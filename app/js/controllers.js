@@ -99,10 +99,17 @@ controllers.SideBarCtrl = function (gameServiceProviderPromise, $q, $scope) {
 		]).then(
 			function (data) {
 				var metas = {};
-				
+
+					// for each meta
 				for (var i = 0; i < data.length; i++) {
+						// goes once - basically get meta key
 					for (var key in data[i]) {
-						metas[key.toLowerCase()] = data[i][key];
+							// assign metas from data
+						var metaObject = data[i][key];
+						var metaName = key.toLowerCase();																
+						metas[metaName] = metaObject;
+						
+						
 					}					
 				}			
 				

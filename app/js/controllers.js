@@ -86,7 +86,7 @@ controllers.SideBarCtrl = function (gameServiceProviderPromise, $q, $scope) {
 	
 	this.showSelectedMasterView = function () {	
 		
-		return '/partials/detailView.html';
+		return '/app/partials/detailView.html';
 	}
 	
 	

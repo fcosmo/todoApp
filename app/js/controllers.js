@@ -65,6 +65,19 @@ controllers.SideBarCtrl = function (gameServiceProviderPromise, $q) {
 
 controllers.SideBarCtrl = function (gameServiceProviderPromise, $q, $scope) {
 	
+		// move this later
+	$scope.switchOnFieldType = function (metas, selectedMetaName, fieldMetaValue) {
+		
+		var fieldMetaKey = fieldMetaValue.split('^')[0];
+		
+		var fieldMetas = metas[selectedMetaName].fieldMeta;
+		
+		var fieldMeta = fieldMetas[fieldMetaKey];
+	
+		
+		return fieldMeta.classMeta;
+	}
+	
 	/*
 	  $scope.templates =
 		    [ { name: 'template1.html', url: '/partials/template1.html'}
@@ -77,9 +90,9 @@ controllers.SideBarCtrl = function (gameServiceProviderPromise, $q, $scope) {
 		var fetchDataPromise = gameServiceProviderPromise.getJSON("/data/" + metaName + ".json");
 		fetchDataPromise.then(function (data) {
 			for (var key in data) {
-				$scope.models[key.toLowerCase()] = data[key];
+				$scope.models[key] = data[key];
 			}	
-			$scope.selectedMetaName = metaName.toLowerCase();			
+			$scope.selectedMetaName = metaName;			
 		}, function () { alert('unable to download')});		
 	}	
 	
@@ -117,7 +130,7 @@ controllers.SideBarCtrl = function (gameServiceProviderPromise, $q, $scope) {
 					for (var key in data[i]) {
 							// assign metas from data
 						var metaObject = data[i][key];
-						var metaName = key.toLowerCase();																
+						var metaName = key;																
 						metas[metaName] = metaObject;
 						
 						

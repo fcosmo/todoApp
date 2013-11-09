@@ -19,10 +19,18 @@ app.filter('objToList', function() {
 app.filter('fieldMetaList', function() {
 	  return function(input, metas, selectedMetaName) {
 
-		var fieldMetas = metas[selectedMetaName].fieldMeta;		  
+		if (typeof input === "undefined") {
+			return [];
+		}
 	    var out = [];
 
+		var fieldMetas = metas[selectedMetaName].fieldMeta;		  
+	    
+	    	// this uses the natural order from the meta.json ! very important
 		for (var fieldMeta in fieldMetas) {
+			if (fieldMetas[fieldMeta].classMeta === "$id") {
+				continue;
+			}
 	    	out.push(input[fieldMeta]);
 		}
 			     	    
@@ -35,11 +43,22 @@ app.filter('fieldMetaList', function() {
 app.filter('fieldValueList', function() {
 	  return function(input, metas, selectedMetaName) {
 
+			if (typeof input == "undefined") {
+				return [];
+			}		  
+		  
 		var fieldMetas = metas[selectedMetaName].fieldMeta;		  
 	    var out = [];
-
+	    
+    		// this uses the natural order from the meta.json ! very important	    
 		for (var fieldMeta in fieldMetas) {
-	    	out.push(input[fieldMeta]);
+			if (fieldMetas[fieldMeta].classMeta === "$id") {
+				continue;
+			}		
+	    	//out.push({"key":fieldMeta,"value":input[fieldMeta]});
+	    	out.push(fieldMeta + "^" + input[fieldMeta]);
+	    	//out.push([fieldMeta, input[fieldMeta]]);
+			
 		}
 			     	    
 	    return out;

@@ -1,0 +1,21 @@
+
+
+
+<table>
+    <tr>
+        <td ng-repeat="fieldMeta in metas[selectedMetaName].fieldMeta | fieldMetaList:metas:selectedMetaName">
+            <span>{{fieldMeta.label}}</span>
+        </td>
+    </tr>
+    <tr ng-repeat="model in models[selectedMetaName] | limitTo:20">
+        <td ng-repeat="fieldValue in model | fieldValueList:metas:selectedMetaName">            
+              <div ng-switch on="switchOnFieldType(metas,selectedMetaName,fieldValue.key)">
+                <div class="animate-switch" ng-switch-when="$string"><span>{{fieldValue.value}}</span></div>
+                <div class="animate-switch" ng-switch-default>{{fieldValue.key}}</div>
+              </div>   
+            
+        </td>
+    </tr>    
+</table>
+
+

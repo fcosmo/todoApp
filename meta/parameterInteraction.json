@@ -8,9 +8,9 @@
                 "label":"Direction",
                 "classMeta":"$string"
             },  
-            "subSystem":{
-                "label":"subSystem",
-                "classMeta":"subSystem"
+            "subsystem":{
+                "label":"subsystem",
+                "classMeta":"subsystem"
             },                
         	"parameter":{
         		"label":"Parameter",

@@ -12,9 +12,9 @@
                 "label":"Key",
                 "classMeta":"$string"
             },            
-            "subSystem":{
+            "subsystem":{
                 "label":"Sub System",
-                "classMeta":"subSystem",
+                "classMeta":"subsystem",
                 "list":true
             },
             "unit":{

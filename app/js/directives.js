@@ -9,12 +9,28 @@ directives.superman = function () {
 		    restrict: 'E',
 		    transclude: false,
 		    replace: true,
-	        templateUrl: 'partials/superman.html',
+	        template: '<span>partials/superman.html</span>',
 		    scope: {
 		    	
 		    },
 		    
 		    link: function (scope, element, attrs) {
+		    }
+		  };
+};
+	
+
+directives.fieldvaluedirective = function () {
+	  return {
+		    restrict: 'E',
+		    transclude: false,
+		    replace: true,
+		    scope: {
+		    	fieldvalue: "="
+		    },
+	        template: '<span>{{fieldvalue}}</span>',
+		    link: function (scope, element, attrs) {
+		    	
 		    }
 		  };
 };

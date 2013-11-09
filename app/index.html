@@ -15,6 +15,7 @@
 	  <link rel="stylesheet" href="css/animations.css">
 	
 	  <script src="lib/jquery/jquery-1.10.2.js"></script>
+      <script src="lib/underscore/underscore-1.5.2.min.js"></script>	  
 	  <script src="lib/angular/angular.js"></script>
 	  <script src="lib/angular/angular-animate.js"></script>
 	  <script src="lib/angular/angular-resource.js"></script>
@@ -93,7 +94,7 @@
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
               <superman></superman>
-              <button ng-click="sidebar.loadMeta()">Load Meta</button> 
+              <button ng-click="sidebar.loadMeta(); sidebar.loadData()">Load Meta</button> 
             
               <li class="nav-header">Entities</li>
 		        <li ng-repeat="(metaName, metaObject) in metas">

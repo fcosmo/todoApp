@@ -68,14 +68,59 @@ controllers.SideBarCtrl = function (gameServiceProviderPromise, $q, $scope) {
 		// move this later
 	$scope.switchOnFieldType = function (metas, selectedMetaName, fieldMetaValue) {
 		
-		var fieldMetaKey = fieldMetaValue.split('^')[0];
+		var fieldMetaValueArray = fieldMetaValue.split('^');
+		
+		
+		var fieldMetaKey = fieldMetaValueArray[0];
 		
 		var fieldMetas = metas[selectedMetaName].fieldMeta;
 		
 		var fieldMeta = fieldMetas[fieldMetaKey];
 	
-		
+	
 		return fieldMeta.classMeta;
+	}
+	
+	
+	$scope.resolveEntityField = function (metas, selectedMetaName, fieldMetaValue) {
+
+		var fieldMetaValueArray = fieldMetaValue.split('^');
+		
+		
+		var fieldMetaKey = fieldMetaValueArray[0];
+		
+		var fieldMetas = metas[selectedMetaName].fieldMeta;
+		
+		var fieldMeta = fieldMetas[fieldMetaKey];
+	
+			 
+		 
+		 
+		var fieldMetaValue =  fieldMetaValueArray[1];
+		var models =  $scope.models[fieldMeta.classMeta];
+		
+		if (fieldMeta.list) {
+			return "[ " + fieldMetaValue.length + " " + $scope.metas[fieldMeta.classMeta].classMeta.label + "s ]" ;
+		}
+		else {
+			var entry = _.findWhere(models, {"id": fieldMetaValue});	
+			var display = entry == null 
+			? "INVALID" 
+			: typeof entry.title === "undefined"
+				? "something else"
+				: entry.title;
+		
+			return display;			
+		}
+		
+		
+		
+		
+		
+		
+		
+
+		
 	}
 	
 	/*
@@ -87,6 +132,11 @@ controllers.SideBarCtrl = function (gameServiceProviderPromise, $q, $scope) {
 	
 	this.selectMeta = function (metaName) {
 		$scope.models = $scope.models || {};
+		
+		if ($scope.models[metaName]) {
+			$scope.selectedMetaName = metaName;	
+		}
+		
 		var fetchDataPromise = gameServiceProviderPromise.getJSON("/data/" + metaName + ".json");
 		fetchDataPromise.then(function (data) {
 			for (var key in data) {
@@ -138,7 +188,7 @@ controllers.SideBarCtrl = function (gameServiceProviderPromise, $q, $scope) {
 				}			
 				
 				$scope.metas = metas;
-				console.log('done');
+				console.log('done metas');
 				
 			},
 			function (error) {
@@ -166,7 +216,6 @@ controllers.SideBarCtrl = function (gameServiceProviderPromise, $q, $scope) {
 		]).then(
 			function (data) {
 				var models = {};
-				var modelMetas = {};
 				
 				for (var i = 0; i < data.length; i++) {
 					for (var key in data[i]) {
@@ -175,7 +224,7 @@ controllers.SideBarCtrl = function (gameServiceProviderPromise, $q, $scope) {
 				}			
 				
 				$scope.models = models;
-				console.log('done');
+				console.log('done models');
 				
 			},
 			function (error) {

@@ -12,7 +12,7 @@
         
                 <div ng-switch on="switchOnFieldType(metas,selectedMetaName,fieldValue)">
                       <div ng-switch-when="$string">{{fieldValue.split('^')[1]}}</div>
-                      <a href="#" ng-switch-default>{{fieldValue.split('^')[0]}}</div>
+                      <a href="#" ng-switch-default>{{resolveEntityField(metas,selectedMetaName,fieldValue)}}</a>
                 </div>           
                     
         </td>

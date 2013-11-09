@@ -1,0 +1,15 @@
+
+
+
+<table>
+    <tr>
+        <td ng-repeat="fieldMeta in metas[selectedMetaName].fieldMeta | fieldMetaList:metas:selectedMetaName">
+            <span>{{fieldMeta.label}}</span>
+        </td>
+    </tr>
+    <tr ng-repeat="model in models[selectedMetaName]">
+        <td ng-repeat="fieldValue in model | fieldValueList:metas:selectedMetaName">
+            <span>{{fieldValue}}</span>
+        </td>
+    </tr>    
+</table>

@@ -1,0 +1,33 @@
+{
+    "subsystem":{
+        "classMeta":{
+            "label":"Sub System"
+        },
+        "fieldMeta":{
+            "title":{
+                "label":"Title",
+                "classMeta":"$string"
+            },
+            "system":{
+                "label":"System",
+                "classMeta":"system"
+            },
+            "componentDeployment":{
+                "label":"Component Deployment",
+                "classMeta":"componentDeployment",
+                "list":true
+            },
+            "parameterInteraction":{
+                "label":"Parameter Interaction",
+                "classMeta":"parameterInteraction",
+                "list":true
+            },
+            "id":{
+                "label":"ID",
+                "classMeta":"$id"
+            }            
+        }
+        
+    }
+    
+}

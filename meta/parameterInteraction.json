@@ -1,0 +1,28 @@
+{
+    "parameterInteraction":{
+        "classMeta":{
+            "label":"Parameter Interaction"
+        },
+        "fieldMeta":{   
+            "direction":{
+                "label":"Direction",
+                "classMeta":"$string"
+            },  
+            "subSystem":{
+                "label":"subSystem",
+                "classMeta":"subSystem"
+            },                
+        	"parameter":{
+        		"label":"Parameter",
+                "classMeta":"parameter"        		
+        	},       	
+            "id":{
+                "label":"ID",
+                "classMeta":"$id"
+            }
+            
+        }
+        
+    }
+    
+}

@@ -1,0 +1,36 @@
+{
+    "sensorDeployment":{
+        "classMeta":{
+            "label":"Sensor Deployment"
+        },
+        "fieldMeta":{
+            "title":{
+                "label":"Title",
+                "classMeta":"$string"
+            },
+            "timed":{
+                "label":"Timed",
+                "classMeta":"$boolean"
+            },
+            "unit":{
+                "label":"Unit",
+                "classMeta":"unit"
+            },            
+            "dimension":{
+                "label":"Dimension",
+                "classMeta":"dimension"
+            },
+            "parameter":{
+                "label":"Parameter",
+                "classMeta":"parameter"
+            },            
+            "id":{
+                "label":"ID",
+                "classMeta":"$id"
+            }
+            
+        }
+        
+    }
+    
+}

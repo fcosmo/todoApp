@@ -1,0 +1,38 @@
+{
+    "system":{
+        "classMeta":{
+            "label":"System"
+        },
+        "fieldMeta":{
+            "title":{
+                "label":"Title",
+                "classMeta":"$string"
+            },
+            "key":{
+                "label":"Key",
+                "classMeta":"$string"
+            },            
+            "subSystem":{
+                "label":"Sub System",
+                "classMeta":"subSystem",
+                "list":true
+            },
+            "unit":{
+                "label":"Unit",
+                "classMeta":"unit",
+                "list":true
+            },
+            "parameter":{
+                "label":"Parameter",
+                "classMeta":"parameter",
+                "list":true
+            },
+            "id":{
+                "label":"ID",
+                "classMeta":"$id"
+            }            
+        }
+        
+    }
+    
+}

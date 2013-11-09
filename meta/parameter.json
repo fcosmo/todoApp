@@ -1,0 +1,40 @@
+{
+    "parameter":{
+        "classMeta":{
+            "label":"Parameter"
+        },
+        "fieldMeta":{
+            "key":{
+                "label":"Key",
+                "classMeta":"$string"
+            },
+            "title":{
+                "label":"Title",
+                "classMeta":"$string"
+            },  
+            "variable":{
+                "label":"Variable",
+                "classMeta":"$string"
+            },  
+            "system":{
+                "label":"System",
+                "classMeta":"system"
+            },                
+        	"quantity":{
+        		"label":"Quantity",
+                "classMeta":"$string"        		
+        	},    
+        	"physicalQuantity":{
+        		"label":"Physical Quantity",
+                "classMeta":"physicalQuantity"        		
+        	},        	
+            "id":{
+                "label":"ID",
+                "classMeta":"$id"
+            }
+            
+        }
+        
+    }
+    
+}

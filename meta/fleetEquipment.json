@@ -1,0 +1,24 @@
+{
+    "fleetEquipment":{
+        "classMeta":{
+            "label":"Fleet Equipment"
+        },
+        "fieldMeta":{
+            "fleet":{
+                "label":"Fleet",
+                "classMeta":"fleet"
+            },
+            "unit":{
+                "label":"Unit",
+                "classMeta":"unit"
+            },          
+            "id":{
+                "label":"ID",
+                "classMeta":"$id"
+            }
+            
+        }
+        
+    }
+    
+}

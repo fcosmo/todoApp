@@ -1,0 +1,20 @@
+{
+    "physicalQuantity":{
+        "classMeta":{
+            "label":"Physical Quantity"
+        },
+        "fieldMeta":{   
+            "title":{
+                "label":"Title",
+                "classMeta":"$string"
+            },      	
+            "id":{
+                "label":"ID",
+                "classMeta":"$id"
+            }
+            
+        }
+        
+    }
+    
+}

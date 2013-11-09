@@ -1,0 +1,29 @@
+{
+    "componentDeployment":{
+        "classMeta":{
+            "label":"Component Deployment"
+        },
+        "fieldMeta":{
+            "title":{
+                "label":"Title",
+                "classMeta":"$string"
+            },
+            "unit":{
+                "label":"Unit",
+                "classMeta":"unit",
+                "list":true
+            },
+            "subsystem":{
+                "label":"Sub System",
+                "classMeta":"subSystem"
+            },
+            "id":{
+                "label":"ID",
+                "classMeta":"$id"
+            }
+            
+        }
+        
+    }
+    
+}

@@ -1,0 +1,29 @@
+{
+    "dimension":{
+        "classMeta":{
+            "label":"Dimension"
+        },
+        "fieldMeta":{
+            "title":{
+                "label":"Title",
+                "classMeta":"$string"
+            },
+            "quantity":{
+                "label":"Quantity",
+                "classMeta":"quantity",
+                "list":true
+            },
+            "physicalQuantity":{
+                "label":"Physical Quantity",
+                "classMeta":"physicalQuantity"
+            },
+            "id":{
+                "label":"ID",
+                "classMeta":"$id"
+            }
+            
+        }
+        
+    }
+    
+}

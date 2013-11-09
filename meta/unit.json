@@ -1,0 +1,38 @@
+{
+    "unit":{
+        "classMeta":{
+            "label":"Unit"
+        },
+        "fieldMeta":{
+            "title":{
+                "label":"Title",
+                "classMeta":"$string"
+            },            
+            "system":{
+                "label":"System",
+                "classMeta":"system"
+            },
+            "fleetEquipment":{
+                "label":"Fleet Equipment",
+                "classMeta":"fleetEquipment",
+                "list":true
+            },
+            "sensorDeployment":{
+                "label":"Sensor Deployment",
+                "classMeta":"sensorDeployment",
+                "list":true
+            },
+            "componentDeployment":{
+                "label":"Component Deployment",
+                "classMeta":"componentDeployment",
+                "list":true
+            },            
+            "id":{
+                "label":"ID",
+                "classMeta":"$id"
+            }            
+        }
+        
+    }
+    
+}

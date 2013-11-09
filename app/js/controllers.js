@@ -94,7 +94,18 @@ controllers.SideBarCtrl = function (gameServiceProviderPromise, $q, $scope) {
 		//game.getJSON();
 	
 		$q.all([
-		        gameServiceProviderPromise.getJSON("/meta/componentDeployment.json")		        
+		        gameServiceProviderPromise.getJSON("/meta/componentDeployment.json"),
+		        gameServiceProviderPromise.getJSON("/meta/dimension.json"),
+		        gameServiceProviderPromise.getJSON("/meta/fleet.json"),
+		        gameServiceProviderPromise.getJSON("/meta/fleetEquipment.json"),
+		        gameServiceProviderPromise.getJSON("/meta/parameter.json"),
+		        gameServiceProviderPromise.getJSON("/meta/physicalQuantity.json"),
+		        gameServiceProviderPromise.getJSON("/meta/sensorDeployment.json"),
+		        gameServiceProviderPromise.getJSON("/meta/subsystem.json"),
+		        gameServiceProviderPromise.getJSON("/meta/system.json"),
+		        gameServiceProviderPromise.getJSON("/meta/unit.json"),
+		        gameServiceProviderPromise.getJSON("/meta/parameterInteraction.json"),
+		        
 		     
 		]).then(
 			function (data) {

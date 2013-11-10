@@ -10,8 +10,7 @@
             },
             "unit":{
                 "label":"Unit",
-                "classMeta":"unit",
-                "list":true
+                "classMeta":"unit"
             },
             "subsystem":{
                 "label":"Sub System",

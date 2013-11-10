@@ -3,16 +3,16 @@
 
 <table>
     <tr>
-        <td ng-repeat="fieldMeta in metas[selectedMetaName].fieldMeta | fieldMetaList:metas:selectedMetaName">
+        <td ng-repeat="fieldMeta in selectedMeta().fieldMeta | fieldMetaList:metas:selectedMetaName">
             <span>{{fieldMeta.label}}</span>
         </td>
     </tr>
-    <tr ng-repeat="model in models[selectedMetaName] | limitTo:20">
+    <tr ng-repeat="model in selectedModel() | limitTo:20">
         <td ng-repeat="fieldValue in (model | fieldValueList:metas:selectedMetaName) track by $index">
         
                 <div ng-switch on="switchOnFieldType(metas,selectedMetaName,fieldValue)">
                       <div ng-switch-when="$string">{{fieldValue.split('^')[1]}}</div>
-                      <a href="#" ng-switch-default>{{resolveEntityField(metas,selectedMetaName,fieldValue)}}</a>
+                      <div ng-switch-default> <a href="#" ng-click="clickEntity(metas,selectedMetaName,fieldValue)">{{resolveEntityField(metas,selectedMetaName,fieldValue)}}</a></div>
                 </div>           
                     
         </td>

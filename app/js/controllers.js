@@ -99,8 +99,10 @@ controllers.SideBarCtrl = function (gameServiceProviderPromise, $q, $scope) {
 		var fieldMetaValue =  fieldMetaValueArray[1];
 		var models =  $scope.models[fieldMeta.classMeta];
 		
+
 		if (fieldMeta.list) {
-			return "[ " + fieldMetaValue.length + " " + $scope.metas[fieldMeta.classMeta].classMeta.label + "s ]" ;
+			var fieldMetaValueList = fieldMetaValue.split(',');
+			return "[ " + fieldMetaValueList.length + " " + $scope.metas[fieldMeta.classMeta].classMeta.label + "s ]" ;
 		}
 		else {
 			var entry = _.findWhere(models, {"id": fieldMetaValue});	
@@ -110,18 +112,61 @@ controllers.SideBarCtrl = function (gameServiceProviderPromise, $q, $scope) {
 				? "something else"
 				: entry.title;
 		
-			return display;			
+			return display;		
 		}
-		
-		
-		
-		
-		
-		
-		
-
-		
+			
 	}
+	
+	
+	$scope.clickEntity = function (metas, selectedMetaName, fieldMetaValue) {
+		var fieldMetaValueArray = fieldMetaValue.split('^');
+		
+		
+		var fieldMetaKey = fieldMetaValueArray[0];
+		
+		var fieldMetas = metas[selectedMetaName].fieldMeta;
+		
+		var fieldMeta = fieldMetas[fieldMetaKey];
+	
+			 
+		 
+		 
+		var fieldMetaValue =  fieldMetaValueArray[1];
+		var models =  $scope.models[fieldMeta.classMeta];
+		
+		
+		var selectedModelList = [];
+			
+			var allModels = $scope.models[fieldMeta.classMeta];
+			var fieldMetaValueList = fieldMetaValue.split(',');
+			for (var i = 0; i < fieldMetaValueList.length; i++) {
+				var id = fieldMetaValueList[i];
+				var entry = _.findWhere(allModels, {"id": id});	
+				selectedModelList.push(entry);
+				
+			}
+			
+			
+		
+		
+		$scope.selectedModels = selectedModelList;
+		$scope.selectedMetaName = fieldMeta.classMeta;		
+			
+	
+	}
+	
+	$scope.selectedMeta = function () {
+		return $scope.metas[$scope.selectedMetaName];
+	}
+	
+	
+	
+	$scope.selectedModel = function () {
+		return $scope.selectedModels;
+	}	
+	
+		// the model holders;
+	$scope.selectedModels = null;
 	
 	/*
 	  $scope.templates =
@@ -135,6 +180,7 @@ controllers.SideBarCtrl = function (gameServiceProviderPromise, $q, $scope) {
 		
 		if ($scope.models[metaName]) {
 			$scope.selectedMetaName = metaName;	
+			$scope.selectedModels = $scope.models[metaName];
 		}
 		
 		var fetchDataPromise = gameServiceProviderPromise.getJSON("/data/" + metaName + ".json");
@@ -143,6 +189,7 @@ controllers.SideBarCtrl = function (gameServiceProviderPromise, $q, $scope) {
 				$scope.models[key] = data[key];
 			}	
 			$scope.selectedMetaName = metaName;			
+			$scope.selectedModels = $scope.models[metaName];			
 		}, function () { alert('unable to download')});		
 	}	
 	

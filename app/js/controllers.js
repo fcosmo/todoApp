@@ -1,6 +1,8 @@
 'use strict';
 
 
+
+
 var controllers = {};
 
 controllers.NavBarCtrl = function () {
@@ -12,10 +14,10 @@ controllers.NavBarCtrl = function () {
 /*
  Simple One
  
-controllers.SideBarCtrl = function (gameServiceProviderPromise) {
+controllers.SideBarCtrl = function (tercelServiceProviderPromise) {
 	this.newNote= function (){
 		//game.getJSON();
-		var promiseFleet = gameServiceProviderPromise.getJSON("/data/fleet.json");		
+		var promiseFleet = tercelServiceProviderPromise.getJSON("/data/fleet.json");		
 				
 		promiseFleet.then(
 				function (data) {
@@ -34,11 +36,11 @@ controllers.SideBarCtrl = function (gameServiceProviderPromise) {
 
 /*  List of Promises 
  
-controllers.SideBarCtrl = function (gameServiceProviderPromise, $q) {
+controllers.SideBarCtrl = function (tercelServiceProviderPromise, $q) {
 	this.newNote= function (){
 		//game.getJSON();
-		var promiseFleet = gameServiceProviderPromise.getJSON("/data/fleet.json");		
-		var promiseDimension = gameServiceProviderPromise.getJSON("/data/dimension.json");		
+		var promiseFleet = tercelServiceProviderPromise.getJSON("/data/fleet.json");		
+		var promiseDimension = tercelServiceProviderPromise.getJSON("/data/dimension.json");		
 
 		$q.all([
 		        promiseFleet,
@@ -63,20 +65,18 @@ controllers.SideBarCtrl = function (gameServiceProviderPromise, $q) {
 };
 */
 
-controllers.SideBarCtrl = function (gameServiceProviderPromise, $q, $scope) {
+controllers.SideBarCtrl = function (tercelServiceProviderPromise, $q, $scope) {
 	
 		// move this later
 	$scope.switchOnFieldType = function (metas, selectedMetaName, fieldMetaValue) {
 		
 		var fieldMetaValueArray = fieldMetaValue.split('^');
 		
-		
 		var fieldMetaKey = fieldMetaValueArray[0];
 		
 		var fieldMetas = metas[selectedMetaName].fieldMeta;
 		
 		var fieldMeta = fieldMetas[fieldMetaKey];
-	
 	
 		return fieldMeta.classMeta;
 	}
@@ -183,7 +183,7 @@ controllers.SideBarCtrl = function (gameServiceProviderPromise, $q, $scope) {
 			$scope.selectedModels = $scope.models[metaName];
 		}
 		
-		var fetchDataPromise = gameServiceProviderPromise.getJSON("/data/" + metaName + ".json");
+		var fetchDataPromise = tercelServiceProviderPromise.getJSON("/data/" + metaName + ".json");
 		fetchDataPromise.then(function (data) {
 			for (var key in data) {
 				$scope.models[key] = data[key];
@@ -200,21 +200,27 @@ controllers.SideBarCtrl = function (gameServiceProviderPromise, $q, $scope) {
 	}
 	
 	
+	this.createMeta = function () {
+		
+	}
+	
+	
+	
 	this.loadMeta = function (){
 		//game.getJSON();
 	
 		$q.all([
-		        gameServiceProviderPromise.getJSON("/meta/componentDeployment.json"),
-		        gameServiceProviderPromise.getJSON("/meta/dimension.json"),
-		        gameServiceProviderPromise.getJSON("/meta/fleet.json"),
-		        gameServiceProviderPromise.getJSON("/meta/fleetEquipment.json"),
-		        gameServiceProviderPromise.getJSON("/meta/parameter.json"),
-		        gameServiceProviderPromise.getJSON("/meta/physicalQuantity.json"),
-		        gameServiceProviderPromise.getJSON("/meta/sensorDeployment.json"),
-		        gameServiceProviderPromise.getJSON("/meta/subsystem.json"),
-		        gameServiceProviderPromise.getJSON("/meta/system.json"),
-		        gameServiceProviderPromise.getJSON("/meta/unit.json"),
-		        gameServiceProviderPromise.getJSON("/meta/parameterInteraction.json"),
+		        tercelServiceProviderPromise.getJSON("/meta/componentDeployment.json"),
+		        tercelServiceProviderPromise.getJSON("/meta/dimension.json"),
+		        tercelServiceProviderPromise.getJSON("/meta/fleet.json"),
+		        tercelServiceProviderPromise.getJSON("/meta/fleetEquipment.json"),
+		        tercelServiceProviderPromise.getJSON("/meta/parameter.json"),
+		        tercelServiceProviderPromise.getJSON("/meta/physicalQuantity.json"),
+		        tercelServiceProviderPromise.getJSON("/meta/sensorDeployment.json"),
+		        tercelServiceProviderPromise.getJSON("/meta/subsystem.json"),
+		        tercelServiceProviderPromise.getJSON("/meta/system.json"),
+		        tercelServiceProviderPromise.getJSON("/meta/unit.json"),
+		        tercelServiceProviderPromise.getJSON("/meta/parameterInteraction.json"),
 		        
 		     
 		]).then(
@@ -249,17 +255,17 @@ controllers.SideBarCtrl = function (gameServiceProviderPromise, $q, $scope) {
 		//game.getJSON();
 	
 		$q.all([
-		        gameServiceProviderPromise.getJSON("/data/componentDeployment.json"),
-		        gameServiceProviderPromise.getJSON("/data/dimension.json"),
-		        gameServiceProviderPromise.getJSON("/data/fleet.json"),
-		        gameServiceProviderPromise.getJSON("/data/fleetEquipment.json"),
-		        gameServiceProviderPromise.getJSON("/data/parameter.json"),
-		        gameServiceProviderPromise.getJSON("/data/parameterInteraction.json"),
-		        gameServiceProviderPromise.getJSON("/data/physicalQuantity.json"),
-		        gameServiceProviderPromise.getJSON("/data/sensorDeployment.json"),
-		        gameServiceProviderPromise.getJSON("/data/subsystem.json"),
-		        gameServiceProviderPromise.getJSON("/data/system.json"),
-		        gameServiceProviderPromise.getJSON("/data/unit.json")		        		        
+		        tercelServiceProviderPromise.getJSON("/data/componentDeployment.json"),
+		        tercelServiceProviderPromise.getJSON("/data/dimension.json"),
+		        tercelServiceProviderPromise.getJSON("/data/fleet.json"),
+		        tercelServiceProviderPromise.getJSON("/data/fleetEquipment.json"),
+		        tercelServiceProviderPromise.getJSON("/data/parameter.json"),
+		        tercelServiceProviderPromise.getJSON("/data/parameterInteraction.json"),
+		        tercelServiceProviderPromise.getJSON("/data/physicalQuantity.json"),
+		        tercelServiceProviderPromise.getJSON("/data/sensorDeployment.json"),
+		        tercelServiceProviderPromise.getJSON("/data/subsystem.json"),
+		        tercelServiceProviderPromise.getJSON("/data/system.json"),
+		        tercelServiceProviderPromise.getJSON("/data/unit.json")		        		        
 		]).then(
 			function (data) {
 				var models = {};
@@ -283,51 +289,5 @@ controllers.SideBarCtrl = function (gameServiceProviderPromise, $q, $scope) {
 };
 
 
-/* chaining of services - come back later 
 
-controllers.SideBarCtrl = function (gameServiceProviderPromise, $q) {
-	this.newNote= function (){
-		
-		var success = function (data) {
-			console.log(JSON.stringify(data));
-		}
-		
-		var error = function (error) {
-			alert('error');
-		}
-		
-		//game.getJSON();
-		//var promiseDimension = gameServiceProviderPromise.getJSON("/data/dimension.json");		
-	
-		      gameServiceProviderPromise.getJSON("/data/fleet.json").then(success, error)
-		.then(gameServiceProviderPromise.getJSON("/data/dimension.json").then(success, error))
-		.then(gameServiceProviderPromise.getJSON("/data/parameter.json").then(success,error));
-		
-			
-		
-				
-				
-				
-		
-    };		
-	
-}
-*/	
-
-
-/*
-controllers.SideBarCtrl = function () {
-	this.newNote= function(){
-		alert("new Note");
-	};
-};
-
- var promise = Activities.get(now, monthAgo);
-    promise.then(
-        function(activities){$scope.transactions = activities;}
-        ,function(reason){alert('Failed: ' + reason);}
-     );
-
-
-*/
 app.controller(controllers);

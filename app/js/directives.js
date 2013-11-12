@@ -4,20 +4,6 @@
 		
 var directives = {};
 
-directives.superman = function () {
-	  return {
-		    restrict: 'E',
-		    transclude: false,
-		    replace: true,
-	        template: '<span>partials/superman.html</span>',
-		    scope: {
-		    	
-		    },
-		    
-		    link: function (scope, element, attrs) {
-		    }
-		  };
-};
 	
 
 directives.fieldvaluedirective = function () {

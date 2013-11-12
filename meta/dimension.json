@@ -10,12 +10,12 @@
             },
             "quantity":{
                 "label":"Quantity",
-                "classMeta":"quantity",
-                "list":true
+                "classMeta":"quantity"
             },
             "physicalQuantity":{
                 "label":"Physical Quantity",
-                "classMeta":"physicalQuantity"
+                "classMeta":"physicalQuantity",
+                "list":true                
             },
             "id":{
                 "label":"ID",

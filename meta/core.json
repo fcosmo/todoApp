@@ -1,0 +1,33 @@
+{
+    "$string":{
+        "classMeta":{
+            "label":"String"
+        },
+        "fieldMeta":{                       
+        }        
+    }
+    
+    "$number":{
+        "classMeta":{
+            "label":"Number"
+        },
+        "fieldMeta":{                       
+        }        
+    }     
+        
+    "$boolean":{
+        "classMeta":{
+            "label":"Boolean"
+        },
+        "fieldMeta":{                       
+        }        
+    }         
+    
+    "$id":{
+        "classMeta":{
+            "label":"Id"
+        },
+        "fieldMeta":{                       
+        }        
+    }    
+}

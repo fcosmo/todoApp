@@ -3,12 +3,12 @@
 /* Services */
 
 
-app.service('gameService', ['$http', function ($http) {
+app.service('tercelService', ['$http', function ($http) {
 	
 	this.getJSON = function () {
 		 $http({method: 'GET', url: '/package.json'}).
 	   		success(function(data, status, headers, config) {
-	   			alert("gameService:" + JSON.stringify(data));
+	   			alert("tercelService:" + JSON.stringify(data));
 	        }).
 	        error(function(data, status, headers, config) {
 	   			alert('error');
@@ -19,13 +19,13 @@ app.service('gameService', ['$http', function ($http) {
 
 
 
-app.service('gameServiceFactory', ['$http', function ($http) {
+app.service('tercelServiceFactory', ['$http', function ($http) {
 	
 	return {
 		getJSON : function () {
 			 $http({method: 'GET', url: '/package.json'}).
 		   		success(function(data, status, headers, config) {
-		   			alert("gameServiceFactory:" + JSON.stringify(data));
+		   			alert("tercelServiceFactory:" + JSON.stringify(data));
 		        }).
 		        error(function(data, status, headers, config) {
 		   			alert('error');
@@ -36,7 +36,7 @@ app.service('gameServiceFactory', ['$http', function ($http) {
 
 
 
-app.provider('gameServiceProvider', function () {
+app.provider('tercelServiceProvider', function () {
 	
 	this.configValue = "some config value";
 	this.setConfigValue = function (newConfigValue) {
@@ -51,7 +51,7 @@ app.provider('gameServiceProvider', function () {
 			getJSON : function () {
 				 $http({method: 'GET', url: '/package.json'}).
 			   		success(function(data, status, headers, config) {
-			   			alert("gameServiceProvider:" + provider.configValue + JSON.stringify(data));
+			   			alert("tercelServiceProvider:" + provider.configValue + JSON.stringify(data));
 			        }).
 			        error(function(data, status, headers, config) {
 			   			alert('error');
@@ -65,13 +65,13 @@ app.provider('gameServiceProvider', function () {
 });
 	
 
-app.config(function (gameServiceProviderProvider) {
-	gameServiceProviderProvider.setConfigValue("Warxxx");
+app.config(function (tercelServiceProviderProvider) {
+	tercelServiceProviderProvider.setConfigValue("new config value");
 });
 
 
 
-app.provider('gameServiceProviderWithParam', function () {
+app.provider('tercelServiceProviderWithParam', function () {
 	
 	this.configValue = "some config value";
 	this.setConfigValue = function (newConfigValue) {
@@ -96,7 +96,7 @@ app.provider('gameServiceProviderWithParam', function () {
 
 
 
-app.provider('gameServiceProviderPromise', function () {
+app.provider('tercelServiceProviderPromise', function () {
 	
 	this.configValue = "some config value";
 	this.setConfigValue = function (newConfigValue) {

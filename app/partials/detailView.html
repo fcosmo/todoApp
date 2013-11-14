@@ -1,23 +1,43 @@
 
 <table class="entityTable">
     <tr class="entityTableHeader">
+        <td>
+            ID
+        </td>
         <td ng-repeat="fieldMeta in selectedMeta().fieldMeta | fieldMetaList:metas:selectedMetaName">
             <div>{{fieldMeta.label}}</div>
         </td>
     </tr>
     <tr class="entityTableRow" ng-repeat="model in selectedModel() | limitTo:20">
-        <td ng-repeat="fieldValue in (model | fieldValueList:metas:selectedMetaName) track by $index">
-			<div ng-switch
-				on="switchOnFieldType(metas,selectedMetaName,fieldValue)">
-				<div ng-switch-when="$string">{{fieldValue.split('^')[1]}}</div>
-				<div ng-switch-when="$boolean">{{fieldValue.split('^')[1]}}</div>
-				<div ng-switch-default>
-					<a href="#"
-						ng-click="clickEntity(metas,selectedMetaName,fieldValue)">{{resolveEntityField(metas,selectedMetaName,fieldValue)}}</a>
-				</div>
-			</div>
+        <td ng-repeat="(key,value) in model.attributes track by $index">
+            <div ng-switch
+                on="model.typeOf(key)">
+                <div ng-switch-when="HasOne">{{value.attributes[title]}}</div>
+                <div ng-switch-when="Value">{{value}}</div>                
+                <div ng-switch-when="HasMany">{{value.length}}</div>
+                <div ng-switch-when="Id">{{value}}</div>
+                <div ng-switch-when="Null">{{'Null'}}</div>                
+                <div ng-switch-default>invalid</div>
+            </div>                        
 		</td>
     </tr>    
 </table>
 
 
+<!-- 
+   <tr class="entityTableRow" ng-repeat="model in selectedModel() | limitTo:20">
+        <td ng-repeat="fieldValue in (model | fieldValueList:metas:selectedMetaName) track by $index">
+            <div ng-switch
+                on="switchOnFieldType(metas,selectedMetaName,fieldValue)">
+                <div ng-switch-when="$string">{{fieldValue.split('^')[1]}}</div>
+                <div ng-switch-when="$boolean">{{fieldValue.split('^')[1]}}</div>
+                <div ng-switch-default>
+                    <a href="#"
+                        ng-click="clickEntity(metas,selectedMetaName,fieldValue)">{{resolveEntityField(metas,selectedMetaName,fieldValue)}}</a>
+                </div>
+            </div>
+        </td>
+    </tr>    
+
+
+ -->

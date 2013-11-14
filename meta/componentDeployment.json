@@ -3,7 +3,7 @@
         "classMeta":{
             "label":"Component Deployment"
         },
-        "fieldMeta":{
+        "fieldMetas":{
             "title":{
                 "label":"Title",
                 "classMeta":"$string"
@@ -19,9 +19,7 @@
             "id":{
                 "label":"ID",
                 "classMeta":"$id"
-            }
-            
-        }
-        
+            }                       
+        }        
     }    
 }

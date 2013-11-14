@@ -5,8 +5,8 @@
 	"title":"Ratio of fuel flow to Ps30",
 	"variable":"response",
 	"system":"Fd7o7n9esAzk3ZffGa2Gwqdykq9",
-	"quantity":"Q0Av1RBvbJHXeXbA5kTh9Y75TX0",
-	"physicalQuantity":["Q0Av1RBvbJHXeXbA5kTh9Y75TX0"],
+	"physicalQuantity":"Q0Av1RBvbJHXeXbA5kTh9Y75TX0",
+	"obsolete":["Q0Av1RBvbJHXeXbA5kTh9Y75TX0"],
 	"sensorDeployment":["6WpwMt1RD50CEK8DUJVqC6d5gsB","CfB0atwnURZbTB86QhhfinTd0P0","21O4WKuBPymxTrJW2W2w4AtHJJR","CgRXn8f0kGVpDF87OeWOiGOIaZ8","Qn832nom1of6BBBBQwuEdVCyUuw","QfBqpPOlzB6YHloXgoOIw2do5Bo","QSbCRa0Qq6qkKT7Bc5CihfWbrbv","aMoQkizwrVyUUPIzJxL3Dvqu531","4LRXTOAUkaIVBHdzUyp2CaEm57h","8hndjG0qMhnY6CpyyEePytdD1tf","5GmysR2M0Tg48au45UTnyzgg3ac","Sw4gMrm9Rd6zW751cGmCTLKFxvj","AQcAkynpXpQgB7rnDYHrYprSWxL","WeGJ5Dy4AApwzUkkXjapplpjO89","SmDaDz6CMZwCRMko9BEpYCIQdRE","RrVE9yi3QDGoHG2mGB8OtQuPdEg","Og4Fhro1IJJM0uSgUBVbnM7Ck9X","D4HNEQ9RSoaNNERRW168L4dP6pZ","G8je1rSdwVNxxH9hUEBJzkWu6B8","HV8picL8bjUC4Emv5zbkxp24YUr","S6mOAAq688j0w7QjPTNdEUicpxT","26DBiADE1BFb0LDc81d635yVeeT","RsBBeCe7H4Wt1sBv2mNQq0HdQ3q","9fwRwMtFWr0c8PyA7hSHfCyqsJO","JkBS3omUsZxF4qzwy5snEiMer6X","DY3UvNVSibUWVwZ2EXVeuaB8mxu","VQpaPs32aYFTFpPrQCyy5YJlYXm","NMlpkcsCKAwVXjCLj057R35LR8N","DMxwWEl42wlKLyaYbIy14T5FdO5","bs6SDbipgOuP8J9Kmk99dcnoCe","H3AggpwS9OwFBLPzx5AbgwrYK6F","P3MP8r7RjAH1Qi8Vxjjr9wUT3n6","Xwr95ACmOSFNiFWVnbo9BxnXaEU","NrDYUcFcY9xjNQbLuupWaOiUR75","OQwC3m65fq9mfV35ILOGdBcMr5Q"]
 },
 {
@@ -15,8 +15,8 @@
 	"title":"Static Pressure at HPC outlet",
 	"variable":"response",
 	"system":"Fd7o7n9esAzk3ZffGa2Gwqdykq9",
-	"quantity":"NAfbRtIr6QEX2sv28vEbKA2Awhx",
-	"physicalQuantity":["NAfbRtIr6QEX2sv28vEbKA2Awhx"],
+	"physicalQuantity":"NAfbRtIr6QEX2sv28vEbKA2Awhx",
+	"obsolete":["NAfbRtIr6QEX2sv28vEbKA2Awhx"],
 	"sensorDeployment":["5Pu6lwfKbD4VdJJRN4Gl2CCJc1O","TDIRVgNjqgUuNWTOgOpbHSdy3nW","4Zpb5w4SsBlel7LLAP9yqob1tfi","V1nmHY1V2RQbdOLvedNN2pGqf71","D0AsN3lMomKoY2dX0aAuFs2zr7v","9Arkaj9p5oAItxnMIFhM5UuWspY","aL4GPzn66hHVQh7Z8XWhLMpxcXb","QJPSYnHTH9uCDCx9s7FdrUYeWaR","7HQWH7M5Amsijw9yM9sxJpdAOUC","PqfLC1sRtN70LJhHX22DiktWdTj","DDSSv5iZC2ZpjaprJwiW7a4NiVP","EX3DslO2ttgMQIVijUE1EIJRFnc","Oz2j7lwidt97gbrDBTnOwk3M33E","XPAOIPYdXrMnaxe34kZ7UBV0zl2","8jep4YxB6JJKdN9yMYLWP8HM9rV","R0xMspFzYV4rrXcVNm9J4HaAujv","MHF38Fllc6G0c1uBvVsIha5u6PH","Wsx9QbYPyvuTFa9Lb1HAHldyjuo","ABwRfXHExQLAmC1s65t98xb7evR","9gtofYC6QOgDWMw9mcxJBbXvinl","2qfVxRAxhP38VY9ue4d3c8G524y","NNDGzOgIkW0L2kinZYXFPIEDXIG","N7kss4aNZDCJlFv4MG97NsbCMmP","39hZy5hMKCXes8nrUHY1V1sP71z","8psnyr6IRhEwt8rlHlgqfqunfd0","2AlrqYiINlvoCdw5OBRT69fMmP3","UqqZc7QqoRLzD3tDxiQuM2jdaXC","Uh4Bxr8FoY1f8l96pwvJA2Tkwsz","6SJF2vXwEodNuf4Q8eM7jMS6om1","4jI3mqHVz4mgVDz193SMlzNdc2u","Kleh59LVunURdCrZPKjdNmmV4qL","VjQTYoMdhdB5Ac0Z12FlNrAwxvE","RNeFz8RfsWYBTzqoE0mdUKGR71C","6qKuPZKhWyJV1cfRgkrvb1RnEKH","CPfvmMvoGwAlx2qVx4MsGfSS9RO"],
 	"parameterInteraction":["DavLA3VrK0soliGSHyKdflQrsb6","P79L2qdLprZIN9aE4oqeqBCH7Xt"]
 },
@@ -26,8 +26,8 @@
 	"title":"Bypass Ratio",
 	"variable":"response",
 	"system":"Fd7o7n9esAzk3ZffGa2Gwqdykq9",
-	"quantity":"Cgw50cDmlgASJAMWbZ051mUPHvr",
-	"physicalQuantity":["Cgw50cDmlgASJAMWbZ051mUPHvr"],
+	"physicalQuantity":"Cgw50cDmlgASJAMWbZ051mUPHvr",
+	"obsolete":["Cgw50cDmlgASJAMWbZ051mUPHvr"],
 	"sensorDeployment":["5VaTtdH9ppzPnGteFmoMl2K9Dxq","ML8xPj0ViDUDRcWAhGmtNLHDE8v","5GopI1KLxjKzFwkYEeulocOOj7e","Vf2BROVDqcHZPqIDwS5CV1LIe0B","MCIo1PddwQvQGIfljVonSlDx2ug","7OwmxDlLfwnih0aGpnaC6ooC9Vx","TwFP4gj4qicVX7BFHhY2DaZiQmW","ZDZvogfxi4io8mx2FB6rqeIF623","Liq6NTo2ieRAcIf5KMlsAxKg02m","SLiGzWD6gp25Pixow9264x24qVe","9ip9Lmbd1vawKBpNE2bz39qvG3E","6NByB2CCVWCBxCP7Qo5jtU9TaXP","Td0ZS1aXVvfuuqUNe6pBCyAjKbO","RmTcDtPbNTql760UdmxThSTlhbC","DQReIhlgsY7uMTQQtNyuuN6RURC","Tzwc7D39Kvwe8Va7iA3cPkataO4","IOnbvx8nJaThdM5N6AeWfxNhLkM","OmBD7t1JQLKEwak0Fn1ogSrH1cu","JJovTYHxyXqTctbN1zZshEU1FPp","LIlKb3JUMjVV2pPDIWSx04t5utl","Iu6GjOweTRptIWPRWAAKD2mM6TD","GSycWMQEf7um38o3vAqqQXtnX9Y","J6a3xnwKBnoNaUXrQB20Y0qOqqc","9Hg4eZNfk9kIGOyfZZJf2H6NBUG","7SnaCazGQRsP3lNTRNtK4lCLuPY","Pafkr7CyThSYPxDGcN8Nk2PY9jP","2UM71If6XUWXiqH3fs64g3yM4DS","R9fF1id3FZNMNp14tLtKvlLGyYA","SNFJ2E3d3J2VUAaP6J2iDqYxy4v","Gsff5OzOcoGEuJoEhtHBqiITw5t","XuhvMCZSr6WbQ9QhOxolTqyYji7","VI1Df8drf6W4qu7BWbynw1ivrKy","EXev2btpxvl9S0coZvReoBJyA4z","HYU00p4ijDa4LQBTwOtmtfhSkqc","MWxqzfsDNTOyjFbTXEaTg6KKMCI"],
 	"parameterInteraction":["HitBSpUOsEc6Jm2N3gW9GnfpjPb"]
 },
@@ -37,8 +37,8 @@
 	"title":"LPT coolant bleed",
 	"variable":"response",
 	"system":"Fd7o7n9esAzk3ZffGa2Gwqdykq9",
-	"quantity":"DTEiLEgrbt6zi5X6FN3Lobp3Ruw",
-	"physicalQuantity":["DTEiLEgrbt6zi5X6FN3Lobp3Ruw"],
+	"physicalQuantity":"DTEiLEgrbt6zi5X6FN3Lobp3Ruw",
+	"obsolete":["DTEiLEgrbt6zi5X6FN3Lobp3Ruw"],
 	"sensorDeployment":["6KrQRDVv2FgTpR0PgVKthOH42Uu","6xR5ZpF032R4YwQ5kVYV7Nenj1i","3vy65H73YoOe2GrX7z1A5yfUqHC","OI1b56mc7rZFjQsAfnudYcWRFVN","A4uLKjKUcS1hwY6M6rrezOZP4Mw","XfiDPlEpBqQ1UPd8cOxqzg0NqEu","4kgE8yLiAnNEtOg8duFz3N0DpTa","WUxzUOVs43u5BkMSyBzsxJoPzdV","9TqmmuJxSSgtRnW7752dQ89pUXj","KdgB4KpQNJbaGQ8mlt6E0803dGf","XUDFK50ZCX1MzvtjeGe0kt2pxLq","BRoFRhY40LnDwRqkMYmC0RBBye7","VbjxJNx4AxoqFkRsoRPPJtQbykt","Ht2Ch5wcHuvwUFRdIOkeXDMDEL5","OKha2l1jc1e1TXjebmQ16vm4nMT","3GK6Zd8K8iqZPzgQ4CiSD5xipcC","A0eI7soCcPtXDYIz359CRZdhEDg","EtpithRlXgbwf9u6dvuNYurUhyb","VBSzGfmd5mXS2FiVaEhEE3g6RqP","HnG5gZ824CUopA56Y6IEjHgKgAn","4yongXXBry11VrRN2RaijN78kTh","9I4pwIbA6azagCqc2nfsEhYzxa2","N0qoefvjeJpmDO1akOpxTv67p1Q","DqhZXMywmQqnq9ggCQGpfGz3GsR","CM6MAxIN3ijoOimpukt1W8oJSWV","2K0FUsiCFp5OIAeYfdiIMLWaTIw","SHcDXe6zrB5okceD3CtQeDVAer5","MWFuyHHujtTxakSLUKq8stIZqN3","PJI71OmUIglrHTSgHkYHmh6V5t9","3clyJynxamm8skFZEEjRBeKiKSK","IkITSlqVyRtKry2HplQOTEqwVnq","2bbFhvzmVuYr1FNlYxy8gZ8sWDh","GYbFo5nXlIER4QQzFomNPIAsVa2","ThsvwDNLhTMwVAp3UDtB1n4XVs7","LEAxWiiWqjZtVYipyAtEjjez2g8"],
 	"parameterInteraction":["HRT4IDrf7x0fh5VeJ157shbn48N"]
 },
@@ -48,8 +48,8 @@
 	"title":"LPC Stall Margin",
 	"variable":"response",
 	"system":"Fd7o7n9esAzk3ZffGa2Gwqdykq9",
-	"quantity":"Cgw50cDmlgASJAMWbZ051mUPHvr",
-	"physicalQuantity":["Cgw50cDmlgASJAMWbZ051mUPHvr"],
+	"physicalQuantity":"Cgw50cDmlgASJAMWbZ051mUPHvr",
+	"obsolete":["Cgw50cDmlgASJAMWbZ051mUPHvr"],
 	"sensorDeployment":["EZRcjcPmsnevNoxuePiX1OVFDh7","YBgg65d8gwWfLpz2TEPwTX7CCdY","A8GEHugsmbZtJs5G6LLdKSY7zkH","7aCuLXUrMOek8qLHxiDIVGahihS","JiSN4rtLzKFJfcIhBIYInQx9TB8","Of3PfMgYM4jkmH2xUExIRKIkJL9","FvQiIQDHzX7CPOCvnsbwjId0w5A","S1sQBoawrwnax1UYjYA3PwBWSYD","NyfSD15awileLic5PFWcXRkOxht","5WMY7OwwRxnxfLHEMVEbLiV0O1L","4CrtxsQnteSsaiHL81L5Jm00nMM","8yrT5d7qEoeqtXljc0m72l1I28k","UuJTzTQHFevWJahPY8MGf4iypjd","FoxeaCY6YI3PaERcM87NBpVZiKf","Sw44r2bG6cRq52xo3XCNegJHTRy","I7ed5Rag8ucFTkyYgZVQbwOAoeB","1OuR1IbVd9V4TUY0GSuXKhLzLG7","PYoZgFuQSvIqCE6xBMU8XxEmlB0","ZLFrcEHSisIEHh9ZW3L3TcGZpQw","JqjWJGFufPgLX0lvfdTc56a6Y5m","PUNpsF7PDrgqSU3kduEaCtZ689p","TMiK2eypZ2vlxcaUPHrC8GJSCh9","UhJGZqC5phx2IJp5a1ncrcV838k","D3KyNHnMOY9URDRMTEFNyWVZjCv","6YPp37isL1OxFOtF0f9VK3ANeCT","BrQGLBraPHSeORw1Y1e06Lw7NS4","Kt3zQKuZzXsXRE5iaDuMDKhhe9v","47lbTPBS7ylUjgn3zNBOsVQg2YB","VZ5Ikte36s20V3S3jrvmqbXtPIJ","D5ccAPwIsrbk6WSCnk67EfNCAzq","XiHl2Ju5rURpvIDEfYjiIEH3TjD","P6pcYJLAR30toXoGgWwjvpJyTPf","Hb3eT5mQecyOeXJ8GXhclfF0So1","A8LKF8ekeCJXu16GJGSiaQ3MoMf","Uf3PAhRbRQKG10SLPmRJRLHRlDM"]
 },
 {
@@ -58,8 +58,8 @@
 	"title":"Total Temperature at LPT outlet",
 	"variable":"response",
 	"system":"Fd7o7n9esAzk3ZffGa2Gwqdykq9",
-	"quantity":"A25ixE4IZxCd3OFD8dXjlhD0wsQ",
-	"physicalQuantity":["A25ixE4IZxCd3OFD8dXjlhD0wsQ"],
+	"physicalQuantity":"A25ixE4IZxCd3OFD8dXjlhD0wsQ",
+	"obsolete":["A25ixE4IZxCd3OFD8dXjlhD0wsQ"],
 	"sensorDeployment":["K1WEMLIQe22bqurK8Itv0kvl2cu","9o2t80teCBfoapkRiuqxi7BCDIT","BPx44z8OeKCkzvNQKO3RZRTrom6","LwwmCVmyAZn912aIm5C4kkcdHF2","3lTdHo2f5dYniKvvSKUD9pNBft2","OEAmXlWtTIAYGcyNBJI36kv0S80","XZ0YMs6Hwy9Jnr55bZ3JYd2zZSS","NZFyPACBCfbdA3Gyyjm9WisIQkw","KLpygbJICkAKtYRYQHwRipkJ4tV","VRd4WJIpF8CS6v2i0wnRCFB87Gx","QfG2bMBAhreiKOMVBbVgklztmd1","ZJrRz31oUCqmaURBaZTwROqP00E","993TPYaeJS5wSyGuRu8wfZFXbez","VTHnZeRMOBI2KtNtNHA9xz6iRnC","QyDYZRRp5GpoYxLmeb3PBgPMrfe","7pT0ONhV7faW0U2Xfvm66N8HmLS","NjDRalNp7zy8UXUcbdoyoz1OTLG","2J9zVnafZzNhMHABxKVuAFKsuu8","7gHlUpw0Ht1N0ltx8uETe4sFY1J","8BDJQEb0n5BolJNcFrIeWuev6JR","JK2GTjSDBCGJCsapPT9twzKOjSC","I7sAebewXZBeGj6V9kQtyjbd0V3","5zoYQJILPxXSAOvu2NBCn7HC0h4","VbvM7BsfmTzrC1xYHvzmnbAtqvk","IwpjO2m2I8tK01PMcSZeoTrRsvL","IfYv6KMKmj0EZGi2ZnOZMdN5B0r","BGo4SQALm7sENfjMRjzWk9s3nTp","SXD5ueonUuWpeBk0cDklOV8MPPa","50tJcNvfXj4342yiqR2BE91wBnq","IZxY0gyDAXku6fv9MqkM3gszCdZ","HIxAj4vL8Yi36kbTq6mprTQa1hU","UPYTKwNyrMALJZ4mlnE6L416S9T","EGDeidrRE5whMNp1oKINqMzHnIx","Clzwu6WXSBfT3FyK25sQW6NBkWo","Jcd8AfBqqEujIkPwNY3UhM7RkZx"],
 	"parameterInteraction":["1VVdfdaPZV8S5fXaL2P3SS8F0cR","LsvGVnkuQNchMKs8RQ086X2stP9"]
 },
@@ -69,8 +69,8 @@
 	"title":"Corrected core speed",
 	"variable":"control",
 	"system":"Fd7o7n9esAzk3ZffGa2Gwqdykq9",
-	"quantity":"1XX310H1afH4DYdlte8yIPmzvNw",
-	"physicalQuantity":["1XX310H1afH4DYdlte8yIPmzvNw"],
+	"physicalQuantity":"1XX310H1afH4DYdlte8yIPmzvNw",
+	"obsolete":["1XX310H1afH4DYdlte8yIPmzvNw"],
 	"sensorDeployment":["52JB7veOGBObHlitCZygCrJwzsB","QF7IL0vJjBinctY2bBMSGhJlf3J","Bn1wdyelPuE9PfuTXbPP8Xk5amQ","78iiiEot6T1yIXUO5rXrgYambVa","6b3d0QzbuvKQwiRTzGOeLapF7si","IpoasA2e46lpswgU306d38SOGds","FqQekF4DT0otztOq1eWbZh2IqXP","aPM8iLhmviRaRiezm8FP1VF1v3c","LwuGKBsiPLx7JVR62GGrv9ZEPLE","BbYt8plaBXzTk7uhdHihqrx6g9f","D3COhPLqeQgfRmPRdYdm9Rnvchn","R4Kk6XmfAZIi0Ic2sSYirli0ERh","NGfqc9ETs3jFlcVeVwDy9AcgdSE","8bzdOmYVz2eDwv5QdVTKWUz2oUM","6fFirOeJcAybrv8KQCmiMlkYb7e","Kbdy6fxHosSnpfH4rYAnTG9Uajy","82HIWxY38tADWBvoIj3FUTK5M8R","8xtbFVN2lwYBmW3uyXEwbC6lhEy","OfaBC4G8uyXs8rPKYKK1EIEsFk7","WEEmQWFb3G7rUpBppILmRbP6NdU","UVbhyt6AOFSYiKDrLL9qqIJCOKz","Vle5djRhAJoyUUSP2zspCFnXIIQ","8g1OsOpFQ9NqUnEsel3tZedurIC","EgjGtTr3q0bVkf4iddqFuOCMHpF","VIiM69tShC3xAWLfXVgdntUG059","7uCBazx5YUECtJeSNaoirysE6Hw","35T1UpeXL53h2yZtMM90qAawTN","EptcT8cLXs0OgaSssDsu6ZUOve","FA4YMm7dDXPfkAHF9GXgJ63Ahsm","N5BwplVaTLWiLn6OHEXQlvjZ8ho","VK9ciVmN1cAXVxdfq4dw0fW8TBn","5s1GqBd94MbIhB1PSFkHuQyqH6f","8J2rGElrsR2EdBzYLDzUpdR7qZt","dK22R9Hy7hURAJ7MhuitVla9MT","UOgqKmqMH3VIiH8whS1s7xRuO4j"],
 	"parameterInteraction":["JugsKcZ2UJwLOzzCddGQUbS5178","UyWAIxjQ5xk9iqMAMLze2N9pnWh"]
 },
@@ -80,8 +80,8 @@
 	"title":"Total Temperature at HPC outlet",
 	"variable":"response",
 	"system":"Fd7o7n9esAzk3ZffGa2Gwqdykq9",
-	"quantity":"A25ixE4IZxCd3OFD8dXjlhD0wsQ",
-	"physicalQuantity":["A25ixE4IZxCd3OFD8dXjlhD0wsQ"],
+	"physicalQuantity":"A25ixE4IZxCd3OFD8dXjlhD0wsQ",
+	"obsolete":["A25ixE4IZxCd3OFD8dXjlhD0wsQ"],
 	"sensorDeployment":["Q0jySkEQ7sMsljAGiFrlgeL1B5o","FAJCegRFIVStF1ECqeGqe5AOuKE","L7SGJeJ1HD33Dn1KNWfeR29tvqv","QLIRRpfmEc6LsDhfNWsfeConfzG","EmfAQIAAdeXWzCwgznWBFKyXcOJ","EPfSEm10KtDf6eLKPoLGfqXPBvL","AI2RE8OQu7lmY7vRCZQX58l6Ktm","JAGBy50vFuW6eNiNRcQ6RdLnrqH","9z9mrfD3or9IvtZrBgR69fQaDrL","1ljShj4EM68EmJ5soUr4pzXWFIf","Bk3vhiVJ4Dur2IRblVOmR8Hp3wq","LRs5eR7Ups7IUIG4d1l9PkWOWN9","BFX60cXav4VxYD9NF6CsWXBziBA","XL7HaMGc2ezlbTRIfYIMoyvG2ik","MSWUOizD7QrsTHQlQposee4T1iD","ZNhNDkUb2IQk6J4WRlZvzIaNWs3","290Sexcy8OxghOy78n1hYP4LpwN","TPUAjBtNIqkIlPdL4ls2Ds4Q8dD","GwuBfsg2dierIFQeu3KHp5ckXpY","2eUdvH1KGsipwVPxCfuqZI8H2i3","WiyGRr93BjfH4XoXPvBiSqhEppe","RWJgbDAjl7o5djTGz3RYU3rXpNZ","TqnsEGRJFyPa2v23xdBcOgwU9WV","BAiZ4AyGzWW6POgqwJ1AcEbK5Sl","QdtZjWKQ1kdoGDOJRdf0i4DOXtx","UP1jHwt5sixgpjNX5z5Epi6Faly","CoseJrLX8ueroXRzm5pUXeNrmtQ","15WvAh9daStqWuDw0xs5ANuY6Hv","Kx0gONP1uYoLMHe0xA8dnV5JUsW","OV7j37MC5r0M01WbaYtGAFq5ArQ","1kCQApCeV8CLkWO9rvMDMCFtgLW","SactLOhDleRDZvgjBmbqo93wDur","3QPwC7468meOhpWIlI6HlXn9SBN","MA8e97XmLdzPcnSBbYKFzAwULIo","V1D30VYwQsR8jsnATsKdtyErS86"],
 	"parameterInteraction":["a684NIkVMlkeX5vFS0ErYtPEIJH","23wkKaJEUhpFlw7TSfyiiEtG8Dl"]
 },
@@ -91,8 +91,8 @@
 	"title":"Altitude",
 	"variable":"response",
 	"system":"Fd7o7n9esAzk3ZffGa2Gwqdykq9",
-	"quantity":"3ekSijza1rBYKGKDyZ05z3gyD1X",
-	"physicalQuantity":["3ekSijza1rBYKGKDyZ05z3gyD1X"],
+	"physicalQuantity":"3ekSijza1rBYKGKDyZ05z3gyD1X",
+	"obsolete":["3ekSijza1rBYKGKDyZ05z3gyD1X"],
 	"sensorDeployment":["DWUHE4qwLoDZjYl4h8MYT89G0K1","QD12MmAkAeKMmOtvXT3J19wDmkD","OClZTNRn2TQByIOTBZ3MWIWfBCw","LlvnsDfz5Behn1rb4YQiHEFAKRh","UZ7bMYGmWROhFxJMi093CNKIHPr","KxwXkwy0DvUZzGYStF5MsexAELb","Ckl5zxNK7d52DYUn2u2xTlXwB6i","I73i4pAKV0LX9JzKyO5HToRAftl","nVOXaGRJJLw7MmsSxxHK9f6Oxv","S4Am7vf3kf4dry9AeS9EW3PUpjF","QlBkE4AJ9YO6pSf1v2nRDCcEuLO","Ecpbpu2BsrZIwhpspc5tZaX2qZE","VS4StozoaVAnBaVBjMGQSKjlm96","RCB0YEJdALJ4H5Cq246vaU1B2Gr","I4nEsC3mQVRtLgPV6yxz72TVf8f","HFqWY57nRblYjpO5ZZlEergUnou","OsVXp0PoU0wpWO9soonny5h7o9h","2EOkWWJrPhtLoQHb8qgpRsnpnu","MfSLkDGEVs07rH4XB5x8ONCi0sl","62RLf3wEIPPtugOa7RFh5DnCR80","5waJxuBvPNoPnoqxjV5QaB7GV0q","NdMiUbKcuGEt6pR9JrHu7FaYb49","49OH5lAAoTuOU7rhFZjBadv5uyX","G4NRsAQU4thWnYy9fxmkbEqWuZd","TlPic8xwPmHXSNCNd2FTs0LUd3k","MZoyjA90juWDpCrDYVgPcbItqAL","RQLB98EvsvgoJXrt60XxgUSQIUm","JtgTrAWse4QaTsvU5LqEtMKJpvx","5V1WL6Re06aq004aByTLxsrX943","NFkamRe8b8m5Zs1LyiTutAxNMUX","TIbzDqQfDXj0qo6p82cYVHsnf4m","X02sfDFau3NFyujAFA3HNODcZSS","JRP0omnC0S44blkwkGXXAU5UmtP","2TpUiArwLHfk86AvIHxx4xrBbNQ","GgORmGLe1Xg5UcenbpjbE66v2Xa"],
 	"parameterInteraction":["JkICPkKSPTbAX9a2LRWJyDYshQ9","TJDtGcQax4XmvC8omfm1cGsE8Jn"]
 },
@@ -102,8 +102,8 @@
 	"title":"Total Pressure at HPC outlet",
 	"variable":"response",
 	"system":"Fd7o7n9esAzk3ZffGa2Gwqdykq9",
-	"quantity":"NAfbRtIr6QEX2sv28vEbKA2Awhx",
-	"physicalQuantity":["NAfbRtIr6QEX2sv28vEbKA2Awhx"],
+	"physicalQuantity":"NAfbRtIr6QEX2sv28vEbKA2Awhx",
+	"obsolete":["NAfbRtIr6QEX2sv28vEbKA2Awhx"],
 	"sensorDeployment":["PorEsJaDGq6cikby6dnwvTUNFMk","VyjNEhuRe8vGLr2nvGV2PvBANBV","D5Mpgrv17J064YLmOInzTWW8hpQ","RG2pyqDlLQ356tOCCgER7LVj2CJ","UY8FdgwaH9uP81kzkADW1w8yAhf","N3dPVcOHocqRAAr3QJBPs3XEDDX","MLjOCmfifZK7NiKvjesinDrlgrC","ESoWjtV6kakNyUoh1G3yhbnpL2n","72DYmaeQ6gbEhoDDZGO6IXJUtpF","FmeXtYWEYTFoUWNiVE5wYcU2m0R","ALoeybbcDUbHkjt3pWZ8tgjMN89","L8LHM22xn17C4AJOntySXfPbAaQ","7PBTpJSU8QyMFJkeE3zNz6yylxL","OGEZfUU9Zcvm03iWPRV7JhBrxAw","Ncwo8SGs18Vm7lyr7TOjeTim6Bb","AV6i4LEApFFYMg4lOcPtV9wg59Z","PwMcdaRcwsr0xGRdymyQbPCKAHH","SFG41gH4JTsCtfWdAFccIHssIgc","6crNlpmMTiB2SgFpkPrPyqjJqa","2OmuWB1fKXBbVb0u6upJbXurCbb","RSqwco6hrFIn36T6kDrb6REOxcR","94AJ2JwQpmfsfOe8ypeCXkuUKWG","CoZX8tTTUviELiiKkxT8vIcP6pf","R4eufFMNjS465gaLfdRN0UizAzY","JhbIgiC9JnD3ClwwOvnTpgEO0iI","9E33YT3AgYystcVR9uvoVJTxIKy","L4SBZfoD4LyvP0jkNQdvqS7deCz","CmKqLgGPoSt8Pw7ANyzvsaixTOp","AvfAYKWn4WJGq5CNOpw7lBI1bTA","Fl4dWMeVAoukbpsA6VAi8e3jU7t","BW7JntxEWE8ckvyFAHewJJukpKT","8Af4laxFEPo2ddSZfgq0ra4Sj7n","1C3LfM7QX9A5FDF4UVeH16cUCPw","SHffFhcs4w5Njpit2PdD6AYi0pT","5xPWM4Mk3mT5W6zjRiaPMAgYTeo"],
 	"parameterInteraction":["NBoS5gJdyClYaGMLbGxIy48Jp2t","DcQ3qjhtgtgbP0BiRAMCprs3RSP"]
 },
@@ -113,8 +113,8 @@
 	"title":"Physical core Speed",
 	"variable":"response",
 	"system":"Fd7o7n9esAzk3ZffGa2Gwqdykq9",
-	"quantity":"1XX310H1afH4DYdlte8yIPmzvNw",
-	"physicalQuantity":["1XX310H1afH4DYdlte8yIPmzvNw"],
+	"physicalQuantity":"1XX310H1afH4DYdlte8yIPmzvNw",
+	"obsolete":["1XX310H1afH4DYdlte8yIPmzvNw"],
 	"sensorDeployment":["LxSk6l9pFS38W5NxpK6XCdqReiO","NaNaI3RDfrEbxtajDQAEJiXIwsY","KXxC1YTvqBvCs9zldHU7mIaA8ZZ","9XMzhv7pKomjejj9WEDsPU1Zvxq","MzxGwhzWfIRXiJzTR0EziLqMFBB","4lko2EuuDuw5gAseYA1DRsobXLX","KnUOBB6WIfDznovw9Ld1Qk5dy7h","1R2pWJvUXYKtWQSqxRAszNTCilb","1CiOj4vVmrUHOWmRNt0jtps6oJq","WxSAyWoqWLMUpTZ7ZUAXNlQOXtB","EUwJ4EewRmBw3NAzcDhdVhf7v3A","AdNvEbpv6mxP2rTuBuUSVxKPJB3","Bno1lEyZliX6ix90oZwu8iQxaJp","2RHWFLMhGEBRyEo3gLV4AoQCxno","OXLU3w9FSveiO3BLCQPMPokgOsL","CSJCx3rkQWyfK6hIW8HEi6ALXBF","DWSY4V6yldR3sP6NsadzV5IJoiC","I1q2NBcnF2BlBmjX8aSVugAjOyQ","4QefNP1iUOe9bSeG8oJEeK34O99","PJWphNQO8mW50UfJlutmqWP02fL","9qFoCl0JR5qTV133UBQ7tW9rrVV","V48sbd1njXS58YIi9FWEbwzVFRc","Wsec8ozQqOMBrSQhbjqEssk1z0q","XicNflNa70kZUT55WgFWiGnpO3v","7d79gdpWGiO7UaekV6YGtDT3XYG","Aj92xzQfgMLf6nYkNkIwZMEqFeP","FjRTFJchREQjv6O2Ym4Y9V6043Z","YxvWUXyV7ptrhjoKLi4VkNj9c1y","RdgjkXLEpxLMZriFMW9si6QBBwt","VcuS5HnEbT08OQrBAyv4qa5mlFO","RqjEc2bxWfwihU1O713BWE1uqJt","JqXsdTXXYB0gHQTFNftKekpZnx6","aBJIdY1Taof19fXVuOChBwrOtPZ","2J6Z8Gyg5TnMNcsQcQ5LLjYkyQ1","b5fPy21tT6MUmVB6l9shFAHkIF"],
 	"parameterInteraction":["M8QduuzVLzk0o6oadp8P4elCZnM","Piilt4m74kXpjLEGq6NvTcJveDt"]
 },
@@ -124,8 +124,8 @@
 	"title":"Total Temperature at LPC outlet",
 	"variable":"response",
 	"system":"Fd7o7n9esAzk3ZffGa2Gwqdykq9",
-	"quantity":"A25ixE4IZxCd3OFD8dXjlhD0wsQ",
-	"physicalQuantity":["A25ixE4IZxCd3OFD8dXjlhD0wsQ"],
+	"physicalQuantity":"A25ixE4IZxCd3OFD8dXjlhD0wsQ",
+	"obsolete":["A25ixE4IZxCd3OFD8dXjlhD0wsQ"],
 	"sensorDeployment":["KmMEMcSvBMSXEKZtY0fbGBOwRui","8rnWoKzFbNnaCPvmQ6M0ZuM9BGW","NUYmpehuCfMHwHQWA4ImpyNlyYS","Xvg4lDeVcg6gjNHOWM8wfmdXjU","FxhREODOOTfZClIYg4RxdctmVW1","PGsjz4pDmzWZfnXOGSsfAlYbJp5","7zOrLD5ZXkGbw1KbJqfEu9obmke","TI0SZWgLdqjtGDJD9YfmTUu6T5t","2DtKxrlgXxt0SKVU38zccY6TMtv","1hIQtFP1O2Op1YBd3qZ7Tg5CA2x","4NLVEEQ87JkSPEEoroTuutxph9B","MdbYlHUVx3g45CJBkeKVRY1FsGM","XpnWvd2C8DbrmVJlQ2Iuk4UsMGd","ZnbkbVnwtink89oOG7uOtS3M5Rh","a3qgqQzogZ2HW4Xx1JSsergjidU","CjCpiF6rr01RT5L2lEO9wjdBQ71","WObmyCd11o360S7T6l9AP2LQfqN","TRuf5QNvffhhNTdeBiWXULjL3Ir","87DYMTSioapotbAxYLkoZgLbOoX","LHY1h0H6To2Hs6VkGn9JYNoLrWW","TmyXwShZwdJiRo4zq7Uiyt9xi9S","GeiyxZ47fy7RD2L59yLLxgUman","ERVFodUzvQ4QVRWfYbGsbLmISQp","P3gPbP7oEq5sRQcP2Jx5eNRJIl0","AJNSMmMLA3JOc7VzodCq9UnfwLy","DUlpc1Eg5KwbXT8b03n2boWNSUQ","JkKet3UHOmbj7L2G0PD3OnL4uIe","Qkm7FsD5Pt64Ty7nvdigqvsMsDV","ZDDEcDTafivf5ga4JrybBZU8FAp","1mMPNJA9fMDKGj7JuL23510TMeL","QLVsyyEeq1fLvP8x0amtDds9Bd9","Va2RqR4K3SNwpuKtYViuQLOCSZt","4FBNCPNs0gPxy11D11zx7LVaHor","Yps4KIzdbqNc3PYfcps9vzAUbMq","EWAwxgMWFMGcqyyllVLdN7UeeWI"],
 	"parameterInteraction":["NStkF8SB6X4QdaSyQTmnPk8iwhv","INy8bllGfNzP0dJFhki1gi6Nr0m"]
 },
@@ -135,8 +135,8 @@
 	"title":"Percent corrected fan speed",
 	"variable":"control",
 	"system":"Fd7o7n9esAzk3ZffGa2Gwqdykq9",
-	"quantity":"1XX310H1afH4DYdlte8yIPmzvNw",
-	"physicalQuantity":["1XX310H1afH4DYdlte8yIPmzvNw"],
+	"physicalQuantity":"1XX310H1afH4DYdlte8yIPmzvNw",
+	"obsolete":["1XX310H1afH4DYdlte8yIPmzvNw"],
 	"sensorDeployment":["RjkujoyUs9xScXMCyEA9ugdfMqn","Vwi3cl8pFVmi0DqpMO2XUKe7zyP","NzUa4ny4dhZfd077eQ7EulsVwcl","F5402XVtQS4lInJTfwgfCAiJGxt","20tcgc0G8OBrfRILpKh9N1fQudz","QaQF5CO5aeQRqGPgMyTkX7WGnQX","DvPy38eKwKMahf0ZuNrplHeAQIc","OLi83x8TYYmG5wFJHyNrII35Slf","UhtigcFbMI7QYKCRvLOMyvPY1gX","6mSGb7GTgm4DfqWkABqzaNNGiSr","ZmM8R2tYvJsNBn2dSFPP5SdtADt","4ZMaorI4kOeyjP5LEY9fVnp1ROx","TXxCgTu8Mw8ue6nYTi8MoeuWNah","QHdbXIJ1fWBvpKB8AHlMc0TxvQa","CgEzyFnrrJz9SeqEk07v9yvMpO9","42lt3NzQbfR8EGbPlkmo1pE7qI3","O2atqVjb72OjZ18B7qUQsu8iybM","TQABqiZwjDyDLQ5Fn8zUl34era6","Zz8c87YyrtfkfCbfkMtESH6RV3u","2oqEXywPFB0KTu9JNUxHCj04s6V","JD29KzuoFHEZQTGQjzfhfkHuzW4","HaFvi7uAKm0m3w5VxjYS49Qr9If","GX5EYbYeDLh4pRLgvUyLR7OI5QD","D24StDqnJLfrXXRjb47gPw9iQ7e","2RpjfzWQiaECC918v4JwxJMzdni","8jsL770eLMQRni7W5pGn482x06j","6TjwrK0xyw060Xy45vhx9LybJTb","7mKzqLhgyMmr11HSwaYy7Qeb4LR","5G2lOcsfql7isBTmWneFxZRUJaX","ZfrDxiJbvtBr5F7Ro1XeSQHbSZV","Ahxmh0DAt9Y3OuVcSxPQtrxPS7v","VJv7Ge5FoCOsTa1kCiF49F66Uzf","OKjfqP57rCVevv9E9A3QGpEjKZx","XC7dnVrKwGNN3979Mnmq9kcUXI3","XmKHOMvKnKZH3p6qB7DDWTuedTy"],
 	"parameterInteraction":["HdobIvhFIMQ6El7Zxw0Z58xrvel","GRti9HnVGhuBb1bsUPlqq19Py8L","EOStCUapOxvT9oqZ3UJL6btt9YB"]
 },
@@ -146,8 +146,8 @@
 	"title":"Bleed Enthalpy",
 	"variable":"response",
 	"system":"Fd7o7n9esAzk3ZffGa2Gwqdykq9",
-	"quantity":"Cgw50cDmlgASJAMWbZ051mUPHvr",
-	"physicalQuantity":["Cgw50cDmlgASJAMWbZ051mUPHvr"],
+	"physicalQuantity":"Cgw50cDmlgASJAMWbZ051mUPHvr",
+	"obsolete":["Cgw50cDmlgASJAMWbZ051mUPHvr"],
 	"sensorDeployment":["Ugjs2zhPuBxsfQrPLWy3CR7YB4P","Xfu3b019GtIYWv8QaLhgDZZ3vsU","8Tf4cXmTUijgVfSbQZULMmcZUwu","Gbk5yvzWlIewi1mGtf06VKpDCjJ","K9atPmTzpSL0n2qNZwHkXw9Lwru","8lxFMkvfrW4gw6meDF5sqiuIOAr","I3Yiyzqg1BKlOoDTycXP4K4KTTY","CwmscGOGMfmfMZ2UhIK60bjoE1C","U0ORD6pKwFyb8zwsYMWNhyvq2cu","Si1wklILne6yu1YymTFkclb5VE5","BJ35ua2iPSdQxAxkQ74PvH35Ee9","3G23caVVaF3n1IBxZqVrlNlhxLZ","WlY3CccRq5L2R4OrwcXewMl6M94","Oi5ffZF5ivbpsxWMp3T8BO1Pkwc","AINgKxPJK3BODsePAOvE3vVgBiB","I2toB80G9wtri3NiZ3La2KpaorD","WiFTMJVKzCgw9aATUA162NMV9t5","JngUcH9tjh4sXh1jO8APoLNprA","BC8ehy4rD9HRNqzeVCDKkvZ6AML","BW75E2n1LUwfonCgXdFjrhXPl8U","4XHZy2SmnhvERZYeSEPIcNxVHnp","LsuzqbKv4jHzh8WvlcRBMzxHMRM","KhtTFg3ZqdrvMLLVsLmlxZ6zDzZ","D3gAvurMVCKKLGtv5g5AMMFGcLj","FtHYF7L2hjlaTxvPqpHQw3AC6Fl","GpK9z1HRT7yKU9Yix4im6Tthq6t","PNqZ4dlu6t4nCFRInhq53LJuHkt","V5qTDyxDlWB2Fd5sNkfj9y4jQZo","YeB9xKN12xgHqUGb1K4HbgtQdBv","VNc30aFAUiYLMSwR8o5ZTMSSi9I","PqWRLnEXqsuB4lFyxYMF4As1yyJ","UjhEbFYkH1h5J4gKhXOQseYzSio","ZxGSqLUQuBNplpHe9NGUkb6XBaZ","RPguqudFnjJpegjaFmsANCG46g5","ShfV9s02n8skD2rl9xeQIBhxoqb"]
 },
 {
@@ -156,8 +156,8 @@
 	"title":"Physical fan speed",
 	"variable":"response",
 	"system":"Fd7o7n9esAzk3ZffGa2Gwqdykq9",
-	"quantity":"1XX310H1afH4DYdlte8yIPmzvNw",
-	"physicalQuantity":["1XX310H1afH4DYdlte8yIPmzvNw"],
+	"physicalQuantity":"1XX310H1afH4DYdlte8yIPmzvNw",
+	"obsolete":["1XX310H1afH4DYdlte8yIPmzvNw"],
 	"sensorDeployment":["TmMa2pSS9k51LgqENlY6Yay1lFa","5rFmYPBeQ3ONDECYD8CWsV6cxLB","OE5LqXmhx7S1W20I912JmEx1QY7","8PJIVLgDi3gknIimKbHkMHm3ukI","EVBvZVjPJXsg8gAHBecGW2wdlZA","BlFqCPW0uyrYA5t0oQI9Y3DrQcT","6T91bbcb2mE5RHl9AafJUAuyIAR","EMs8aqJwaPX3esJo3H44oNl1o3J","2hdZTqeCvtwSwb8KgBjVHiMWTFj","ZFnbbboCZnlEZr01XjKAQ64m5C5","NAqx5LZRK8FqcouVo05tQoE098e","CqzXUDewHhutS278HXWMMcPdMs6","B7a07ZoowPzDpFSlbbzjf9FErIS","DD5MLuwxxiiu8ZjFID9W1abIgRo","QVwSgCPWyK8UeB3kQgOAtpxCQXn","CYMILf2xMPBH45MQn6SB6UUhfLx","V0y7YTh8PRl5OmYtmjAB1WVSXkt","1w4JDBYWGQkqeiITrXSPjMWBFiO","IdYeV1dBVbh1eFFpJE5RLH82Y3C","P45L60JtSsVSfylxeBzW4lGMK24","FC0MHpOaoWdcWrMwQMbglakqItK","BEkrruojScvNHA53MyCLqQqODGb","TnwAGUP4LOEK129HmyKjwfeTnH2","AQWpeCtitq9O825BRnie8DvkjGa","IqnXnIA3c9oeumQIIko2laFkMgX","9nPMVZhUm8sN07WcKGFn9V4O8JB","Yixn41BwMVxr9EDYtcThOXOnJki","ZxRxJ6r6Dh95gzGFrrR7SBfDZQx","NQbhmJS5GpYE6R0Th8Kfqv8JWfG","AtJnwHyocty3ZVgy7Iajq3XIVZb","AlOqsE1OSmLGQO4nrOB0RytL5AQ","8ICKq8gieAMCxqyfElj3xTL2O79","NTtwPVUfyb88DQE2BX3pQMimMLw","IB00vbjbjWfNo7Z0STr72hA5FD2","CGeK6fC9QletPbqVcT9OXSP16ik"],
 	"parameterInteraction":["A40gFpbyaGNeWFNVWWvTOV8b3S8","Bi1NGbHjZE8RIdYPMcPeRO6vZ99","9kdDhmvq6MZVZB0FsGTpsVVyXln"]
 },
@@ -167,8 +167,8 @@
 	"title":"Throttle Resolver Angle",
 	"variable":"response",
 	"system":"Fd7o7n9esAzk3ZffGa2Gwqdykq9",
-	"quantity":"PO0POOoMbdmJO4II6XhN0BlJiPu",
-	"physicalQuantity":["PO0POOoMbdmJO4II6XhN0BlJiPu"],
+	"physicalQuantity":"PO0POOoMbdmJO4II6XhN0BlJiPu",
+	"obsolete":["PO0POOoMbdmJO4II6XhN0BlJiPu"],
 	"sensorDeployment":["VTGG6hsPTmCKMFAWDVRjRrT3IUR","5fb9LiUftWlUqjO3K8ro0YCa1SR","NZoC1sAQp7pLHCjjLbrz2kLvBHD","AdPVIYXso7kz1ZG0gqRpeGnhyGF","PAWZQGOQKJqT1JSZrjanLCbF6UW","MpVtHjWNDEPamMnWDMoeaivPpDz","KUzXAz7zxuM0bNg6vUFw8fmg7TA","Ocd6LFnNH7NERfv9S8DOWy4Kcjf","8nGI2tJZT26GxlL8Hi2ZgpsFPO0","L5TiUjyOA1RN8QLjU2xaz4JZbTa","ZlcXAZugxICoEMR9I0gtH10Fbno","HbVBiEJRnMVNBqelirGEqjJJP1u","Ly2XqnUyZA7EvC9lf7ysqfIHCzG","9OBKOIqDFu9xPTH14EilTnS6O9u","LVdjFsEcq00runUN7i0kk0EAQ1y","Jem0vLYZj4VMYPnWTq1ysdpH2Tn","B4yGoYcHqlqxyWWhbCiQGlw3dxT","HE7wI8SxfxsCqRaeCbhCpi9SIVD","YYpUpIc3CDb5jdDKTjYvgzKCwzt","YsJgDecrEO0inIimQF3qg6Cu0FV","Hp7ddl6CyyI4GvaFbGhyzU2sSwK","CbXXjnG78aDkGuIetk24blqtP1L","I0YHbOpErpIKxZ2vhPp0fTBuXx7","H5hJo0lmmmQ6lyrnLlo6D9HeDW","ZPd29TrUQBsxznx0iCSiIkkUGNz","1il5MXon71zJ8zbxlA6oYAD1g75","LELVwJTcnb3Keg35KQy9PgBh7mu","DbLJghNFEwjPCbTkdKrSqFS0096","1CkhF6Fq04VX2nL1mmXCnglcTpw","U2v9R7X164LNot3mT3ef5NDYonj","PvhdhN8bOH4chYpjgbFxrc3xRYx","ARrjd3xXPe9WuD1KXvmZPwK5N7L","PfPDhLtDdGAWoN7Cb8OmAVyDDkA","LOf7lvekndTIHpf7VIH2VvxCfuD","djuY4i4cPc05pvzTDE25QdwH1b"],
 	"parameterInteraction":["RBNtREieKOgeGJyRDtHoCcZF60K","8rGr8MyjMofQzyzTjRKpfpIWWsr"]
 },
@@ -178,8 +178,8 @@
 	"title":"Total Temperature at fan inlet",
 	"variable":"response",
 	"system":"Fd7o7n9esAzk3ZffGa2Gwqdykq9",
-	"quantity":"A25ixE4IZxCd3OFD8dXjlhD0wsQ",
-	"physicalQuantity":["A25ixE4IZxCd3OFD8dXjlhD0wsQ"],
+	"physicalQuantity":"A25ixE4IZxCd3OFD8dXjlhD0wsQ",
+	"obsolete":["A25ixE4IZxCd3OFD8dXjlhD0wsQ"],
 	"sensorDeployment":["M3MSd1jTbpj7xtoHNHJ3Fx5Usbx","X1RkCRjWGU5MBP0SGNBLFRgTl50","ZyQhwIPsz5BxfG4lVfglxKJkuF","JNxjHJKj7FUvFzNPG0kKMf8mBZ7","FqO42GyaR7WjyVLnvZuzp29tu16","RbRrMIkU1GggmlHMTTw0qttrVC0","KaUjRYx2EC51MzbrW0nJA9kg3jG","P4ePyig5NKFfhRXXibw0KmWxNLn","K8gpUptDsULKUVYy4VS8rVFzEUj","Lpb1bVOqVWlUGgtyHXWCjT16eB3","7azN6HPyT0Z5S0U5cTWNmwHTO6M","aV5UUhAsPHimavN2OqxsuxZkybv","Zg6jcideYq1ywRbCceapcHiBbmv","VOHQnP3D5LF34KcWXT985Mop5ux","FBLuVu8jIBEMvCv6dKOQipAokaP","KV2I7zn0wcrC3neoP2M4r2f5oi9","SH17M5rRrs799vpkKlfrVaF9iA2","THKD8peevC2v1g49lWPuq2CPd5p","NqjUwgqdB1j0m23a2UQNRN7KLBM","NbFpNvJMiLFav4ip26prbpzN1Ba","J6QewiXo6ekjAnI0v8zuktmksic","9ch2IJFnvrtzJ3tR9Jw46dyyuX4","ZSqz60dZuFtbkVyQUA6HHeWmFVM","S9JQ2wxqvHqd4let0Yybl2qE7iI","RTq1XeIlc5f9Ql5VVzapW827zxO","6VKYp1tdavReMFEbN874mCEbubl","7R6Mq8SJlixsfaUX8ZporCm3CaV","JiS2cAxSN6UyXnndcfbz47Yrp9v","9wH7dUOQ3xPCC60n6ksEwJ2uS3B","8IrMKrMTpda7DeyXXlZbus6oZPs","K71OEd7V4u2Ez6I6IUrMCedTxXP","6GE9G5hhpNo5TMfmQ0N91iPJ8o9","VoQ7LWQ5U0C3gevkOhPUy6yfjyZ","EHTrorq3XJAKtHWXkkqwHZQVD6m","KuHbbiEeUap4vfzUGN0pBQ32BY0"],
 	"parameterInteraction":["OpCiinQLwkzBSsJ5uo8WABIVFrI","RNjhE7ZFswzfXglNwamHLpIjDGX"]
 },
@@ -189,8 +189,8 @@
 	"title":"Pressure at fan inlet",
 	"variable":"response",
 	"system":"Fd7o7n9esAzk3ZffGa2Gwqdykq9",
-	"quantity":"NAfbRtIr6QEX2sv28vEbKA2Awhx",
-	"physicalQuantity":["NAfbRtIr6QEX2sv28vEbKA2Awhx"],
+	"physicalQuantity":"NAfbRtIr6QEX2sv28vEbKA2Awhx",
+	"obsolete":["NAfbRtIr6QEX2sv28vEbKA2Awhx"],
 	"sensorDeployment":["7E2naWtVU2edeRY6mqCEcFljK5r","7riJ0EZy4lRw6deHF685hgxJHoL","6rb5qhDsPPbsVTxkwzVcrIIJLuU","3MEdIxrKwwrjVSMVwZi5TsP7E0T","18SJCIUPaewprc4rwQ4Jq8lENxZ","ZsOYSTZwxUKfb7aiXFPj0XJyO51","MkunOpRBN4NdHqMaUStJMnBnCM","UkBgzia9TzMu4PscK1GfEPvTL8j","ZGAcctdLedw3mK9iAJIW1i6sW0N","1XnIVxN5LnrfpxuRMpnadBeV69E","KAH00IV0tjV66AmiBUW925TTgJK","V22ut6Vf6u4wDg8W0WQMbPlax5V","OsIyHR46rq0YWf39lHBSUV7r343","XXPdSEhgqaZHWSz4R0EIcCdlGKC","LPqIo8MTgT7B4c5XMO5C5Dhwvr9","FaGsbvYgpibO6x4GSXj5Us7GIYd","Z8vpFtSbBquHzC503LZ1bZeQ2ms","a0ugE9r4yCMygmufBaoH1IIVNnx","aBjJp0pBiIhEktQtpsy6ECpfABg","OsHshfsXqjgeK07tZLnaf8U98zO","JAyBOgeTqqKSDstASJiZEGY5Qmp","fLeSRQrKe60tQPVrJJiceIS7lB","GzjBdz5qQmgCOUlWJ1ephjOXjGw","ObHiccayGravKpLpBxvr6pVJ87E","2QR0fmYfRiAMZf7q5soWBPMgKrK","XCYjNpHMSj2EUIs6xV6BgGVXU6e","LbqR1wrvvrDsvCrQk5eL7irYn3C","P5FScs2xYoP6EwKySk7JuJUsemQ","IKZ9DV3rDNybUO6jFBhKROHPy9X","BTRt9HHaqdy4i2LPVUb9h1CvWQW","WBtdEhGQbviW8YguFLBUI0pJxtv","9lUXlk33HvwoxYQ1T0Zecx0VNId","WERdmngBkp8OFKk57RiTRKA0DEQ","QrOUCUIu27ZWWhvoYes0f9Vch5T","NVwaOXRWHg6KLZdo2fBofeDDovG"],
 	"parameterInteraction":["DkXyoy7J9zVRBnwgzBR59kpGS48","a6ySq9hksMR9htJY4K7BPMnFkv4"]
 },
@@ -200,8 +200,8 @@
 	"title":"Net Thrust",
 	"variable":"response",
 	"system":"Fd7o7n9esAzk3ZffGa2Gwqdykq9",
-	"quantity":"Qe9y4JlIb3lwvi2RGotLRJ9GQIp",
-	"physicalQuantity":["Qe9y4JlIb3lwvi2RGotLRJ9GQIp"],
+	"physicalQuantity":"Qe9y4JlIb3lwvi2RGotLRJ9GQIp",
+	"obsolete":["Qe9y4JlIb3lwvi2RGotLRJ9GQIp"],
 	"sensorDeployment":["WB3HK4SPmUReyM3MeQhMYguEdxT","ZqXSZ2fjm0WaPPcYDMYh5LVWREV","KnL1HmRxmrh6yGtcEixAP8CPSMU","W7dx6mljlaJJEGkmR6iUJCqmMI0","STFN3LuTHVcE6WMliRWU2tnuNue","LZbFkzEc5Ww0by2s3hVVuJxsUrd","nDT3KUsMLEcpZvTtAZGuz1hBVS","IvPWJN76wk9aUlXihBjz4DqR2a5","FtdzOXTGbUF6nLOFcs2Ofn8gTpr","FayIVY2sLWQ614sMlvEeJ2c4RqF","HRagjRo9ajKNs8ili5zdMV5fsIc","UR2CYfX4WNBsfMVSRoO8Jjsu4Vb","MeX4Y3avaVnxKenqCR3NluBw7jm","MMZwtYbl73QH9lSkUw21SjM0qOz","BIv9gQx93fLv2JEh9N1CL4oSIX8","R8gozRu2mLLb4Lj52aTAvoZDdww","6eWiPRBbxp7bny3aMh7EaE61qns","BFRpbNF8g9s1kDIb1JSM4EYya7X","Lvq0tVpRglUk4ZNe6u99rjXMlQ","8KAFdHOfU9Mpz64f87Dc6VWxyT","SCKbbrAG3bciFAn7njYcGwhOrOh","D8vhYqi1MCSMxSUR0SsNjB1Odju","Q42yQPJ6ZwLo8NXRbuJqdlxSrX0","WU66Z87XhArfl0gOuAAzG1VnuIX","MNl6200v09OzTSSRoNkxo8JQ0gp","MkOoCVlu9YUCDvdk6A9aNKbFO7g","HFhNurvhjQuJLJ34FImQBnwuQMS","3qNJW2TJ9Ev18pHAZQ53NPShiuS","K9ErybhN0FO8on413DuxGDi7pPI","L83f4MHmpG1eGQgfxbC1RCIAVUy","GfyurOraIK2gr5xzb0dKQCrRz7M","C7ga3H0zxrh9zYGR1AXik3Fqw0d","GmO8uBA4UUGT15gymzILtZWKV05","UFlHdivpX69a6eTm8wUClrGFn21","a4HGBGny1fwxGjRijBopskEStxf"]
 },
 {
@@ -210,8 +210,8 @@
 	"title":"Fuel Flow",
 	"variable":"response",
 	"system":"Fd7o7n9esAzk3ZffGa2Gwqdykq9",
-	"quantity":"DTEiLEgrbt6zi5X6FN3Lobp3Ruw",
-	"physicalQuantity":["DTEiLEgrbt6zi5X6FN3Lobp3Ruw"],
+	"physicalQuantity":"DTEiLEgrbt6zi5X6FN3Lobp3Ruw",
+	"obsolete":["DTEiLEgrbt6zi5X6FN3Lobp3Ruw"],
 	"sensorDeployment":["LWUJfFcx8SVIgPYpo6eaI512CIl","TbMRf3PAgamwovLx4TTp8bubX09","7VDCEzYzfCLJyhYRqDvw4EL2RDw","TJN2r1YupnBQxSHyF1JtqcCe1G2","8iT7XWp2AP55ZW3IHZRTud4zz6r","ERT8t2zP2gjMnIMabdAITAhm4UW","8cqb8NU3dLE1tqgIOY7ghmzvWCA","2eJFb42ohL2tcmjqEmr5m81qAYo","Jwmu54r0yJCnuCxPeB4OxpcImUz","MeSi9rArpSILP1R2rzcWHDR3G4q","WNTUFwPwkavaUphZ1GTyKSHkhDU","KbkFpeU4dKHnZwzfoszx1472Fiz","VyufHsacOQDKCZQOqsXzgAo7cB5","FoocNuFAxwVX6z0cNj5Ey7EXYdl","Gqrt4CJP4UpR4xotF7L1WPJnaPY","7bpA6TkGeb5O3dD2AIy4bYh9EAY","TQekGr8W5tsKS1hxj3eL4XcJtp5","VTdp2KQEQnQO1Pq6rJ91pGpdaFo","J9CejRhi6kLqhs4VcY2bImo6kCt","1TbV0Wzl4kNzrR6iADexg1s44C4","6viZmokJ6MgXEmAc10ZXTWK32xZ","1Pq20vwufB3WEkyZqplvnRZ3Lxz","GsIubc6D05pHhJtRc2b7r7chcKO","B7lAf1me4J3Zd9ecOsisZraL9zu","VYZbMDnBHVsgIAzi7MPxoYPpZqh","A4YgzPXcDcYJKez9AR8V46JcwQB","SAZGRCIbMpxfF0F1CvULjDdQPf6","FbytjF91wkOv1EzlJi6FfwuKmfq","EzHOWJpStYgdrPHugrCm3fv9cdw","QmaPuMHyZUrWESATAddUkkv8V7L","H4TympRFukHsBebPrtXPLvqZPYJ","XmYeAXUUeMZCtdokUUgfssHjsIA","LKxeKlQpo9rRCXMGAR4v5dSUchg","a2JbIi54yTMnaxG7dQigcFUXlQF","OXOjLvbef3PVErrTB69rKe8dy83"]
 },
 {
@@ -220,8 +220,8 @@
 	"title":"EnginePressureRatio",
 	"variable":"response",
 	"system":"Fd7o7n9esAzk3ZffGa2Gwqdykq9",
-	"quantity":"Cgw50cDmlgASJAMWbZ051mUPHvr",
-	"physicalQuantity":["Cgw50cDmlgASJAMWbZ051mUPHvr"],
+	"physicalQuantity":"Cgw50cDmlgASJAMWbZ051mUPHvr",
+	"obsolete":["Cgw50cDmlgASJAMWbZ051mUPHvr"],
 	"sensorDeployment":["YwRU8BhRe0QJoZckiMKRskzoUPn","6UW7C99otOKFHRgHU4qZ0fjOab3","Zmgx8hS2oZrps6sNXykna6ffiIV","LO9fNO1svQkoPMQUMh5dZMH5ZBZ","6O5WydcQUD1Z7XdAP3ZTuRQEK3H","OWCPoHNL0VV3Ugk0PhdOVwwX15P","WPQ0gOxBqVKhWb9cbjO6KhWBfHj","MbtohtaKkXVvY6oc9ZAsuAStFhi","MK0wpMiM44RR3kWpD1ILArjBRJR","Y4KVyagXIL62pANqTZGYuxyODvZ","GQnjrgql0N44bn30d296iI2niPc","EDbYUmIGFY42JC2ZcQR2knFA3Rj","Iak9ik0HeZtLHVX1eJYnhNibL6d","OSC8zW5wF4p9RvPnBGEGvgUPmVM","Nq0YXHZPdIoFhDeHnL8HBUn8mOg","IhVAVqdECt4AszEGt3RSmBBEy44","BKvrJmJx5V6aOXXxHU2aeXtCErj","Kf9QvhhqjmrDryfMhsOG5eoq9g7","Kh23LbQKYl3WAs5PBXtxt8v45QO","JocOm6erIQNXljluHqsebI1FxMJ","VOJ4aCIK16SUOO7TjP7wxdulZhZ","WASEhwwjl0SkxzqbTfJBOytG57e","YnPYbjfFgNFnVDA1Q684A5z8Fl4","EA08p9SMB4iSnHMXCnJ3im8QicK","UO4yjixhsYDGtzDcIrndMavuaEk","O43OSJ3TdGLjlYJh1eBZSOC1eYO","Bxx0kY8s1DuUsIZvpuDDFPxlSdQ","5RtCUZVVsNpQnrxVgcrrzVOy9aq","L7LErgEIWDuAXlp4A9dcC3LalBZ","PNUHC62aEdPmh19yZAwahd1mUGI","LykbOHtEFFJ5efH36Z18Bjlg5I3","1fer1n0yQV9li0UP4RPcp6Ikxi6","MbmmK3iJUw8A01ym4LB34IjMHt0","G6IUlX2fDDHCJyYTO2EX3dn1Mgn","YUsV9r3GY1F5aWubqzTGl1CxSrh"]
 },
 {
@@ -230,8 +230,8 @@
 	"title":"Total Temperature at HPT outlet",
 	"variable":"response",
 	"system":"Fd7o7n9esAzk3ZffGa2Gwqdykq9",
-	"quantity":"A25ixE4IZxCd3OFD8dXjlhD0wsQ",
-	"physicalQuantity":["A25ixE4IZxCd3OFD8dXjlhD0wsQ"],
+	"physicalQuantity":"A25ixE4IZxCd3OFD8dXjlhD0wsQ",
+	"obsolete":["A25ixE4IZxCd3OFD8dXjlhD0wsQ"],
 	"sensorDeployment":["D0CVjznYhM3DeG7G3sXmt7mT5p8","J9GkfkfHlW3vPXVQucbhoPUKVHi","Kb2MwAJ217HWlSZ6S65n2daMg3n","9WYVZaOuGmcWYtyyewzE9eQUMqg","MepE3jKwGnsvopmUKhyM3YBBket","8ZHZeSwtK4qwj2cT7GYveW7otey","OA3CoAEwgsWHCq56FZNK2kpth87","CNO2aNmvOEEHhoBqxZ1FSAKwwAb","U2LBp6HbMxX0XIOWXQf3ToQZPns","2RM9cxcR4PJLWi68jHtCAtT8rUv","HJuIOhDh8i3lGuW1kuGm5bfn2tO","36F9PhBv8tL93sGZud7pZ7hGBKU","8Yl8C4a9SrmjGCJC3qrrwrVCeXn","O1VCcg9XrXK3yyn2YIDJNKfzpU","FjpcNGZWHs0If9FimzE8eGtkwBm","PPudI5dEd096hG0gbMui3wRRsl4","6jXx8RypTXldAF8GZHRLYTD6YLa","2yKpWOrQXBdtRVzEvaoFeUEyIyv","W3rf0BVUC59ce767yQInZ4Vrinf","ABDq2QtEQBzIfmX4kQYpk3BWpEC","QndCBqJXKzFDPd44XkYTeDSg7U9","aNYssNwcGcMcvLLXen2JD6NypzE","3F0LzUQ2rohQWLdlVMd5AOiANOz","IRCt8Wa8dombOfTZ2THivsYgU2X","ROP5B7mAZam1jyKYw5kPwaXzx8C","2YVVpdnmLu0l5Zr4Vjc2aEbBH3B","CEz4WBGEgofr0EQiEsuHjfJsK0B","CrkSQ0znYpvTEIxSHzw45LXoJ0Z","Rp2WtoXf5ouWVmCnoGwTaDtpdEV","UXXCtGRY0eaYGwrEYBCt7GjUhF6","GmAGmOlnSYGOmx5r7wGRftV392O","N99YV7vloQP7dxXqM8cQn018USn","24JIpRrfeX3wMc6OAExJOzjrgU6","XvKyDoCysKWZlPaNvLKxsUmq7sk","PrRvlAMdGUL8eRjrNn9AQGSYVp6"],
 	"parameterInteraction":["WER9UQDkfCKx1I3s4H1bedssf8J","NnBahLEQdI2gGZjhjvVZd6wVeaK"]
 },
@@ -241,8 +241,8 @@
 	"title":"Mach Number",
 	"variable":"response",
 	"system":"Fd7o7n9esAzk3ZffGa2Gwqdykq9",
-	"quantity":"2aGDt39yHV51L39G8RRBjd3Pa94",
-	"physicalQuantity":["2aGDt39yHV51L39G8RRBjd3Pa94"],
+	"physicalQuantity":"2aGDt39yHV51L39G8RRBjd3Pa94",
+	"obsolete":["2aGDt39yHV51L39G8RRBjd3Pa94"],
 	"sensorDeployment":["Pt2Nm21ywAH9UH5Jp5UREtOKTSD","SQ6NYgiEtNHRqolyVB6QhKZTovw","Y0LX0M9HB3f58KSABIsnScUZjid","aKUwpVA4hvmSQNPJeoDUG7yBNrG","2UzNuhSPaF0BGGvQgm5a5R377aB","TNPyvGnzHEo5BUCZOBGaAFSpklg","YUDeerZjjQ4mPZrReGLu78UWERb","Iv3ujKVMMZdUSZKhFTdvluWj87b","9G38Z5Do0UEgRQtlCjLwpnLjRSO","RUJSHH2wJKIHpCBmN154lMO8AWx","T9qk7vfi06i6byhleiK5pzFeLD7","NqTbTxXphcU4sSWdaBeClHhLs3Y","9xTaOrzHVD8sXyJ3t9I56LjC9Jp","48bFjmCMBDnlLgIxL2JpDYplJXQ","Dzh5ktlRZ2qV9DXAfGvBFXDYZwW","Gx1NlGhJ92M00YxuRHhDtM9fbCj","JOXnQp4fl7TNuhpDPrfGUKoSIwZ","4nHq4oybMJSdKHZNfdN3NqRS8hy","QqIC4lgJrEZDm3gDAV4LSkv95ln","EGd9gjcCB5VxYPUTZShov5aozZG","ZQdMxeZVi9SJEa1hYiEYrX7F3oN","3TYfsaEBWKys6LGaXGGC9jx0dYt","Qzc0upmDcEgzZLqv3rS6wjewIbe","1TaO4xftNDTA8mHskFD8rgI169V","FATqJFvhJ7KkbHaWFWxI1eXF1Pc","8AKdBvm67wKHgFvg5IUabDo23Op","S9PytFBm9tPqSYsXQL61AgUCVc5","VSlc7owUyU4OAGAPKzb4jLWI7lq","11bEDpxaa0pjRFPs0q3ZFaKj2b","T1Cs21KQWdhd2aJwAIZEGNbzF6p","4VNaETFayup8SF2kRj81pIdfPBO","FGnayM9VvECQlQKvZKfjbRW4NFN","aEjQcXJ06YBPA1EXd1U1cXnzslh","UOGZGmTx0qd0siPt0kQfPROWbYz","T3tMck2aMPDjFtz4aFmQaWUqtdw"],
 	"parameterInteraction":["LKCi83YCcPfzERTn6G1amCk93gF","TzLcuRYd4B0NVUVzWLnmys4R9ly"]
 },
@@ -252,8 +252,8 @@
 	"title":"HPC Stall Margin",
 	"variable":"response",
 	"system":"Fd7o7n9esAzk3ZffGa2Gwqdykq9",
-	"quantity":"Cgw50cDmlgASJAMWbZ051mUPHvr",
-	"physicalQuantity":["Cgw50cDmlgASJAMWbZ051mUPHvr"],
+	"physicalQuantity":"Cgw50cDmlgASJAMWbZ051mUPHvr",
+	"obsolete":["Cgw50cDmlgASJAMWbZ051mUPHvr"],
 	"sensorDeployment":["HNYnw3WEJHMkiTPDE8Lrattgskz","8rdD77XfUClC3ZYMSkaIimnoOa1","Gd6dmMkrAy2rxQB9gQGQ3GaXtpM","2pOBGhRfEmHyy7gGPmLE48sPCxv","TA6yXMzODnPMkJBT5VAsdj4pOL3","HgbT2xcdDn1pKuTvV70kYBEJnuI","XuHZj6cywg6qHnN3PfcW2ziZWR1","ZehIQKnMhlyRfOUZX0e9WDn8NDb","1CARHY8guNjuYarmm44JR8GLAFL","KW2CdodDXf9pbr7xPGGIrFWUwP9","Jx96bPak8D6Lh7ROVF4IxmZOa3P","To7b1EYLdIb2C3BKjQFL9Y5sESG","3cJIqHUCcDKG3asigdYPH7WFeSC","28b8SkudyY5PZNYM8ZXcfXQYeDW","5wQrznKuYerUTWCvAlPOfar62it","Qb2xxsz3d6Z06qwshCxFD4RmGo2","XMqJ39pAp5KnLFZ4ytIDSVTPg9P","O9luXGwULVOQBfqtMNzvsenML5r","L9XYtS3Fb9HjaKw1nPFJScmga4z","2FmkRc1lmqqtO2eLAwrVLkSaB2d","WdFS6kNCg4cI8PB5XsAsU3QyAoI","15CIScSQqni6LukIVpyYYPxyHo2","LM8oaEvqQk6dPXpyvWLIr4dNG2W","5H0v389Nw8XQLvFVDjyM8eXX0WQ","N7TYJ1lnXsFf7fOS9u9YrPnjg3g","DT5B3DCCLNa3MIROxOtIoYElMmz","GwbP1zoj6H8pHQNysiXiUVBFo7X","GWUsQJrcA9XMYlGMDLrcwDubwde","IVCH0EBTmYFLTdavkVz8KPoHJBa","IIuKjNAupVVFFauWEmaopH9xwfv","V0icfViRDisxcEHhphyrYYHgxOY","GcBQiwqXUYVbp4VQjbvV02GkGCm","UNRX94CtstGnfCfrhojY9Tc28L8","4d2b3PgekP0hk9neLl7Usqf4gjQ","2eVKF688h3Z4hRcIxcYfJZgpadc"]
 },
 {
@@ -262,8 +262,8 @@
 	"title":"HPT coolant bleed",
 	"variable":"response",
 	"system":"Fd7o7n9esAzk3ZffGa2Gwqdykq9",
-	"quantity":"DTEiLEgrbt6zi5X6FN3Lobp3Ruw",
-	"physicalQuantity":["DTEiLEgrbt6zi5X6FN3Lobp3Ruw"],
+	"physicalQuantity":"DTEiLEgrbt6zi5X6FN3Lobp3Ruw",
+	"obsolete":["DTEiLEgrbt6zi5X6FN3Lobp3Ruw"],
 	"sensorDeployment":["9vlSYpLvFaGy7O9dwEezHxI8ali","Iz6hlZDQIIPOZQCpOmb7tSA6x5T","OzaZEcl1PnSjzyHCTlbhrpmBsKH","6ImtTAMIcl30nPYwvOPztHuodlo","aSNGcvGe6DSal9y1EUXSIgSf6nj","2l9Leu6nGhDkc2vleJvkQpXDXi3","VnaVqhS7sSYQkGKjDLe0AeEMyAa","QxGrK7UxVLOnGzHaLhEltdpFsuM","Fqx2YWkOtNlnMIwhDYMk6dlxKJB","J3cjq9XHvtwY3lq4nrfi1ax5Px7","GumWM4YF8BBSq9ifn2Fn1VdMwhf","Ha7aT1nliRtduVdjxG1Tsd7dLMg","IbEPY8d7cYJcUX8xGT5kXbKSDiB","C9rykAkquSNCcA2grdH5wwY9s2b","Gkyl4ac2AysbG6ohylyJXcGc1Rv","M3cCPePER2vniBfDFfEd8SIzLbw","5j9YjV7AyAfRyK5jUy6dOy1XGv4","UtwzfH2KLuBrZhyInz2UGeWwVc9","6CUPi58zWPJmyML4DWsUsWLIaD6","XXnviuWjlKwCEY1hWDGSedSTNnB","WCycKunGDVjgxyJuHBYNbBOHtZT","PXiQlDhVnjTGtXHObcLmm7bAiK9","IqhT39CHgCGMdTg2h2md4SKQFkK","O2iAeTyeKHzcXmksSEqIIKptxiq","SDx0vMlsG24ef6RsYH0zks6UBaL","YsnXMGBaCyJKu5FiWJmkO1pb0AA","DRgw0cdd1A3mY5vtHgDu640qNMv","JSB1JoLjOv7cD1AZWrfD7ErhWCl","JYSWXliOHJxcuiPvyId7oBYTsiM","KGbKUAaRpwtOMdmtJ4KFlV5RRFM","IBX12Qb9jV7kuAbxMDceWQ2NuT8","GxWjirHuOBKxVZaU9a2NamWo3B5","Prhko7KMvGdH7z1IPFhUVXnG4tr","MDSBzydj8C4ssyImqh5NHEMBSvX","Hz0aQglNCNeZQsZ5zECSn7UjR2V"],
 	"parameterInteraction":["Tm71ouhTeFJzf1NcaLz78V39bNb"]
 },
@@ -273,8 +273,8 @@
 	"title":"Fan Stall Margin",
 	"variable":"response",
 	"system":"Fd7o7n9esAzk3ZffGa2Gwqdykq9",
-	"quantity":"Cgw50cDmlgASJAMWbZ051mUPHvr",
-	"physicalQuantity":["Cgw50cDmlgASJAMWbZ051mUPHvr"],
+	"physicalQuantity":"Cgw50cDmlgASJAMWbZ051mUPHvr",
+	"obsolete":["Cgw50cDmlgASJAMWbZ051mUPHvr"],
 	"sensorDeployment":["Vkkla8qLpKpk159ixbLgab0Uqnj","T4Cxge7Z5Iz2Zex14AACM9zMDIs","QTKsk0bMTVfLYKfi1sTSvSyIn4x","LIBAlP9KtRTEkHGOT1VTF0ZfQVZ","Rb14VB3RBc4fjGO4pWimPbqrA5u","9U5v1UYfr7YUqw21I9zTrgRxg1G","980Ir6TIUsu3tOFfbqB2s7jqxZT","Nm3BUOqSKY3W5jAnWxq32HyMVCB","YMLVhWg6VxV7pgnxjym9ua8WtVW","FB2Z9cE6tVeC1liCprriJJRPwe8","OBkjvaB0X9XC5FRPRxYT5q12rwH","7rxFIJ18xKMmspfiihqZQhX8nnw","R3SLkqJhU0MxZANtj5F8LZHwgzk","FzMNV274EBD7ZCpH1wjH0QqNjdf","H98MsZFM2cynrqwWiJrh7A2KTB4","EJyzQyCtCWGiW9406yMjStZep1L","H8gk3P3Vt5aRxbCMXStZGGeIkWY","PCSAzvWvgTwwS3Fo8HgMeygIpgp","VctPg7SubYVO4VehO6hOgli1X1H","6dqBwfOmjB8vSCX2zF3gziVA7WO","TW4mblZNVC5jzYaejVtnUHjyjDt","XytpLW4XlveXEluGhiolc6ciZnW","XKOJ55l2zceMtZHlKNx3xTqnNo5","MCpIEaG8XBMKn4AmkWBU7uT2Spj","TxHqcN7jZ5NFZrQwjzdWk4PWrMR","CoSU9UFudYBx3pA5j9nOHCQz8iy","CPWBnPA2vhl5TurxpaRrxe8gM9d","F53jdyGdmi5RHK4Uw49TKpzP8zs","a9z0Jz4zh23bDcrJABrQFxT6Boa","GAALHjH5j6hpoCKj5dC0zpnZHsk","VZGIVxRGNq8ACK43TdLH33CcR8Q","B2iEJJd9zLN2kuYcuKshikdyc7c","N931jIUlZHq5ABZUu398u5ADLVn","X0bouRoEneNdD2fzRTfSroNp4c6","VzinjNmV5PE33d6ct2rSrwSKLGv"]
 },
 {
@@ -283,8 +283,8 @@
 	"title":"Burner fuel-air ratio",
 	"variable":"response",
 	"system":"Fd7o7n9esAzk3ZffGa2Gwqdykq9",
-	"quantity":"Cgw50cDmlgASJAMWbZ051mUPHvr",
-	"physicalQuantity":["Cgw50cDmlgASJAMWbZ051mUPHvr"],
+	"physicalQuantity":"Cgw50cDmlgASJAMWbZ051mUPHvr",
+	"obsolete":["Cgw50cDmlgASJAMWbZ051mUPHvr"],
 	"sensorDeployment":["6alglwvDkPYhHqnpUcfqKWSmLfj","CXGDzg9ka7euAZfxCSfAW1ftn0y","M59WQ4SfKLPH17UeJY5SD2b7C68","5yY8vfHzSXQoBqqnA73uMQnwpyK","aKMkQSbfk1TuqfaXSnUX8IeIKe1","WZ3eznZmDfsUBjjpiHn2oBbXEaO","PprSBxZDTnza1PrCpNPT7EPkunF","DDxxeJGUUtQen3IE2cSD4tOk63Q","R8c6TTMU8xSKKys3gwMV4aoKntH","C5hryBJm0xqZ2Rxw3arG1zLW2SW","ZlEl3Znj30scNkGOoSlJ5VMlheb","ZjKYFpaVPvmhfNGW0RdFagacpLx","KKDOju0M3z6EbfDfyr9v608hnsP","Qo1vbetCJ11uSgchCN49DOycwQf","XR7buFqerQMP12uPUxtXxSMIFaC","3Jbno8WjrTvdU54xZWdKHh5nBrM","7CBSJV7jyu2d90jbDHu3R3zp8oh","PKAe1h868cfh3cseRk4PrMS9cSR","Q6eXGyMyZDQe4m5etn8t79MgKJq","JgvnImLQ3kMtIudQreyW1STelct","UA1SOBnkRllwieQ6etcpwxfu5eG","TdQNYG9lvf6aw9dBarr8CdqKgv9","Cu8sERd2LJlbIvtvNXNT6bq30Mw","Dg7oXeOUrCdFvfAoOrfw2k4slgD","IPwWInLpRSiVp5faAmjlEcda4PS","6FUYgd0sCS7yWCB7d1K4yWc5aA3","6CGjn5U8V0WlJqo5IX6u3N08BIu","HRcuWMeGq2lOcOFn2GbQdtToz21","9uwxAH8wRb6iuwmjEnl3gbv4Hb9","WhFECKJpDCFhcPZELYr0nz046IW","LVl8wfLVxtpxqQrJlxJEUMJ4TEv","MJPOS7SKNw4Hi3jLVJuZKywYlx3","JChY5Eh6C9TppAClRQiZvJAqynA","NMWgAgYl5jSGet2oN69T6AJOzZu","1LcfBVI6cYAr0l0L8TdEmQswyWy"],
 	"parameterInteraction":["8naomlIBjqmluhhQedQeXO5XceI"]
 },
@@ -294,8 +294,8 @@
 	"title":"Total Pressure in bypass-duct",
 	"variable":"response",
 	"system":"Fd7o7n9esAzk3ZffGa2Gwqdykq9",
-	"quantity":"NAfbRtIr6QEX2sv28vEbKA2Awhx",
-	"physicalQuantity":["NAfbRtIr6QEX2sv28vEbKA2Awhx"],
+	"physicalQuantity":"NAfbRtIr6QEX2sv28vEbKA2Awhx",
+	"obsolete":["NAfbRtIr6QEX2sv28vEbKA2Awhx"],
 	"sensorDeployment":["P7zkNzo5fsRTaHQXC6sugLdC3zj","JRPrNnVQ7a76SxUoz5s4PGMAJJ8","FshDuV9dmwxzA1It4hXyLfs1Mc8","2nWy0kHOjWCe8JRzWxLXtpcjJNU","7435WcS9dtdj9xLRkk65UvQkkUm","8FXV238Gbfpb2pMusghZznmFdZb","Xim5KXnplUj5PgOTKupHwsAoN15","4D8aG6FnBxBwZCyl4joVPf3Uc93","T1oIhkOQhvS4kAtvwwgQ0KeMUzG","BO2ocYUoFiJ8xFxRnJUlQGfRrsP","QfOirtS2RrlXd3ydYKJjdikshlN","28vxZy1m6oowZwYpCAVRTjGlokh","RFuZNk6oL1fx9Hm8lDKU8C47xHm","E7kJoqKk6Cq4IF3tqxmXXY4Cxy","WckD9fmANNwOIKk3U8MeZ4mntFG","ESejgawR0fC1cHfcNplmmlY9g0g","1ARVBCfszF7L4Lhb6uXkQkfWadV","6wAQzcp2mEj6c93RaLnkSYkCtby","Zaicl0drpWdqX9O6tGfcQdYbmPK","MR2WAwDE2CC8OcqTwxjlzqUO9dS","3B3xl2EzxRaS0Jd2Or1vc6ideIw","VubgO1vrr9M9RkaY1vWyoOhKGhO","6a6vxoxwrLrTo7rpjonVX9lQ6LL","HfGpSijk2DTyd8HRr1VrOdLQGj","aBMtXNRVdLGpYV4ygQL72ydg4j2","TxHblBkHz74GcDjDkADqxb2owfb","Hb9CLX2sjoTzSKF8vM4Apancvgo","qrTZSaUkGEwyyNEMp6Mo8N0rq","A2bkA2j8usr19vOwu0fgvgTWRWY","W7YPH9hlYlaA2i4ril1LZYuCGNL","At9lDL5RWMIxC4yGGmAcq2DF4uH","MFLwDU4AXWWehQOD69j33ug85ZG","BP4GGy3WFM5Xtc8a1xlU0vjXzeU","3PCgSUn0uiyZk42fnBJsljqr2vw","IqhMF4sbEcyTy46D4VoEFuuxlre"],
 	"parameterInteraction":["BBziaN1NHi7aweHJCl2zJCdokb7","V04eq20TMtQ4AZ6L1wX2dNVdfgY"]
 },
@@ -305,8 +305,8 @@
 	"title":"Corrected fan speed",
 	"variable":"control",
 	"system":"Fd7o7n9esAzk3ZffGa2Gwqdykq9",
-	"quantity":"1XX310H1afH4DYdlte8yIPmzvNw",
-	"physicalQuantity":["1XX310H1afH4DYdlte8yIPmzvNw"],
+	"physicalQuantity":"1XX310H1afH4DYdlte8yIPmzvNw",
+	"obsolete":["1XX310H1afH4DYdlte8yIPmzvNw"],
 	"sensorDeployment":["571uEpCNMlMlL9hSKOxGFaw1qp8","B839oT5h5wUWCK9TGaQWfTbT2Lb","Suv0kcR5DR58tDRpoq1o1DVSkrT","OZyWzETTqTgbmi1JhRwmn6JkKzn","TOOJTkEaLdhZTbRUrvmN2RMsW7K","5zSu8bgmTm7xVkudHjNZZAR95W4","8CObIufbLYkmm2BqvjPyJaHG40Z","FoVWJSpPpuGjFEtq6k7MsWcSvvI","saM4Y0cicRFe2ewxCD6FFXZtaR","2Uioe6EuqT4HuOJm86zXqNHcz1s","PASwNjHhq1SKXGvDGug2SqIvop0","BLPnQMKnltVk0TffiogBYhgqETP","nzm2zXPVxCytK8QsVFD9Sx9e7f","8JVGfnZWWSfbO9XuXtrufx03LoL","98C4om9KfdHvCF205p4mffUmy5R","flIoOsmWKkOaregpKrFTTNW43Z","NT7oLqWfqRYCxyWIV4bWhwp2aD2","5sheRT59b0hILQ5CkdWRFWe1pCu","10oA3O6rU9HbQO9VCGDYawxtv7X","3iEhlU8N8sYhUOvt4frnqSkrdlS","G5S2F2243ksVGymI7JX4SwoqXPm","5XH8HARNAUxLbzJKfMOzLofYr0U","ABouMOz1eNjBU7J1tb8eLea6XMC","WiLf8L1xy1NNLbpAOSO8XziQR5E","EI6JC8gvY581cJ4Ort826EE0uF7","Hx66GUzm2QsgGWmyDrROjvc0WyT","YjyvoVpTv7jgJtn2Xdv5OmeWUSz","QmyBMh4x3MjkYPxNtfyT4pepVqM","KuwRJdzhFZjAuW5nbre3C8zaLv5","P9XtfBHVNYEum4f3emFXpBPbgJq","QW4jXcNf0mIbPxmq6HiY9eJ0aHB","DRPRpeUP7x8qiqtGoCdC4KSaDbS","S7v5r8X6q302FYZEgLqYLu2F6K4","9p9PABbmJZP9ecyabc6ei5sW2qn","ZGgeTNmJF4ojhYDtsIhoPlyLWD1"],
 	"parameterInteraction":["KKESzEt304by8IJZ3n01kYYRa5K","W8UM3BDlbDt16nyM9W6A3kaRgjo","NTSEawrHE255OkVAZkSvrcQzkY2"]
 }]}

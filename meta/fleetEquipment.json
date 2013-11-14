@@ -1,7 +1,7 @@
 {
     "fleetEquipment":{
         "classMeta":{
-            "label":"Fleet Equipment"
+            "label":"Fleet Equipment"            
         },
         "fieldMeta":{
             "fleet":{

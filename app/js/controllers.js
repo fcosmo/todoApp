@@ -156,13 +156,19 @@ controllers.SideBarCtrl = function (tercelServiceProviderPromise, $q, $scope) {
 	}
 	
 	$scope.selectedMeta = function () {
+		
+		if (typeof $scope.selectedMetaName == "undefined") {
+			return "";
+		}
+		
 		return $scope.metas[$scope.selectedMetaName];
 	}
 	
 	
 	
 	$scope.selectedModel = function () {
-		return $scope.selectedModels;
+		var selectedModels = $scope.selectedModels;
+		return selectedModels;
 	}	
 	
 		// the model holders;
@@ -181,7 +187,9 @@ controllers.SideBarCtrl = function (tercelServiceProviderPromise, $q, $scope) {
 		if ($scope.models[metaName]) {
 			$scope.selectedMetaName = metaName;	
 			$scope.selectedModels = $scope.models[metaName];
+			return;
 		}
+		
 		
 		var fetchDataPromise = tercelServiceProviderPromise.getJSON("/data/" + metaName + ".json");
 		fetchDataPromise.then(function (data) {
@@ -190,7 +198,8 @@ controllers.SideBarCtrl = function (tercelServiceProviderPromise, $q, $scope) {
 			}	
 			$scope.selectedMetaName = metaName;			
 			$scope.selectedModels = $scope.models[metaName];			
-		}, function () { alert('unable to download')});		
+		}, function () { alert('unable to download')});	
+			
 	}	
 	
 	
@@ -251,6 +260,13 @@ controllers.SideBarCtrl = function (tercelServiceProviderPromise, $q, $scope) {
     };		
 		
 	
+    
+    function cap(string)
+    {
+        return string.charAt(0).toUpperCase() + string.slice(1);
+    }
+    
+    
 	this.loadData= function (){
 		//game.getJSON();
 	
@@ -272,12 +288,52 @@ controllers.SideBarCtrl = function (tercelServiceProviderPromise, $q, $scope) {
 				
 				for (var i = 0; i < data.length; i++) {
 					for (var key in data[i]) {
-						models[key] = data[i][key];
+						
+						var className = cap(key);
+						var theClass = classes[className];
+						var theAttributesList = data[i][key];
+						
+						var instanceCollection = [];
+						
+						for (var j = 0; j < theAttributesList.length; j++) {
+							var theAttributes = theAttributesList[j];
+							
+							var duplicate = _.find(instanceCollection, function (instance) {
+								return instance.id == theAttributes.id;
+							});
+							
+							if (duplicate) {
+								continue;
+							}
+							
+							try {
+								var anInstance = new theClass(theAttributes);
+								instanceCollection.push(anInstance);	
+							}
+							catch (err) {
+								alert(className + err);
+							}
+						}
+												
+						models[key] = instanceCollection;
 					}					
 				}			
 				
 				$scope.models = models;
+				
+				
+				/*
 				console.log('done models');
+				
+				var systemModel = models['system'][0];
+				var test = systemModel.get('subsystem');
+				test = test.get('parameterInteraction');
+				test = test.get('parameter');
+				test = test.get('title');
+				
+				console.log(test);
+				
+				*/
 				
 			},
 			function (error) {

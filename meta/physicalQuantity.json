@@ -1,20 +1,26 @@
 {
-    "physicalQuantity":{
-        "classMeta":{
-            "label":"Physical Quantity"
-        },
-        "fieldMeta":{   
-            "title":{
-                "label":"Title",
-                "classMeta":"$string"
-            },      	
-            "id":{
-                "label":"ID",
-                "classMeta":"$id"
-            }
-            
+    "classMeta":{
+        "name":"PhysicalQuantity",
+        "description":"Physical Quantity Class",
+        "inherits":"BaseObject",
+        "since":1,
+        "access":100,
+        "label":"Physical Quantity"
+    },
+    "fieldMetas":[
+        {
+            "name":"title",
+            "description":"The title of this Physical Quantity",
+            "class":"$String(2048)",
+            "required":true,
+            "nullAllowed":false,
+            "unique":false,
+            "default":"$null",
+            "final":true,
+            "access":100,
+            "since":1,
+            "label":"Title",
+            "rank":5
         }
-        
-    }
-    
+    ]
 }

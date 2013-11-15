@@ -1,10 +1,5 @@
 /*
 
-- required
-- description
-- strongly typed
-- number format
-- constraints 
  */
 
 var classes = {};
@@ -24,8 +19,7 @@ classes.Base = Backbone.RelationalModel.extend({
 	},
 	
 	typeOf : function (field) {
-	
-		
+			
 		if (field === "id") {
 			return "Id";
 		}			
@@ -35,8 +29,7 @@ classes.Base = Backbone.RelationalModel.extend({
 		if (typeof aRelation === "undefined" || aRelation === null) {
 			return "Value";
 		}		
-	
-		
+			
 		if (aRelation instanceof Backbone.HasMany) {
 			return "HasMany";
 		}
@@ -47,7 +40,18 @@ classes.Base = Backbone.RelationalModel.extend({
 				
 		return "Null"
 		
+	},
+	
+	fieldNames : function () {
+		
+		 return _.without(Object.keys(this.attributes), 'id');		
+	},
+	
+	
+	classMeta : function () {
+		return metas[];
 	}
+	
 	
 })
 

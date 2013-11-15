@@ -117,6 +117,18 @@ controllers.SideBarCtrl = function (tercelServiceProviderPromise, $q, $scope) {
 			
 	}
 	
+	$scope.clickField = function (model) {
+		var id = model.attributes.id;
+		
+		$scope.selectedMetaName = fieldMeta.classMeta;		
+		
+		alert(id);
+	}
+	
+	$scope.clickList = function (collection) {
+		alert(collection.length);
+	}	
+	
 	
 	$scope.clickEntity = function (metas, selectedMetaName, fieldMetaValue) {
 		var fieldMetaValueArray = fieldMetaValue.split('^');

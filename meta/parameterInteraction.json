@@ -1,28 +1,54 @@
 {
-    "parameterInteraction":{
-        "classMeta":{
-            "label":"Parameter Interaction"
+    "classMeta":{
+        "name":"ParameterInteraction",
+        "description":"The Parameter Interaction Class",
+        "inherits":"BaseObject",
+        "since":1,
+        "access":100,
+        "label":"Parameter Interaction"
+    },
+    "fieldMetas":[
+        {
+            "name":"direction",
+            "description":"The direction of this Parameter Interaction",
+            "class":"$String(2048)",
+            "required":true,
+            "nullAllowed":false,
+            "unique":false,
+            "default":"$null",
+            "final":true,
+            "access":100,
+            "since":1,
+            "label":"Direction",
+            "rank":5
         },
-        "fieldMeta":{   
-            "direction":{
-                "label":"Direction",
-                "classMeta":"$string"
-            },  
-            "subsystem":{
-                "label":"subsystem",
-                "classMeta":"subsystem"
-            },                
-        	"parameter":{
-        		"label":"Parameter",
-                "classMeta":"parameter"        		
-        	},       	
-            "id":{
-                "label":"ID",
-                "classMeta":"$id"
-            }
-            
+        {
+            "name":"subSystem",
+            "description":"The SubSystem of the Parameter Interaction",
+            "class":"SubSystem",
+            "required":true,
+            "nullAllowed":false,
+            "unique"false,
+            "default":"$null",
+            "final":true,
+            "access":100,
+            "since":1,
+            "label":"SubSystem",
+            "rank":6
+        },
+        {
+            "name":"parameter",
+            "description":"The parameter of the Parameter Interaction",
+            "class":"Parameter",
+            "required":true,
+            "nullAllowed":false,
+            "unique"false,
+            "default":"$null",
+            "final":true,
+            "access":100,
+            "since":1,
+            "label":"Parameter",
+            "rank":7
         }
-        
-    }
-    
+    ]
 }

@@ -1,25 +1,54 @@
 {
-    "componentDeployment":{
-        "classMeta":{
-            "label":"Component Deployment"
+    "classMeta":{
+        "name":"ComponentDeployment",
+        "description":"The Component Deployment Class",
+        "inherits":"BaseObject",
+        "since":1,
+        "access":100,
+        "label":"Component Deployment"
+    },
+    "fieldMetas":[
+        {
+            "name":"title",
+            "description":"The title of this Component Deployment",
+            "class":"$String(2048)",
+            "required":true,
+            "nullAllowed":false,
+            "unique":false,
+            "default":"$null",
+            "final":true,
+            "access":100,
+            "since":1,
+            "label":"Title",
+            "rank":5
         },
-        "fieldMetas":{
-            "title":{
-                "label":"Title",
-                "classMeta":"$string"
-            },
-            "unit":{
-                "label":"Unit",
-                "classMeta":"unit"
-            },
-            "subsystem":{
-                "label":"Sub System",
-                "classMeta":"subsystem"
-            },
-            "id":{
-                "label":"ID",
-                "classMeta":"$id"
-            }                       
-        }        
-    }    
+        {
+            "name":"unit",
+            "description":"The unit of the Component Deployment",
+            "class":"Unit",
+            "required":true,
+            "nullAllowed":false,
+            "unique"false,
+            "default":"$null",
+            "final":true,
+            "access":100,
+            "since":1,
+            "label":"Unit",
+            "rank":6
+        },
+        {
+            "name":"subSystem",
+            "description":"The SubSystem of the Component Deployment",
+            "class":"SubSystem",
+            "required":true,
+            "nullAllowed":false,
+            "unique"false,
+            "default":"$null",
+            "final":true,
+            "access":100,
+            "since":1,
+            "label":"SubSystem",
+            "rank":7
+        }
+    ]
 }

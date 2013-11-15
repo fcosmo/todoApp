@@ -1,17 +1,41 @@
 {
-    "fleet":{
-        "classMeta":{
-            "label":"Fleet"
+    "classMeta":{
+        "name":"Fleet",
+        "description":"The Fleet Class",
+        "inherits":"BaseObject",
+        "since":1,
+        "access":100,
+        "label":"Fleet"
+    },
+    "fieldMetas":[
+        {
+            "name":"title",
+            "description":"The title of this Fleet",
+            "class":"$String(2048)",
+            "required":true,
+            "nullAllowed":false,
+            "unique":false,
+            "default":"$null",
+            "final":true,
+            "access":100,
+            "since":1,
+            "label":"Title",
+            "rank":5
         },
-        "fieldMeta":{
-            "title":{
-                "label":"Title",
-                "classMeta":"$string"
-            },
-            "id":{
-                "label":"ID",
-                "classMeta":"$id"
-            }            
-        }        
-    }    
+        {
+            "name":"unit",
+            "description":"The unit of this Fleet",
+            "class":"Unit",
+            "required":true,
+            "nullAllowed":false,
+            "unique"false,
+            "default":"$null",
+            "final":true,
+            "access":100,
+            "since":1,
+            "label":"Unit",
+            "rank":6
+        },
+        
+    ]
 }

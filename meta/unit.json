@@ -1,38 +1,85 @@
 {
-    "unit":{
-        "classMeta":{
-            "label":"Unit"
+    "classMeta":{
+        "name":"Unit",
+        "description":"The Unit Class",
+        "inherits":"BaseObject",
+        "since":1,
+        "access":100,
+        "label":"Unit"
+    },
+    "fieldMetas":[
+        {
+            "name":"title",
+            "description":"The title of this Unit",
+            "class":"$String(2048)",
+            "required":true,
+            "nullAllowed":false,
+            "unique":false,
+            "default":"$null",
+            "final":true,
+            "access":100,
+            "since":1,
+            "label":"Title",
+            "rank":5
         },
-        "fieldMeta":{
-            "title":{
-                "label":"Title",
-                "classMeta":"$string"
-            },            
-            "system":{
-                "label":"System",
-                "classMeta":"system"
-            },
-            "fleetEquipment":{
-                "label":"Fleet Equipment",
-                "classMeta":"fleetEquipment",
-                "list":true
-            },
-            "sensorDeployment":{
-                "label":"Sensor Deployment",
-                "classMeta":"sensorDeployment",
-                "list":true
-            },
-            "componentDeployment":{
-                "label":"Component Deployment",
-                "classMeta":"componentDeployment",
-                "list":true
-            },            
-            "id":{
-                "label":"ID",
-                "classMeta":"$id"
-            }            
+        {
+            "name":"system",
+            "description":"The system of this Unit",
+            "class":"System",
+            "required":true,
+            "nullAllowed":false,
+            "unique"false,
+            "default":"$null",
+            "final":true,
+            "access":100,
+            "since":1,
+            "label":"System",
+            "rank":6
+        },
+        {
+            "name":"fleetEquipments",
+            "description":"The Fleet Equipments of this Unit",
+            "hasMany":"bidirectional",
+            "class":"FleetEquipment",
+            "required":true,
+            "nullAllowed":false,
+            "unique"false,
+            "default":"$null",
+            "final":true,
+            "access":100,
+            "since":1,
+            "label":"Fleet Equipments",
+            "rank":6
+        },
+        {
+            "name":"sensorDeployments",
+            "description":"The Sensor Deployment of this Unit",
+            "hasMany":"bidirectional",
+            "class":"SensorDeployment",
+            "required":true,
+            "nullAllowed":false,
+            "unique"false,
+            "default":"$null",
+            "final":true,
+            "access":100,
+            "since":1,
+            "label":"Sensor Deployments ",
+            "rank":7
+        },
+        {
+            "name":"componentDeployments",
+            "description":"The Component Deployment of this Unit",
+            "hasMany":"bidirectional",
+            "class":"ComponentDeployment",
+            "required":true,
+            "nullAllowed":false,
+            "unique"false,
+            "default":"$null",
+            "final":true,
+            "access":100,
+            "since":1,
+            "label":"Component Deployments",
+            "rank":7
         }
-        
-    }
-    
+    ]
 }

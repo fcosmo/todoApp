@@ -1,33 +1,70 @@
 {
-    "subSystem":{
-        "classMeta":{
-            "label":"Sub System"
+    "classMeta":{
+        "name":"SubSystem",
+        "description":"The SubSYstem Class",
+        "inherits":"BaseObject",
+        "since":1,
+        "access":100,
+        "label":"SubSystem"
+    },
+    "fieldMetas":[
+        {
+            "name":"title",
+            "description":"The title of this SubSystem",
+            "class":"$String(2048)",
+            "required":true,
+            "nullAllowed":false,
+            "unique":false,
+            "default":"$null",
+            "final":true,
+            "access":100,
+            "since":1,
+            "label":"Title",
+            "rank":5
         },
-        "fieldMeta":{
-            "title":{
-                "label":"Title",
-                "classMeta":"$string"
-            },
-            "system":{
-                "label":"System",
-                "classMeta":"system"
-            },
-            "componentDeployment":{
-                "label":"Component Deployment",
-                "classMeta":"componentDeployment",
-                "list":true
-            },
-            "parameterInteraction":{
-                "label":"Parameter Interaction",
-                "classMeta":"parameterInteraction",
-                "list":true
-            },
-            "id":{
-                "label":"ID",
-                "classMeta":"$id"
-            }            
+        {
+            "name":"componentDeployment",
+            "description":"The ComponentDeployment of this SubSystem",
+            "hasMany":"bidirectional",
+            "class":"ComponentDeployment",
+            "required":true,
+            "nullAllowed":false,
+            "unique"false,
+            "default":"$null",
+            "final":true,
+            "access":100,
+            "since":1,
+            "label":"System",
+            "rank":6
+        },
+        {
+            "name":"parameterInteraction",
+            "description":"The Parameter Interaction of this SubSystem",
+            "hasMany":"bidirectional",
+            "class":"ParameterInteraction",
+            "required":true,
+            "nullAllowed":false,
+            "unique"false,
+            "default":"$null",
+            "final":true,
+            "access":100,
+            "since":1,
+            "label":"ParameterInteraction",
+            "rank":7
+        },
+        {
+            "name":"system",
+            "description":"The system of this SubSystem",
+            "class":"System",
+            "required":true,
+            "nullAllowed":false,
+            "unique"false,
+            "default":"$null",
+            "final":true,
+            "access":100,
+            "since":1,
+            "label":"System",
+            "rank":6
         }
-        
-    }
-    
+    ]
 }

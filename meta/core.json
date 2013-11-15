@@ -1,33 +1,223 @@
-{
-    "$string":{
+[
+    {
         "classMeta":{
-            "label":"String"
+            "name":"BaseObject",
+            "description":"Base Class",
+            "since":1,
+            "access":100,
+            "label":"Base Class"
         },
-        "fieldMeta":{                       
-        }        
+        "fieldMetas":[
+            {
+                "name":"id",
+                "description":"Unique id of this object",
+                "label":"Id",
+                "class":"$String(128)",
+                "required":true,
+                "nullAllowed":false,
+                "unique":true,
+                "default":"$null",
+                "final":true,
+                "rank":1,
+                "access":100,
+                "since":1,
+                
+            },
+            {
+                "name":"createTime",
+                "description":"Time in millisecond when object is created since epoc",
+                "class":"$Timestamp",
+                "required":true,
+                "nullAllowed":false,
+                "unique":false,
+                "default":-1,
+                "final":true,
+                "access":100,
+                "since":1,
+                "label":"Create Time",
+                "rank":2,
+                
+            },
+            {
+                "name":"tenant",
+                "description":"The tenant in which this object belongs to",
+                "class":"$Number",
+                "required":true,
+                "nullAllowed":false,
+                "unique":false,
+                "default":-1,
+                "final":true,
+                "access":100,
+                "since":1,
+                "label":"Tenant",
+                "rank":3
+            },
+            {
+                "name":"version",
+                "description":"The version at which this object is created",
+                "class":"$Number",
+                "required":true,
+                "nullAllowed":false,
+                "unique":false,
+                "default":-1,
+                "final":false,
+                "access":100,
+                "since":1,
+                "label":"Version",
+                "rank":4
+            }
+        ]
+    },
+    {
+        "classMeta":{
+            "name":"$String",
+            "description":"String Class",
+            "since":1
+        },
+        "fieldMetas":[
+            {
+                "name":"size",
+                "description":"the maximum size of the string",
+                "default":2048,
+                "required":false
+            },
+            {
+                "name":"encoded",
+                "description":"if the string is encoded",
+                "default":"None",
+                "required":false,
+                "supports":[
+                    "None",
+                    "Base64",
+                    "URLEncode"
+                ]
+            },
+            {
+                "name":"encrption",
+                "description":"if encryption is used",
+                "default":"None",
+                "required":false,
+                "supports":[
+                    "AES",
+                    "XOR"
+                ]
+            }
+        ]
+    },
+    {
+        "classMeta":{
+            "name":"$Number",
+            "since":1,
+            "description":"Number Class"
+        },
+        "fieldMetas":[
+            {
+                "name":"precision",
+                "default":15,
+                "required":false,
+                "description":"the precision of the number"
+            },
+            {
+                "name":"scale",
+                "default":0,
+                "required":false,
+                "description":"the scale of the number",
+                "range":[
+                    "Default",
+                    "Base64",
+                    "URLEncode"
+                ]
+            },
+            {
+                "name":"range",
+                "default":[
+                    0,
+                    2147483647
+                ],
+                "required":false,
+                "description":"valid numeric range"
+            }
+        ]
+    },
+    {
+        "classMeta":{
+            "name":"$Date",
+            "since":1,
+            "description":"Date Class"
+        },
+        "fieldMetas":[
+            {
+                "name":"timezone",
+                "default":-600,
+                "required":false,
+                "range":[
+                    -1200,
+                    +1400
+                ],
+                "description":"http://en.wikipedia.org/wiki/List_of_time_zone_abbreviations"
+            }
+        ]
+    },
+    {
+        "classMeta":{
+            "name":"$Boolean",
+            "since":1,
+            "description":"Boolean Class"
+        },
+        "fieldMetas":[
+            
+        ]
+    },
+    {
+        "classMeta":{
+            "name":"$Timestamp",
+            "since":1,
+            "description":"Timestamp Class"
+        },
+        "fieldMetas":[
+            
+        ]
+    },
+    {
+        "classMeta":{
+            "name":"$Blob",
+            "since":1,
+            "description":"Blob Class"
+        },
+        "fieldMetas":[
+            {
+                "name":"size",
+                "default":2048,
+                "required":false,
+                "description":"the maximum size of the blob in bytes"
+            }
+        ]
+    },
+    {
+        "classMeta":{
+            "name":"$Enum",
+            "since":1,
+            "description":"Enum Class"
+        },
+        "fieldMetas":[
+            {
+                "name":"varargs",
+                "default":[
+                    
+                ],
+                "required":false,
+                "description":"variable arguments"
+            }
+        ]
+    },
+    {
+        "classMeta":{
+            "name":"$Json",
+            "since":1,
+            "description":"JSON Class"
+        },
+        "fieldMetas":[
+            
+        ]
     }
-    
-    "$number":{
-        "classMeta":{
-            "label":"Number"
-        },
-        "fieldMeta":{                       
-        }        
-    }     
-        
-    "$boolean":{
-        "classMeta":{
-            "label":"Boolean"
-        },
-        "fieldMeta":{                       
-        }        
-    }         
-    
-    "$id":{
-        "classMeta":{
-            "label":"Id"
-        },
-        "fieldMeta":{                       
-        }        
-    }    
-}
+]

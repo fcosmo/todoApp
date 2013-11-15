@@ -1,30 +1,45 @@
 
 <table class="entityTable">
     <tr class="entityTableHeader">
-        <td>
-            ID
-        </td>
         <td ng-repeat="fieldMeta in selectedMeta().fieldMeta | fieldMetaList:metas:selectedMetaName">
             <div>{{fieldMeta.label}}</div>
         </td>
     </tr>
     <tr class="entityTableRow" ng-repeat="model in selectedModel() | limitTo:20">
-        <td ng-repeat="(key,value) in model.attributes track by $index">
-            <div ng-switch
-                on="model.typeOf(key)">
-                <div ng-switch-when="HasOne">{{value.attributes[title]}}</div>
-                <div ng-switch-when="Value">{{value}}</div>                
-                <div ng-switch-when="HasMany">{{value.length}}</div>
-                <div ng-switch-when="Id">{{value}}</div>
+        <td ng-repeat="fieldName in model.fieldNames() track by $index">
+            <div ng-switch on="model.typeOf(fieldName)">
+                <div ng-switch-when="HasOne" ng-click="clickField(model.attributes[fieldName])"><a href="#">{{model.attributes[fieldName].attributes['title']}}</a></div>
+                <div ng-switch-when="Value">{{model.attributes[fieldName]}}</div>                
+                <div ng-switch-when="HasMany" ng-click="clickList(model.attributes[fieldName])"><a href="#">{{model.attributes[fieldName].length + ' ' + metas[fieldName].classMeta.label}}</a></div>
                 <div ng-switch-when="Null">{{'Null'}}</div>                
-                <div ng-switch-default>invalid</div>
-            </div>                        
+                <div ng-switch-default>INVALID</div>
+            </div>                                                      
 		</td>
     </tr>    
 </table>
 
 
 <!-- 
+<div ng-switch-when="HasOne">{{model.attributes[key].attributes[title]}}</div>
+                <div ng-switch-when="Value">{{model.attributes[key]}}</div>                
+                <div ng-switch-when="HasMany">{{model.attributes[key].length + ' ' + metas[key].classMeta.label}}</div>
+                <div ng-switch-when="Id">{{model.attributes[key]}}</div>
+                <div ng-switch-when="Null">{{'Null'}}</div>   
+
+    <tr class="entityTableRow" ng-repeat="model in selectedModel() | limitTo:20">
+        <td ng-repeat="(key,value) in model.attributes track by $index">
+            <div ng-switch on="model.typeOf(key)">
+                <div ng-switch-when="HasOne">{{value.attributes[title]}}</div>
+                <div ng-switch-when="Value">{{value}}</div>                
+                <div ng-switch-when="HasMany">{{value.length + ' ' + metas[key].classMeta.label}}</div>
+                <div ng-switch-when="Id">{{value}}</div>
+                <div ng-switch-when="Null">{{'Null'}}</div>                
+                <div ng-switch-default>invalid</div>
+            </div>                        
+        </td>
+    </tr> 
+
+
    <tr class="entityTableRow" ng-repeat="model in selectedModel() | limitTo:20">
         <td ng-repeat="fieldValue in (model | fieldValueList:metas:selectedMetaName) track by $index">
             <div ng-switch

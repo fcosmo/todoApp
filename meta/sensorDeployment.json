@@ -1,36 +1,82 @@
 {
-    "sensorDeployment":{
-        "classMeta":{
-            "label":"Sensor Deployment"
+    "classMeta":{
+        "name":"SensorDeployment",
+        "description":"The Sensor Deployment Class",
+        "inherits":"BaseObject",
+        "since":1,
+        "access":100,
+        "label":"Sensor Deployment"
+    },
+    "fieldMetas":[
+        {
+            "name":"title",
+            "description":"The title of this Sensor Deployment",
+            "class":"$String(2048)",
+            "required":true,
+            "nullAllowed":false,
+            "unique":false,
+            "default":"$null",
+            "final":true,
+            "access":100,
+            "since":1,
+            "label":"Title",
+            "rank":5
         },
-        "fieldMeta":{
-            "title":{
-                "label":"Title",
-                "classMeta":"$string"
-            },
-            "timed":{
-                "label":"Timed",
-                "classMeta":"$boolean"
-            },
-            "unit":{
-                "label":"Unit",
-                "classMeta":"unit"
-            },            
-            "dimension":{
-                "label":"Dimension",
-                "classMeta":"dimension"
-            },
-            "parameter":{
-                "label":"Parameter",
-                "classMeta":"parameter"
-            },            
-            "id":{
-                "label":"ID",
-                "classMeta":"$id"
-            }
-            
+        {
+            "name":"timed",
+            "description":"Is this Sensor Deployment timed",
+            "class":"$Boolean",
+            "required":true,
+            "nullAllowed":false,
+            "unique"false,
+            "default":"$null",
+            "final":true,
+            "access":100,
+            "since":1,
+            "label":"Timed",
+            "rank":6
+        },
+        {
+            "name":"Parameter",
+            "description":"The parameter of this Sensor Deployment",
+            "class":"Parameter",
+            "required":true,
+            "nullAllowed":false,
+            "unique"false,
+            "default":"$null",
+            "final":true,
+            "access":100,
+            "since":1,
+            "label":"Parameter",
+            "rank":7
+        },
+        {
+            "name":"unit",
+            "description":"The unit of this Sensor Deployment",
+            "class":"Unit",
+            "required":true,
+            "nullAllowed":false,
+            "unique"false,
+            "default":"$null",
+            "final":true,
+            "access":100,
+            "since":1,
+            "label":"Unit",
+            "rank":6
+        },
+        {
+            "name":"dimension",
+            "description":"The Dimension of the Sensor Deployment",
+            "class":"Dimension",
+            "required":true,
+            "nullAllowed":false,
+            "unique"false,
+            "default":"$null",
+            "final":true,
+            "access":100,
+            "since":1,
+            "label":"Dimension",
+            "rank":7
         }
-        
-    }
-    
+    ]
 }

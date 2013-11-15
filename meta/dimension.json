@@ -1,31 +1,40 @@
 {
-    "dimension":{
-        "classMeta":{
-            "label":"Dimension"
+    "classMeta":{
+        "name":"Dimension",
+        "description":"Dimension Class",
+        "inherits":"BaseObject",
+        "since":1,
+        "access":100,
+        "label":"Dimension"
+    },
+    "fieldMetas":[
+        {
+            "name":"title",
+            "description":"The title of this Dimension",
+            "class":"$String(2048)",
+            "required":true,
+            "nullAllowed":false,
+            "unique":false,
+            "default":"$null",
+            "final":true,
+            "access":100,
+            "since":1,
+            "label":"Title",
+            "rank":5
         },
-        "fieldMeta":{
-            "title":{
-                "label":"Title",
-                "classMeta":"$string"
-            },
-            "quantity":{
-                "label":"Quantity",
-                "classMeta":"quantity"
-            },
-            "physicalQuantity":{
-                "label":"Physical Quantity",
-                "classMeta":"physicalQuantity",
-                "list":true                
-            },
-            "id":{
-                "label":"ID",
-                "classMeta":"$id"
-            }
-            
+        {
+            "name":"physicalQuantity",
+            "description":"The physical quantity of the Dimension",
+            "class":"PhysicalQuantity",
+            "required":true,
+            "nullAllowed":false,
+            "unique"false,
+            "default":"$null",
+            "final":true,
+            "access":100,
+            "since":1,
+            "label":"Physical Quantity",
+            "rank":6
         }
-    }
-    
+    ]
 }
-
-
-

@@ -1,40 +1,82 @@
 {
-    "parameter":{
-        "classMeta":{
-            "label":"Parameter"
+    "classMeta":{
+        "name":"Parameter",
+        "description":"The Parameter Class",
+        "inherits":"BaseObject",
+        "since":1,
+        "access":100,
+        "label":"Parameter"
+    },
+    "fieldMetas":[
+        {
+            "name":"key",
+            "description":"The key of this Parameter",
+            "class":"$String(2048)",
+            "required":true,
+            "nullAllowed":false,
+            "unique":false,
+            "default":"$null",
+            "final":true,
+            "access":100,
+            "since":1,
+            "label":"Key",
+            "rank":5
         },
-        "fieldMeta":{
-            "key":{
-                "label":"Key",
-                "classMeta":"$string"
-            },
-            "title":{
-                "label":"Title",
-                "classMeta":"$string"
-            },  
-            "variable":{
-                "label":"Variable",
-                "classMeta":"$string"
-            },  
-            "system":{
-                "label":"System",
-                "classMeta":"system"
-            },                
-        	"quantity":{
-        		"label":"Quantity",
-                "classMeta":"$string"        		
-        	},    
-        	"physicalQuantity":{
-        		"label":"Physical Quantity",
-                "classMeta":"physicalQuantity"        		
-        	},        	
-            "id":{
-                "label":"ID",
-                "classMeta":"$id"
-            }
-            
+        {
+            "name":"title",
+            "description":"The title of this Parameter",
+            "class":"$String(2048)",
+            "required":true,
+            "nullAllowed":false,
+            "unique":false,
+            "default":"$null",
+            "final":true,
+            "access":100,
+            "since":1,
+            "label":"Title",
+            "rank":5
+        },
+        {
+            "name":"variable",
+            "description":"The variable of this Parameter",
+            "class":"$String(2048)",
+            "required":true,
+            "nullAllowed":false,
+            "unique":false,
+            "default":"$null",
+            "final":true,
+            "access":100,
+            "since":1,
+            "label":"Variable",
+            "rank":5
+        },
+        {
+            "name":"system",
+            "description":"The System of this Parameter",
+            "class":"System",
+            "required":true,
+            "nullAllowed":false,
+            "unique"false,
+            "default":"$null",
+            "final":true,
+            "access":100,
+            "since":1,
+            "label":"System",
+            "rank":6
+        },
+        {
+            "name":"physicalQuantity",
+            "description":"The physical quantity of this Parameter",
+            "class":"PhysicalQuantity",
+            "required":true,
+            "nullAllowed":false,
+            "unique"false,
+            "default":"$null",
+            "final":true,
+            "access":100,
+            "since":1,
+            "label":"PhysicalQuantity",
+            "rank":7
         }
-        
-    }
-    
+    ]
 }

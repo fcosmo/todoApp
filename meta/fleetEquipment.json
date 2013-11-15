@@ -1,23 +1,40 @@
 {
-    "fleetEquipment":{
-        "classMeta":{
-            "label":"Fleet Equipment"            
+    "classMeta":{
+        "name":"FleetEquipment",
+        "description":"The Fleet Equipment Class",
+        "inherits":"BaseObject",
+        "since":1,
+        "access":100,
+        "label":"Fleet Equipment"
+    },
+    "fieldMetas":[
+        {
+            "name":"fleet",
+            "description":"The fleet of this Fleet Equipment",
+            "class":"Fleet",
+            "required":true,
+            "nullAllowed":false,
+            "unique":false,
+            "default":"$null",
+            "final":true,
+            "access":100,
+            "since":1,
+            "label":"Fleet",
+            "rank":5
         },
-        "fieldMeta":{
-            "fleet":{
-                "label":"Fleet",
-                "classMeta":"fleet"
-            },
-            "unit":{
-                "label":"Unit",
-                "classMeta":"unit"
-            },          
-            "id":{
-                "label":"ID",
-                "classMeta":"$id"
-            }
-            
+        {
+            "name":"unit",
+            "description":"The unit of the Fleet Equipment",
+            "class":"Unit",
+            "required":true,
+            "nullAllowed":false,
+            "unique"false,
+            "default":"$null",
+            "final":true,
+            "access":100,
+            "since":1,
+            "label":"Unit",
+            "rank":6
         }
-    }
-    
+    ]
 }

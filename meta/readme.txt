@@ -21,12 +21,12 @@ Top Level:
 
     fieldMetas:
 
-        name: the name of this field. for oneToMany fields add plural suffix (s).
+        name: the name of this field.
             ::= <string>
         description: the description of this field.
             ::= <string>        
-        hasMany: inidicates the field is a oneToMany relationship and what type.
-            ::= "froward" | "backward" | "bidirectional"
+        hasMany: indicates the field is a oneToMany relationship.
+            ::= <boolean>
         class: the type class of this field.
             ::= <string>
         required: is this field required.
@@ -41,7 +41,7 @@ Top Level:
             ::= <boolean>
         access: access level of this field, for 0 being lowest.
             ::= <integer>
-        since: the version this field is introdced.
+        since: the version this field is introduced.
             ::= <integer>
         label: the UI display label for this field.
             ::= <string>

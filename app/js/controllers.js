@@ -241,9 +241,7 @@ controllers.SideBarCtrl = function (tercelServiceProviderPromise, $q, $scope) {
 		        tercelServiceProviderPromise.getJSON("/meta/subsystem.json"),
 		        tercelServiceProviderPromise.getJSON("/meta/system.json"),
 		        tercelServiceProviderPromise.getJSON("/meta/unit.json"),
-		        tercelServiceProviderPromise.getJSON("/meta/parameterInteraction.json"),
-		        
-		     
+		        tercelServiceProviderPromise.getJSON("/meta/parameterInteraction.json")		     
 		]).then(
 			function (data) {
 				var metas = {};
@@ -251,14 +249,11 @@ controllers.SideBarCtrl = function (tercelServiceProviderPromise, $q, $scope) {
 					// for each meta
 				for (var i = 0; i < data.length; i++) {
 						// goes once - basically get meta key
-					for (var key in data[i]) {
-							// assign metas from data
-						var metaObject = data[i][key];
-						var metaName = key;																
-						metas[metaName] = metaObject;
-						
-						
-					}					
+						// assign metas from data
+					var metaObject = data[i];
+					var metaName = metaObject.classMeta.name;																
+					metas[metaName] = metaObject;
+												
 				}			
 				
 				$scope.metas = metas;

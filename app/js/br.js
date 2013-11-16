@@ -49,7 +49,7 @@ classes.Base = Backbone.RelationalModel.extend({
 	
 	
 	classMeta : function () {
-		return metas[];
+		return metas;
 	}
 	
 	

@@ -13,7 +13,6 @@
             "description":"The title of this Fleet",
             "class":"$String(2048)",
             "required":true,
-            "nullAllowed":false,
             "unique":false,
             "default":"$null",
             "final":true,
@@ -27,15 +26,13 @@
             "description":"The unit of this Fleet",
             "class":"Unit",
             "required":true,
-            "nullAllowed":false,
-            "unique"false,
+            "unique":false,
             "default":"$null",
             "final":true,
             "access":100,
             "since":1,
             "label":"Unit",
             "rank":6
-        },
-        
+        }        
     ]
 }

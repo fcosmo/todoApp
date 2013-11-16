@@ -13,7 +13,6 @@
             "description":"The title of this System",
             "class":"$String(2048)",
             "required":true,
-            "nullAllowed":false,
             "unique":false,
             "default":"$null",
             "final":true,
@@ -27,59 +26,55 @@
             "description":"The key of this System",
             "class":"$String(2048)",
             "required":true,
-            "nullAllowed":false,
             "unique":false,
             "default":"$null",
             "final":true,
             "access":100,
             "since":1,
             "label":"Key",
-            "rank":5
+            "rank":6
         },
         {
             "name":"sybSystem",
             "description":"The subSystem of this System",
-            "hasMany":"bidirectional",
+            "hasMany":true,
             "class":"SubSystem",
             "required":true,
-            "nullAllowed":false,
-            "unique"false,
+            "unique":false,
             "default":"$null",
             "final":true,
             "access":100,
             "since":1,
             "label":"SubSystem",
-            "rank":6
+            "rank":7
         },
         {
             "name":"parameter",
             "description":"The Parameter of this System",
-            "hasMany":"bidirectional",
+            "hasMany":true,
             "class":"Parameter",
             "required":true,
-            "nullAllowed":false,
-            "unique"false,
+            "unique":false,
             "default":"$null",
             "final":true,
             "access":100,
             "since":1,
             "label":"Parameter",
-            "rank":7
+            "rank":8
         },
         {
             "name":"unit",
             "description":"The unit of this System",
-            "hasMany":"bidirectional",
+            "hasMany":true,
             "class":"Unit",
             "required":true,
-            "nullAllowed":false,
-            "unique"false,
+            "unique":false,
             "default":"$null",
             "final":true,
             "access":100,
             "since":1,
             "label":"Unit",
-            "rank":6
+            "rank":9
         }
     ]
 }

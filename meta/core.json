@@ -14,36 +14,31 @@
                 "label":"Id",
                 "class":"$String(128)",
                 "required":true,
-                "nullAllowed":false,
                 "unique":true,
                 "default":"$null",
                 "final":true,
                 "rank":1,
                 "access":100,
-                "since":1,
-                
+                "since":1
             },
             {
                 "name":"createTime",
                 "description":"Time in millisecond when object is created since epoc",
                 "class":"$Timestamp",
                 "required":true,
-                "nullAllowed":false,
                 "unique":false,
                 "default":-1,
                 "final":true,
                 "access":100,
                 "since":1,
                 "label":"Create Time",
-                "rank":2,
-                
+                "rank":2
             },
             {
                 "name":"tenant",
                 "description":"The tenant in which this object belongs to",
                 "class":"$Number",
                 "required":true,
-                "nullAllowed":false,
                 "unique":false,
                 "default":-1,
                 "final":true,
@@ -57,7 +52,6 @@
                 "description":"The version at which this object is created",
                 "class":"$Number",
                 "required":true,
-                "nullAllowed":false,
                 "unique":false,
                 "default":-1,
                 "final":false,
@@ -152,7 +146,7 @@
                 "required":false,
                 "range":[
                     -1200,
-                    +1400
+                    1400
                 ],
                 "description":"http://en.wikipedia.org/wiki/List_of_time_zone_abbreviations"
             }

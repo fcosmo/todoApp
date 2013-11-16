@@ -13,7 +13,6 @@
             "description":"The title of this SubSystem",
             "class":"$String(2048)",
             "required":true,
-            "nullAllowed":false,
             "unique":false,
             "default":"$null",
             "final":true,
@@ -25,11 +24,10 @@
         {
             "name":"componentDeployment",
             "description":"The ComponentDeployment of this SubSystem",
-            "hasMany":"bidirectional",
+            "hasMany":true,
             "class":"ComponentDeployment",
             "required":true,
-            "nullAllowed":false,
-            "unique"false,
+            "unique":false,
             "default":"$null",
             "final":true,
             "access":100,
@@ -40,11 +38,10 @@
         {
             "name":"parameterInteraction",
             "description":"The Parameter Interaction of this SubSystem",
-            "hasMany":"bidirectional",
+            "hasMany":true,
             "class":"ParameterInteraction",
             "required":true,
-            "nullAllowed":false,
-            "unique"false,
+            "unique":false,
             "default":"$null",
             "final":true,
             "access":100,
@@ -57,14 +54,13 @@
             "description":"The system of this SubSystem",
             "class":"System",
             "required":true,
-            "nullAllowed":false,
-            "unique"false,
+            "unique":false,
             "default":"$null",
             "final":true,
             "access":100,
             "since":1,
             "label":"System",
-            "rank":6
+            "rank":8
         }
     ]
 }

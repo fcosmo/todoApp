@@ -14,7 +14,7 @@
                 "class":"$String(128)",
                 "required":true,
                 "unique":true,
-                "default":"$null",
+                "default":null,
                 "final":true,
                 "access":100,
                 "since":1,

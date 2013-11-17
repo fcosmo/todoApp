@@ -46,6 +46,7 @@ classes.Base = Backbone.RelationalModel.extend({
 	
 	fieldNames : function () {
 		
+			// XXX jwang - do this when create meta - cache it!
 		var meta = this.meta();
 		var fieldMetas = meta.fieldMetas;
 		
@@ -394,6 +395,15 @@ controllers.SideBarCtrl = function (tercelServiceProviderPromise, $q, $scope) {
 					}					
 					
 					classes[meta.classMeta.name] = (function (meta) {
+						
+							// define defaults
+						var defaults = {};
+						for (var i = 0; i < meta.fieldMetas.length; i++) {							
+							var fieldMeta = meta.fieldMetas[i];				
+							defaults[fieldMeta.name] = fieldMeta["default"];							
+						}						
+						
+							// define relations
 						var relations = [];
 						for (var i = 0; i < meta.fieldMetas.length; i++) {
 							
@@ -410,7 +420,7 @@ controllers.SideBarCtrl = function (tercelServiceProviderPromise, $q, $scope) {
 							}
 						}
 						
-						var relationalModel = classes.Base.extend({"relations":relations});
+						var relationalModel = classes.Base.extend({"relations":relations,"defaults":defaults});
 						
 							// make both class and instance to have method meta
 						relationalModel.prototype.meta = function () {

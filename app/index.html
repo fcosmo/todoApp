@@ -148,7 +148,7 @@
 							Entity Meta</button>
 
 						<li class="nav-header">Entities</li>
-						<li ng-repeat="(metaName, metaObject) in metas"><a href="#"
+						<li ng-repeat="(metaName, metaObject) in metas"><a href="#" title="{{metaObject.classMeta.description}}"
 							ng-click="sidebar.selectMeta(metaName)">{{metaObject.classMeta.label}}</a>
 						</li>
 

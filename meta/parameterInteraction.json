@@ -14,12 +14,12 @@
             "class":"$String(2048)",
             "required":true,
             "unique":false,
-            "default":"$null",
+            "default":null,
             "final":true,
             "access":100,
             "since":1,
             "label":"Direction",
-            "rank":5,
+            "rank":7,
             "visible":true
         },
         {
@@ -28,12 +28,12 @@
             "class":"SubSystem",
             "required":true,
             "unique":false,
-            "default":"$null",
+            "default":null,
             "final":true,
             "access":100,
             "since":1,
             "label":"SubSystem",
-            "rank":6,
+            "rank":5,
             "visible":true
         },
         {
@@ -42,12 +42,12 @@
             "class":"Parameter",
             "required":true,
             "unique":false,
-            "default":"$null",
+            "default":null,
             "final":true,
             "access":100,
             "since":1,
             "label":"Parameter",
-            "rank":7,
+            "rank":6,
             "visible":true
         }
     ]

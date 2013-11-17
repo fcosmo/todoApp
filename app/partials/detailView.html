@@ -2,7 +2,7 @@
 <table class="entityTable">
     <tr class="entityTableHeader">
         <td ng-repeat="fieldMeta in selectedClass().fieldMetas  | filter:{visible: true} ">
-            <div>{{fieldMeta.label}}</div>
+            <div title={{fieldMeta.description}}>{{fieldMeta.label}}</div>
         </td>
     </tr>
     <tr class="entityTableRow" ng-repeat="model in selectedModel() | limitTo:20">

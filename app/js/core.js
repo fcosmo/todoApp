@@ -6,7 +6,7 @@
 var metas = {
 		
 		"BaseObject" : {
-			"classMeta": {
+			"entityMeta": {
 				"name":"BaseObject",
 				"label":"Base Object"
 			},
@@ -15,14 +15,14 @@ var metas = {
 				{	
 					"name":"id",
 					"label":"Id",
-					"classMeta":"$string"
+					"entityMeta":"$string"
 				}
 			]
 		},
 		
 		
 		"ComponentDeployment":{
-			"classMeta":{
+			"entityMeta":{
 				"name":"ComponentDeployment",
 				"label":"Component Deployment",
 				"extend":"BaseObject"
@@ -31,24 +31,24 @@ var metas = {
 				{	
 					"name":"title",
 					"label":"Title",
-					"classMeta":"$string"
+					"entityMeta":"$string"
 				},
 				{
 					"name":"unit",
 					"label":"Unit",
-					"classMeta":"Unit"
+					"entityMeta":"Unit"
 				},
 				{
 					"name":"subSystem",
 					"label":"Sub System",
-					"classMeta":"SubSystem"
+					"entityMeta":"SubSystem"
 				}
 			]
 
 		},    
 
 		"Dimension":{
-			"classMeta":{
+			"entityMeta":{
 				"name":"Dimension",
 				"label":"Dimension"
 			},
@@ -56,17 +56,17 @@ var metas = {
 				{
 					"name":"title",
 					"label":"Title",
-					"classMeta":"$string"
+					"entityMeta":"$string"
 				},
 				{
 					"name":"quantity",
 					"label":"Quantity",
-					"classMeta":"Quantity"
+					"entityMeta":"Quantity"
 				},
 				{
 					"name":"physicalQuantity",
 					"label":"Physical Quantity",
-					"classMeta":"PhysicalQuantity",
+					"entityMeta":"PhysicalQuantity",
 					"list":true                
 				}
 			]
@@ -86,13 +86,13 @@ var metas = {
 		
 		var aMeta = metas[key];	 
 	
-		classes[aMeta.classMeta.name]  = (function (aMeta) {
+		classes[aMeta.entityMeta.name]  = (function (aMeta) {
 			
 				// define the base field properties
 			var properties =  {			
-					classMeta: {	
+					entityMeta: {	
 						get: function () {
-							return aMeta.classMeta;
+							return aMeta.entityMeta;
 						}
 					},
 
@@ -106,10 +106,10 @@ var metas = {
 			
 				// works the inheritance tree and get all the meta fields 
 			var metaFields = [];									
-			var extendsClass = metas[aMeta.classMeta.extend];
+			var extendsClass = metas[aMeta.entityMeta.extend];
 			while (typeof extendsClass !== "undefined") {
 				metaFields = metaFields.concat(extendsClass.fieldMetas);	
-				extendsClass = extendsClass.classMeta.extend;
+				extendsClass = extendsClass.entityMeta.extend;
 			}			
 			metaFields = metaFields.concat(aMeta.fieldMetas);
 			
@@ -162,7 +162,7 @@ var metas = {
 	aComponentDeployment.getLi
 	
 	var aDimension = new classes.Dimension();
-	alert(aDimension.classMeta.label);	
+	alert(aDimension.entityMeta.label);	
 	
 /*	
 	

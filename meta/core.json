@@ -1,6 +1,6 @@
 [
     {
-        "classMeta":{
+        "entityMeta":{
             "name":"BaseObject",
             "description":"Base Class",
             "since":1,
@@ -67,7 +67,7 @@
         ]
     },
     {
-        "classMeta":{
+        "entityMeta":{
             "name":"$String",
             "description":"String Class",
             "since":1,
@@ -105,7 +105,7 @@
         ]
     },
     {
-        "classMeta":{
+        "entityMeta":{
             "name":"$Number",
             "since":1,
             "description":"Number Class",
@@ -141,7 +141,7 @@
         ]
     },
     {
-        "classMeta":{
+        "entityMeta":{
             "name":"$Date",
             "since":1,
             "description":"Date Class",
@@ -161,7 +161,7 @@
         ]
     },
     {
-        "classMeta":{
+        "entityMeta":{
             "name":"$Boolean",
             "since":1,
             "description":"Boolean Class",
@@ -172,7 +172,7 @@
         ]
     },
     {
-        "classMeta":{
+        "entityMeta":{
             "name":"$Timestamp",
             "since":1,
             "description":"Timestamp Class",
@@ -183,7 +183,7 @@
         ]
     },
     {
-        "classMeta":{
+        "entityMeta":{
             "name":"$Blob",
             "since":1,
             "description":"Blob Class",
@@ -199,7 +199,7 @@
         ]
     },
     {
-        "classMeta":{
+        "entityMeta":{
             "name":"$Enum",
             "since":1,
             "description":"Enum Class",
@@ -217,7 +217,7 @@
         ]
     },
     {
-        "classMeta":{
+        "entityMeta":{
             "name":"$Json",
             "since":1,
             "description":"JSON Class",

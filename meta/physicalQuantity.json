@@ -1,5 +1,5 @@
 {
-    "classMeta":{
+    "entityMeta":{
         "name":"PhysicalQuantity",
         "description":"Physical Quantity Class",
         "inherits":"BaseObject",

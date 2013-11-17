@@ -1,5 +1,5 @@
 {
-    "classMeta":{
+    "entityMeta":{
         "name":"Unit",
         "description":"The Unit Class",
         "inherits":"BaseObject",
@@ -37,9 +37,9 @@
             "visible":true
         },
         {
-            "name":"fleetEquipment",
+            "name":"fleetEquipmentList",
             "description":"The Fleet Equipments of this Unit",
-            "hasMany":true,
+            "hasMany":"bidirectional",
             "class":"FleetEquipment",
             "required":true,
             "unique":false,
@@ -52,9 +52,9 @@
             "visible":true
         },
         {
-            "name":"sensorDeployment",
+            "name":"sensorDeploymentList",
             "description":"The Sensor Deployment of this Unit",
-            "hasMany":true,
+            "hasMany":"bidirectional",
             "class":"SensorDeployment",
             "required":true,
             "unique":false,
@@ -67,9 +67,9 @@
             "visible":true
         },
         {
-            "name":"componentDeployment",
+            "name":"componentDeploymentList",
             "description":"The Component Deployment of this Unit",
-            "hasMany":true,
+            "hasMany":"bidirectional",
             "class":"ComponentDeployment",
             "required":true,
             "unique":false,

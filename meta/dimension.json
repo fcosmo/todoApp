@@ -1,5 +1,5 @@
 {
-    "classMeta":{
+    "entityMeta":{
         "name":"Dimension",
         "description":"Dimension Class",
         "inherits":"BaseObject",

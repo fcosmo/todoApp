@@ -61,6 +61,11 @@ classes.Base = Backbone.RelationalModel.extend({
 		var fieldNames = _.pluck(fieldMetas, "name");
 		
 		return fieldNames;		
+	},
+	
+	labelForFieldMeta : function (fieldName){		
+		var meta = this.meta();
+		return meta.fieldMetaMap[fieldName]["class"].entityMeta.label;
 	}
 	
 	
@@ -142,7 +147,7 @@ controllers.SideBarCtrl = function (tercelServiceProviderPromise, $q, $scope) {
 		
 		var fieldMeta = fieldMetas[fieldMetaKey];
 	
-		return fieldMeta.classMeta;
+		return fieldMeta.entityMeta;
 	}
 	
 	
@@ -161,12 +166,12 @@ controllers.SideBarCtrl = function (tercelServiceProviderPromise, $q, $scope) {
 		 
 		 
 		var fieldMetaValue =  fieldMetaValueArray[1];
-		var models =  $scope.models[fieldMeta.classMeta];
+		var models =  $scope.models[fieldMeta.entityMeta];
 		
 
 		if (fieldMeta.list) {
 			var fieldMetaValueList = fieldMetaValue.split(',');
-			return "[ " + fieldMetaValueList.length + " " + $scope.metas[fieldMeta.classMeta].classMeta.label + "s ]" ;
+			return "[ " + fieldMetaValueList.length + " " + $scope.metas[fieldMeta.entityMeta].entityMeta.label + "s ]" ;
 		}
 		else {
 			var entry = _.findWhere(models, {"id": fieldMetaValue});	
@@ -184,7 +189,7 @@ controllers.SideBarCtrl = function (tercelServiceProviderPromise, $q, $scope) {
 	$scope.clickField = function (model) {
 		var id = model.attributes.id;
 		
-		$scope.selectedMetaName = fieldMeta.classMeta;		
+		$scope.selectedMetaName = fieldMeta.entityMeta;		
 		
 		alert(id);
 	}
@@ -208,12 +213,12 @@ controllers.SideBarCtrl = function (tercelServiceProviderPromise, $q, $scope) {
 		 
 		 
 		var fieldMetaValue =  fieldMetaValueArray[1];
-		var models =  $scope.models[fieldMeta.classMeta];
+		var models =  $scope.models[fieldMeta.entityMeta];
 		
 		
 		var selectedModelList = [];
 			
-			var allModels = $scope.models[fieldMeta.classMeta];
+			var allModels = $scope.models[fieldMeta.entityMeta];
 			var fieldMetaValueList = fieldMetaValue.split(',');
 			for (var i = 0; i < fieldMetaValueList.length; i++) {
 				var id = fieldMetaValueList[i];
@@ -226,7 +231,7 @@ controllers.SideBarCtrl = function (tercelServiceProviderPromise, $q, $scope) {
 		
 		
 		$scope.selectedModels = selectedModelList;
-		$scope.selectedMetaName = fieldMeta.classMeta;		
+		$scope.selectedMetaName = fieldMeta.entityMeta;		
 			
 	
 	}
@@ -330,14 +335,14 @@ controllers.SideBarCtrl = function (tercelServiceProviderPromise, $q, $scope) {
 					if (data[i] instanceof Array) {
 						for (var j = 0; j < data[i].length; j++) {
 							var metaObject = data[i][j];
-							var metaName = metaObject.classMeta.name;																
+							var metaName = metaObject.entityMeta.name;																
 							metas[metaName] = metaObject;							
 						}
 					}
 					else {
 						// parse file that contains just one meta
 						var metaObject = data[i];
-						var metaName = metaObject.classMeta.name;																
+						var metaName = metaObject.entityMeta.name;																
 						metas[metaName] = metaObject;						
 					}												
 				}			
@@ -347,29 +352,31 @@ controllers.SideBarCtrl = function (tercelServiceProviderPromise, $q, $scope) {
 					// ie. push fieldMetas to subclasses
 				for (metaName in metas) {
 					var inheritedFields = [];									
-					var extendsClass = metas[metaName].classMeta.inherits;
+					var extendsClass = metas[metaName].entityMeta.inherits;
 						// note. this is doing from bottom to top, should probably do top to bottom using stack
 					while (typeof extendsClass !== "undefined") {						
 						inheritedFields = inheritedFields.concat(metas[extendsClass].fieldMetas);	
-						extendsClass = metas[extendsClass].classMeta.inherits;
+						extendsClass = metas[extendsClass].entityMeta.inherits;
 					}			
 					metas[metaName].fieldMetas = metas[metaName].fieldMetas.concat(inheritedFields);												
 				}
 				
 					
-					// resolve fieldMeta's class to their actual class
+					// resolve fieldMeta's class to their actual class, also create an convenience fieldMeta map by name
 				for (metaName in metas) {
 					if (metaName.charAt(0) == '$') {
 						continue;
 					}
 					var fieldMetas = metas[metaName].fieldMetas;
+					metas[metaName].fieldMetaMap = {};
 					for (var i = 0; i < fieldMetas.length; i++) {
-						var fieldMetaClass = fieldMetas[i]['class'];
+						var fieldMeta = fieldMetas[i];
+						var fieldMetaClass = fieldMeta['class'];
 						
-							// since fieldMeta share same reference to the class, so if it hasn't be converted then do conversion
+							// since fieldMeta share same reference to the class, so if it hasn't be converted (i.e. still a string) then do conversion
 						if (typeof fieldMetaClass === "string") {						
 							
-								// note. for primative we should create new instance, with different parameter value, for now one global
+								// note. for primitive we should create new instance, with different parameter value, for now one global
 							if (fieldMetaClass.charAt(0) == '$') {
 								fieldMetaClass = fieldMetaClass.split('(')[0];
 								fieldMetas[i]['class'] = metas[fieldMetaClass];							
@@ -379,7 +386,10 @@ controllers.SideBarCtrl = function (tercelServiceProviderPromise, $q, $scope) {
 								fieldMetas[i]['class'] = metas[fieldMetaClass];														
 							}
 						}		
+						
+						metas[metaName].fieldMetaMap[fieldMeta.name] = fieldMeta;
 					}
+					
 				}
 				
 				
@@ -390,11 +400,11 @@ controllers.SideBarCtrl = function (tercelServiceProviderPromise, $q, $scope) {
 					
 					var meta = metas[metaName];
 					
-					if (meta['classMeta']['abstract']) {
+					if (meta['entityMeta']['abstract']) {
 						continue;
 					}					
 					
-					classes[meta.classMeta.name] = (function (meta) {
+					classes[meta.entityMeta.name] = (function (meta) {
 						
 							// define defaults
 						var defaults = {};
@@ -409,11 +419,11 @@ controllers.SideBarCtrl = function (tercelServiceProviderPromise, $q, $scope) {
 							
 							var fieldMeta = meta.fieldMetas[i];
 							
-							if (!fieldMeta['class']['classMeta']['abstract']) {
+							if (!fieldMeta['class']['entityMeta']['abstract']) {
 								var aRelation = {
 									type: fieldMeta.hasMany ? Backbone.HasMany : Backbone.HasOne,
 									key: fieldMeta.name,
-									relatedModel : 'classes.' + fieldMeta['class'].classMeta.name
+									relatedModel : 'classes.' + fieldMeta['class'].entityMeta.name
 								}
 								
 								relations.push(aRelation);

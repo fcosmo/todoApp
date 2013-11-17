@@ -1,5 +1,5 @@
 {
-    "classMeta":{
+    "entityMeta":{
         "name":"Fleet",
         "description":"The Fleet Class",
         "inherits":"BaseObject",

@@ -1,5 +1,5 @@
 {
-    "classMeta":{
+    "entityMeta":{
         "name":"SensorDeployment",
         "description":"The Sensor Deployment Class",
         "inherits":"BaseObject",

@@ -1,5 +1,5 @@
 {
-    "classMeta":{
+    "entityMeta":{
         "name":"SubSystem",
         "description":"The SubSYstem Class",
         "inherits":"BaseObject",
@@ -23,9 +23,9 @@
             "visible":true
         },
         {
-            "name":"componentDeployment",
+            "name":"componentDeploymentList",
             "description":"The ComponentDeployment of this SubSystem",
-            "hasMany":true,
+            "hasMany":"bidirectional",
             "class":"ComponentDeployment",
             "required":true,
             "unique":false,
@@ -38,9 +38,9 @@
             "visible":true
         },
         {
-            "name":"parameterInteraction",
+            "name":"parameterInteractionList",
             "description":"The Parameter Interaction of this SubSystem",
-            "hasMany":true,
+            "hasMany":"bidirectional",
             "class":"ParameterInteraction",
             "required":true,
             "unique":false,

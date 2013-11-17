@@ -1,11 +1,6 @@
-1) add List to paramter names that has manu
-2) change the hasMany back
-3) change class to entity
-4) think better name for abstract
-
 Top Level:
     
-    classMeta:
+    entityMeta:
 
         name: the name of this entity. Capitalized with CamelCase. 
             ::= <string>
@@ -25,12 +20,12 @@ Top Level:
 
     fieldMetas:
 
-        name: the name of this field. Lowercase with CamelCase. falkonryTercel
+        name: the name of this field. Lowercase with CamelCase. Append suffix "List" for hasMany relation fields
             ::= <string>
         description: the description of this field.
             ::= <string>        
-        hasMany: indicates the field is a oneToMany relationship.
-            ::= <boolean>
+        hasMany: indicates the field is a oneToMany relationship. 
+            ::= "forward" | "backward" | "bidirectional"
         class: the type of class of this field.
             ::= <string>
         required: is this field required.

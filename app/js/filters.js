@@ -26,7 +26,7 @@ app.filter('fieldMetaList', function() {
 	    
 	    	// this uses the natural order from the meta.json ! very important
 		for (var fieldMeta in fieldMetas) {
-			if (fieldMetas[fieldMeta].classMeta === "$id") {
+			if (fieldMetas[fieldMeta].entityMeta === "$id") {
 				continue;
 			}
 	    	out.push(input[fieldMeta]);
@@ -50,7 +50,7 @@ app.filter('fieldValueList', function() {
 	    
     		// this uses the natural order from the meta.json ! very important	    
 		for (var fieldMeta in fieldMetas) {
-			if (fieldMetas[fieldMeta].classMeta === "$id") {
+			if (fieldMetas[fieldMeta].entityMeta === "$id") {
 				continue;
 			}		
 	    	//out.push({"key":fieldMeta,"value":input[fieldMeta]});

@@ -1,5 +1,5 @@
 {
-    "classMeta":{
+    "entityMeta":{
         "name":"Parameter",
         "description":"The Parameter Class",
         "inherits":"BaseObject",

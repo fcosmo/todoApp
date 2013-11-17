@@ -1,5 +1,5 @@
 {
-    "classMeta":{
+    "entityMeta":{
         "name":"ComponentDeployment",
         "description":"The Component Deployment Class",
         "inherits":"BaseObject",

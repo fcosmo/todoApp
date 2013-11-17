@@ -19,7 +19,8 @@
             "access":100,
             "since":1,
             "label":"Title",
-            "rank":5
+            "rank":5,
+            "visible":true
         },
         {
             "name":"unit",
@@ -32,10 +33,11 @@
             "access":100,
             "since":1,
             "label":"Unit",
-            "rank":6
+            "rank":6,
+            "visible":true
         },
         {
-            "name":"subSystem",
+            "name":"subsystem",
             "description":"The SubSystem of the Component Deployment",
             "class":"SubSystem",
             "required":true,
@@ -45,7 +47,8 @@
             "access":100,
             "since":1,
             "label":"SubSystem",
-            "rank":7
+            "rank":7,
+            "visible":true
         }
     ]
 }

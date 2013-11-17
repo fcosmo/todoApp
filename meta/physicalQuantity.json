@@ -19,7 +19,8 @@
             "access":100,
             "since":1,
             "label":"Title",
-            "rank":5
+            "rank":5,
+            "visible":true
         }
     ]
 }

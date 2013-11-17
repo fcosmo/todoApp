@@ -19,7 +19,8 @@
             "access":100,
             "since":1,
             "label":"Title",
-            "rank":5
+            "rank":5,
+            "visible":true
         },
         {
             "name":"key",
@@ -32,10 +33,11 @@
             "access":100,
             "since":1,
             "label":"Key",
-            "rank":6
+            "rank":6,
+            "visible":true
         },
         {
-            "name":"sybSystem",
+            "name":"subsytem",
             "description":"The subSystem of this System",
             "hasMany":true,
             "class":"SubSystem",
@@ -46,7 +48,8 @@
             "access":100,
             "since":1,
             "label":"SubSystem",
-            "rank":7
+            "rank":7,
+            "visible":true
         },
         {
             "name":"parameter",
@@ -60,7 +63,8 @@
             "access":100,
             "since":1,
             "label":"Parameter",
-            "rank":8
+            "rank":8,
+            "visible":true
         },
         {
             "name":"unit",
@@ -74,7 +78,8 @@
             "access":100,
             "since":1,
             "label":"Unit",
-            "rank":9
+            "rank":9,
+            "visible":true
         }
     ]
 }

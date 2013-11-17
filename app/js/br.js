@@ -5,6 +5,8 @@
 var classes = {};
 
 
+
+
 classes.Base = Backbone.RelationalModel.extend({
 	
 	isRelation : function (field) {
@@ -254,7 +256,7 @@ classes.Dimension = classes.Base.extend({
 
 
 
-
+console.log("loaded br");
 
 /*
 var aPhysicalQuantity = new PhysicalQuantity({

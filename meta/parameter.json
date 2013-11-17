@@ -19,7 +19,8 @@
             "access":100,
             "since":1,
             "label":"Key",
-            "rank":5
+            "rank":5,
+            "visible":true
         },
         {
             "name":"title",
@@ -32,7 +33,8 @@
             "access":100,
             "since":1,
             "label":"Title",
-            "rank":5
+            "rank":5,
+            "visible":true
         },
         {
             "name":"variable",
@@ -45,7 +47,8 @@
             "access":100,
             "since":1,
             "label":"Variable",
-            "rank":5
+            "rank":5,
+            "visible":true
         },
         {
             "name":"system",
@@ -58,7 +61,8 @@
             "access":100,
             "since":1,
             "label":"System",
-            "rank":6
+            "rank":6,
+            "visible":true
         },
         {
             "name":"physicalQuantity",
@@ -71,7 +75,8 @@
             "access":100,
             "since":1,
             "label":"PhysicalQuantity",
-            "rank":7
+            "rank":7,
+            "visible":true
         }
     ]
 }

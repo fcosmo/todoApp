@@ -19,20 +19,8 @@
             "access":100,
             "since":1,
             "label":"Title",
-            "rank":5
-        },
-        {
-            "name":"unit",
-            "description":"The unit of this Fleet",
-            "class":"Unit",
-            "required":true,
-            "unique":false,
-            "default":"$null",
-            "final":true,
-            "access":100,
-            "since":1,
-            "label":"Unit",
-            "rank":6
-        }        
+            "rank":5,
+            "visible":true
+        }
     ]
 }

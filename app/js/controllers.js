@@ -2,6 +2,69 @@
 
 
 
+var classes = {};
+
+
+
+
+classes.Base = Backbone.RelationalModel.extend({
+	
+	isRelation : function (field) {
+		var aRelation = this._relations[field];
+		
+		if (typeof aRelation === "undefined" || aRelation === null) {
+			return false;
+		}
+		
+		var test = aRelation instanceof Backbone.Relation;
+		return test;	
+	},
+	
+	typeOf : function (field) {
+			
+		if (field === "id") {
+			return "Id";
+		}			
+		
+		var aRelation = this._relations[field];
+			
+		if (typeof aRelation === "undefined" || aRelation === null) {
+			return "Value";
+		}		
+			
+		if (aRelation instanceof Backbone.HasMany) {
+			return "HasMany";
+		}
+		
+		if (aRelation instanceof Backbone.HasOne) {
+			return "HasOne";
+		}
+				
+		return "Null"
+		
+	},
+	
+	fieldNames : function () {
+		
+		var meta = this.meta();
+		var fieldMetas = meta.fieldMetas;
+		
+		fieldMetas = _.reject(fieldMetas, function (aFieldMeta) {
+			return aFieldMeta.visible == false;
+		});		
+		
+		fieldMetas = _.sortBy(fieldMetas, function (aFieldMeta) {
+			return aFieldMeta.rank;
+		});
+					
+		var fieldNames = _.pluck(fieldMetas, "name");
+		
+		return fieldNames;		
+	}
+	
+	
+})
+
 
 var controllers = {};
 
@@ -177,6 +240,18 @@ controllers.SideBarCtrl = function (tercelServiceProviderPromise, $q, $scope) {
 	}
 	
 	
+	$scope.selectedClass = function () {
+		
+		if (typeof $scope.selectedMetaName === "undefined") {
+			return "";
+		}
+		var scope = $scope;
+		var theClass = $scope['classes'][$scope.selectedMetaName];
+		var meta = theClass.meta();
+		return meta;
+	}
+		
+	
 	
 	$scope.selectedModel = function () {
 		var selectedModels = $scope.selectedModels;
@@ -231,6 +306,7 @@ controllers.SideBarCtrl = function (tercelServiceProviderPromise, $q, $scope) {
 		//game.getJSON();
 	
 		$q.all([
+		        tercelServiceProviderPromise.getJSON("/meta/core.json"),		        
 		        tercelServiceProviderPromise.getJSON("/meta/componentDeployment.json"),
 		        tercelServiceProviderPromise.getJSON("/meta/dimension.json"),
 		        tercelServiceProviderPromise.getJSON("/meta/fleet.json"),
@@ -246,17 +322,117 @@ controllers.SideBarCtrl = function (tercelServiceProviderPromise, $q, $scope) {
 			function (data) {
 				var metas = {};
 
-					// for each meta
+					// for each meta file parse
 				for (var i = 0; i < data.length; i++) {
-						// goes once - basically get meta key
-						// assign metas from data
-					var metaObject = data[i];
-					var metaName = metaObject.classMeta.name;																
-					metas[metaName] = metaObject;
-												
+					
+						// parse file that contains array of metas
+					if (data[i] instanceof Array) {
+						for (var j = 0; j < data[i].length; j++) {
+							var metaObject = data[i][j];
+							var metaName = metaObject.classMeta.name;																
+							metas[metaName] = metaObject;							
+						}
+					}
+					else {
+						// parse file that contains just one meta
+						var metaObject = data[i];
+						var metaName = metaObject.classMeta.name;																
+						metas[metaName] = metaObject;						
+					}												
 				}			
 				
+					
+					// for each meta, resolve fieldMeta inheritance from superclass, 
+					// ie. push fieldMetas to subclasses
+				for (metaName in metas) {
+					var inheritedFields = [];									
+					var extendsClass = metas[metaName].classMeta.inherits;
+						// note. this is doing from bottom to top, should probably do top to bottom using stack
+					while (typeof extendsClass !== "undefined") {						
+						inheritedFields = inheritedFields.concat(metas[extendsClass].fieldMetas);	
+						extendsClass = metas[extendsClass].classMeta.inherits;
+					}			
+					metas[metaName].fieldMetas = metas[metaName].fieldMetas.concat(inheritedFields);												
+				}
+				
+					
+					// resolve fieldMeta's class to their actual class
+				for (metaName in metas) {
+					if (metaName.charAt(0) == '$') {
+						continue;
+					}
+					var fieldMetas = metas[metaName].fieldMetas;
+					for (var i = 0; i < fieldMetas.length; i++) {
+						var fieldMetaClass = fieldMetas[i]['class'];
+						
+							// since fieldMeta share same reference to the class, so if it hasn't be converted then do conversion
+						if (typeof fieldMetaClass === "string") {						
+							
+								// note. for primative we should create new instance, with different parameter value, for now one global
+							if (fieldMetaClass.charAt(0) == '$') {
+								fieldMetaClass = fieldMetaClass.split('(')[0];
+								fieldMetas[i]['class'] = metas[fieldMetaClass];							
+							}
+							else {
+								// else it's regular class, point to same global value
+								fieldMetas[i]['class'] = metas[fieldMetaClass];														
+							}
+						}		
+					}
+				}
+				
+				
+				
+				
+				// generate backbone relation models
+				for (var metaName in metas) {									
+					
+					var meta = metas[metaName];
+					
+					if (meta['classMeta']['abstract']) {
+						continue;
+					}					
+					
+					classes[meta.classMeta.name] = (function (meta) {
+						var relations = [];
+						for (var i = 0; i < meta.fieldMetas.length; i++) {
+							
+							var fieldMeta = meta.fieldMetas[i];
+							
+							if (!fieldMeta['class']['classMeta']['abstract']) {
+								var aRelation = {
+									type: fieldMeta.hasMany ? Backbone.HasMany : Backbone.HasOne,
+									key: fieldMeta.name,
+									relatedModel : 'classes.' + fieldMeta['class'].classMeta.name
+								}
+								
+								relations.push(aRelation);
+							}
+						}
+						
+						var relationalModel = classes.Base.extend({"relations":relations});
+						
+							// make both class and instance to have method meta
+						relationalModel.prototype.meta = function () {
+							return meta;
+						};
+						relationalModel.meta = function () {
+							return meta;
+						}
+						return relationalModel;
+						
+						
+					}) (meta);
+					
+					
+					
+				}
+
+				
 				$scope.metas = metas;
+				$scope['classes'] = classes;
+				
+				
 				console.log('done metas');
 				
 			},
@@ -283,12 +459,12 @@ controllers.SideBarCtrl = function (tercelServiceProviderPromise, $q, $scope) {
 		        tercelServiceProviderPromise.getJSON("/data/fleet.json"),
 		        tercelServiceProviderPromise.getJSON("/data/fleetEquipment.json"),
 		        tercelServiceProviderPromise.getJSON("/data/parameter.json"),
-		        tercelServiceProviderPromise.getJSON("/data/parameterInteraction.json"),
 		        tercelServiceProviderPromise.getJSON("/data/physicalQuantity.json"),
 		        tercelServiceProviderPromise.getJSON("/data/sensorDeployment.json"),
 		        tercelServiceProviderPromise.getJSON("/data/subsystem.json"),
 		        tercelServiceProviderPromise.getJSON("/data/system.json"),
-		        tercelServiceProviderPromise.getJSON("/data/unit.json")		        		        
+		        tercelServiceProviderPromise.getJSON("/data/unit.json"),
+		        tercelServiceProviderPromise.getJSON("/data/parameterInteraction.json")		     		       
 		]).then(
 			function (data) {
 				var models = {};
@@ -322,7 +498,7 @@ controllers.SideBarCtrl = function (tercelServiceProviderPromise, $q, $scope) {
 							}
 						}
 												
-						models[key] = instanceCollection;
+						models[className] = instanceCollection;
 					}					
 				}			
 				

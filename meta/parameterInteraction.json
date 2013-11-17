@@ -19,10 +19,11 @@
             "access":100,
             "since":1,
             "label":"Direction",
-            "rank":5
+            "rank":5,
+            "visible":true
         },
         {
-            "name":"subSystem",
+            "name":"subsystem",
             "description":"The SubSystem of the Parameter Interaction",
             "class":"SubSystem",
             "required":true,
@@ -32,7 +33,8 @@
             "access":100,
             "since":1,
             "label":"SubSystem",
-            "rank":6
+            "rank":6,
+            "visible":true
         },
         {
             "name":"parameter",
@@ -45,7 +47,8 @@
             "access":100,
             "since":1,
             "label":"Parameter",
-            "rank":7
+            "rank":7,
+            "visible":true
         }
     ]
 }

@@ -1,7 +1,7 @@
 
 <table class="entityTable">
     <tr class="entityTableHeader">
-        <td ng-repeat="fieldMeta in selectedMeta().fieldMeta | fieldMetaList:metas:selectedMetaName">
+        <td ng-repeat="fieldMeta in selectedClass().fieldMetas  | filter:{visible: true} ">
             <div>{{fieldMeta.label}}</div>
         </td>
     </tr>

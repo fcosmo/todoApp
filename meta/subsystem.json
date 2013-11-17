@@ -19,7 +19,8 @@
             "access":100,
             "since":1,
             "label":"Title",
-            "rank":5
+            "rank":5,
+            "visible":true
         },
         {
             "name":"componentDeployment",
@@ -33,7 +34,8 @@
             "access":100,
             "since":1,
             "label":"System",
-            "rank":6
+            "rank":6,
+            "visible":true
         },
         {
             "name":"parameterInteraction",
@@ -47,7 +49,8 @@
             "access":100,
             "since":1,
             "label":"ParameterInteraction",
-            "rank":7
+            "rank":7,
+            "visible":true
         },
         {
             "name":"system",
@@ -60,7 +63,8 @@
             "access":100,
             "since":1,
             "label":"System",
-            "rank":8
+            "rank":8,
+            "visible":true
         }
     ]
 }

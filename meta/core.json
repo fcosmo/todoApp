@@ -5,21 +5,22 @@
             "description":"Base Class",
             "since":1,
             "access":100,
-            "label":"Base Class"
+            "abstract":true
         },
         "fieldMetas":[
             {
                 "name":"id",
                 "description":"Unique id of this object",
-                "label":"Id",
                 "class":"$String(128)",
                 "required":true,
                 "unique":true,
                 "default":"$null",
                 "final":true,
-                "rank":1,
                 "access":100,
-                "since":1
+                "since":1,
+                "label":"Id",
+                "rank":1,
+                "visible":false
             },
             {
                 "name":"createTime",
@@ -32,7 +33,8 @@
                 "access":100,
                 "since":1,
                 "label":"Create Time",
-                "rank":2
+                "rank":2,
+                "visible":false
             },
             {
                 "name":"tenant",
@@ -45,7 +47,8 @@
                 "access":100,
                 "since":1,
                 "label":"Tenant",
-                "rank":3
+                "rank":3,
+                "visible":false
             },
             {
                 "name":"version",
@@ -58,7 +61,8 @@
                 "access":100,
                 "since":1,
                 "label":"Version",
-                "rank":4
+                "rank":4,
+                "visible":false
             }
         ]
     },
@@ -66,7 +70,8 @@
         "classMeta":{
             "name":"$String",
             "description":"String Class",
-            "since":1
+            "since":1,
+            "abstract":true
         },
         "fieldMetas":[
             {
@@ -92,6 +97,7 @@
                 "default":"None",
                 "required":false,
                 "supports":[
+                    "None",
                     "AES",
                     "XOR"
                 ]
@@ -102,7 +108,8 @@
         "classMeta":{
             "name":"$Number",
             "since":1,
-            "description":"Number Class"
+            "description":"Number Class",
+            "abstract":true
         },
         "fieldMetas":[
             {
@@ -137,7 +144,8 @@
         "classMeta":{
             "name":"$Date",
             "since":1,
-            "description":"Date Class"
+            "description":"Date Class",
+            "abstract":true
         },
         "fieldMetas":[
             {
@@ -156,7 +164,8 @@
         "classMeta":{
             "name":"$Boolean",
             "since":1,
-            "description":"Boolean Class"
+            "description":"Boolean Class",
+            "abstract":true
         },
         "fieldMetas":[
             
@@ -166,7 +175,8 @@
         "classMeta":{
             "name":"$Timestamp",
             "since":1,
-            "description":"Timestamp Class"
+            "description":"Timestamp Class",
+            "abstract":true
         },
         "fieldMetas":[
             
@@ -176,7 +186,8 @@
         "classMeta":{
             "name":"$Blob",
             "since":1,
-            "description":"Blob Class"
+            "description":"Blob Class",
+            "abstract":true
         },
         "fieldMetas":[
             {
@@ -191,7 +202,8 @@
         "classMeta":{
             "name":"$Enum",
             "since":1,
-            "description":"Enum Class"
+            "description":"Enum Class",
+            "abstract":true
         },
         "fieldMetas":[
             {
@@ -208,7 +220,8 @@
         "classMeta":{
             "name":"$Json",
             "since":1,
-            "description":"JSON Class"
+            "description":"JSON Class",
+            "abstract":true
         },
         "fieldMetas":[
             

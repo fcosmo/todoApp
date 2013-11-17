@@ -1,4 +1,7 @@
-
+1) add List to paramter names that has manu
+2) change the hasMany back
+3) change class to entity
+4) think better name for abstract
 
 Top Level:
     
@@ -16,7 +19,8 @@ Top Level:
             ::= <digit>
         label: the UI display label for this class.
             ::= <string>
-
+        abstract: indicate the class is abstract. i.e super/abstract/primitive classes
+            ::= <boolean>
 
 
     fieldMetas:
@@ -47,4 +51,6 @@ Top Level:
             ::= <string>
         rank: the displaying rank of this field.
             ::= <integer> 
+        visible: is field visible.
+            ::= <boolean>
 

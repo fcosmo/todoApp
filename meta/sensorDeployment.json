@@ -19,7 +19,8 @@
             "access":100,
             "since":1,
             "label":"Title",
-            "rank":5
+            "rank":5,
+            "visible":true
         },
         {
             "name":"timed",
@@ -32,10 +33,11 @@
             "access":100,
             "since":1,
             "label":"Timed",
-            "rank":6
+            "rank":6,
+            "visible":true
         },
         {
-            "name":"Parameter",
+            "name":"parameter",
             "description":"The parameter of this Sensor Deployment",
             "class":"Parameter",
             "required":true,
@@ -45,7 +47,8 @@
             "access":100,
             "since":1,
             "label":"Parameter",
-            "rank":7
+            "rank":7,
+            "visible":true
         },
         {
             "name":"unit",
@@ -58,7 +61,8 @@
             "access":100,
             "since":1,
             "label":"Unit",
-            "rank":6
+            "rank":6,
+            "visible":true
         },
         {
             "name":"dimension",
@@ -71,7 +75,8 @@
             "access":100,
             "since":1,
             "label":"Dimension",
-            "rank":7
+            "rank":7,
+            "visible":true
         }
     ]
 }

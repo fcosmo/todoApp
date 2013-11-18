@@ -11,7 +11,7 @@
         {
             "name":"direction",
             "description":"The direction of this Parameter Interaction",
-            "class":"$String(2048)",
+            "type":"$String(2048)",
             "required":true,
             "unique":false,
             "default":null,
@@ -25,7 +25,7 @@
         {
             "name":"subsystem",
             "description":"The SubSystem of the Parameter Interaction",
-            "class":"SubSystem",
+            "type":"SubSystem",
             "required":true,
             "unique":false,
             "default":null,
@@ -39,7 +39,7 @@
         {
             "name":"parameter",
             "description":"The parameter of the Parameter Interaction",
-            "class":"Parameter",
+            "type":"Parameter",
             "required":true,
             "unique":false,
             "default":null,

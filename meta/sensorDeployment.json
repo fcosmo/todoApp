@@ -11,7 +11,7 @@
         {
             "name":"title",
             "description":"The title of this Sensor Deployment",
-            "class":"$String(2048)",
+            "type":"$String(2048)",
             "required":true,
             "unique":false,
             "default":null,
@@ -25,7 +25,7 @@
         {
             "name":"timed",
             "description":"Is this Sensor Deployment timed",
-            "class":"$Boolean",
+            "type":"$Boolean",
             "required":true,
             "unique":false,
             "default":null,
@@ -39,7 +39,7 @@
         {
             "name":"parameter",
             "description":"The parameter of this Sensor Deployment",
-            "class":"Parameter",
+            "type":"Parameter",
             "required":true,
             "unique":false,
             "default":null,
@@ -53,7 +53,7 @@
         {
             "name":"unit",
             "description":"The unit of this Sensor Deployment",
-            "class":"Unit",
+            "type":"Unit",
             "required":true,
             "unique":false,
             "default":null,
@@ -67,7 +67,7 @@
         {
             "name":"dimension",
             "description":"The Dimension of the Sensor Deployment",
-            "class":"Dimension",
+            "type":"Dimension",
             "required":true,
             "unique":false,
             "default":null,

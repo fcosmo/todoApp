@@ -65,7 +65,7 @@ classes.Base = Backbone.RelationalModel.extend({
 	
 	labelForFieldMeta : function (fieldName){		
 		var meta = this.meta();
-		return meta.fieldMetaMap[fieldName]["class"].entityMeta.label;
+		return meta.fieldMetaMap[fieldName].type.entityMeta.label;
 	}
 	
 	
@@ -371,7 +371,7 @@ controllers.SideBarCtrl = function (tercelServiceProviderPromise, $q, $scope) {
 					metas[metaName].fieldMetaMap = {};
 					for (var i = 0; i < fieldMetas.length; i++) {
 						var fieldMeta = fieldMetas[i];
-						var fieldMetaClass = fieldMeta['class'];
+						var fieldMetaClass = fieldMeta.type;
 						
 							// since fieldMeta share same reference to the class, so if it hasn't be converted (i.e. still a string) then do conversion
 						if (typeof fieldMetaClass === "string") {						
@@ -379,11 +379,11 @@ controllers.SideBarCtrl = function (tercelServiceProviderPromise, $q, $scope) {
 								// note. for primitive we should create new instance, with different parameter value, for now one global
 							if (fieldMetaClass.charAt(0) == '$') {
 								fieldMetaClass = fieldMetaClass.split('(')[0];
-								fieldMetas[i]['class'] = metas[fieldMetaClass];							
+								fieldMetas[i].type = metas[fieldMetaClass];							
 							}
 							else {
 								// else it's regular class, point to same global value
-								fieldMetas[i]['class'] = metas[fieldMetaClass];														
+								fieldMetas[i].type = metas[fieldMetaClass];														
 							}
 						}		
 						
@@ -400,7 +400,7 @@ controllers.SideBarCtrl = function (tercelServiceProviderPromise, $q, $scope) {
 					
 					var meta = metas[metaName];
 					
-					if (meta['entityMeta']['abstract']) {
+					if (meta.entityMeta['abstract']) {
 						continue;
 					}					
 					
@@ -419,11 +419,11 @@ controllers.SideBarCtrl = function (tercelServiceProviderPromise, $q, $scope) {
 							
 							var fieldMeta = meta.fieldMetas[i];
 							
-							if (!fieldMeta['class']['entityMeta']['abstract']) {
+							if (!fieldMeta.type.entityMeta['abstract']) {
 								var aRelation = {
 									type: fieldMeta.hasMany ? Backbone.HasMany : Backbone.HasOne,
 									key: fieldMeta.name,
-									relatedModel : 'classes.' + fieldMeta['class'].entityMeta.name
+									relatedModel : 'classes.' + fieldMeta.type.entityMeta.name
 								}
 								
 								relations.push(aRelation);
@@ -450,7 +450,7 @@ controllers.SideBarCtrl = function (tercelServiceProviderPromise, $q, $scope) {
 
 				
 				$scope.metas = metas;
-				$scope['classes'] = classes;
+				$scope.classes = classes;
 				
 				
 				console.log('done metas');

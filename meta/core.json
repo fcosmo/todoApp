@@ -11,7 +11,7 @@
             {
                 "name":"id",
                 "description":"Unique id of this object",
-                "class":"$String(128)",
+                "type":"$String(128)",
                 "required":true,
                 "unique":true,
                 "default":null,
@@ -25,7 +25,7 @@
             {
                 "name":"createTime",
                 "description":"Time in millisecond when object is created since epoc",
-                "class":"$Timestamp",
+                "type":"$Timestamp",
                 "required":true,
                 "unique":false,
                 "default":-1,
@@ -39,7 +39,7 @@
             {
                 "name":"tenant",
                 "description":"The tenant in which this object belongs to",
-                "class":"$Number",
+                "type":"$Number",
                 "required":true,
                 "unique":false,
                 "default":-1,
@@ -53,7 +53,7 @@
             {
                 "name":"version",
                 "description":"The version at which this object is created",
-                "class":"$Number",
+                "type":"$Number",
                 "required":true,
                 "unique":false,
                 "default":-1,

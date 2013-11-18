@@ -11,7 +11,7 @@
         {
             "name":"title",
             "description":"The title of this Fleet",
-            "class":"$String(2048)",
+            "type":"$String(2048)",
             "required":true,
             "unique":false,
             "default":null,

@@ -11,7 +11,7 @@
         {
             "name":"title",
             "description":"The title of this Component Deployment",
-            "class":"$String(2048)",
+            "type":"$String(2048)",
             "required":true,
             "unique":false,
             "default":null,
@@ -25,7 +25,7 @@
         {
             "name":"unit",
             "description":"The unit of the Component Deployment",
-            "class":"Unit",
+            "type":"Unit",
             "required":true,
             "unique":false,
             "default":null,
@@ -39,7 +39,7 @@
         {
             "name":"subsystem",
             "description":"The SubSystem of the Component Deployment",
-            "class":"SubSystem",
+            "type":"SubSystem",
             "required":true,
             "unique":false,
             "default":null,
@@ -53,7 +53,7 @@
        {
             "name":"test",
             "description":"The SubSystem of the Component Deployment",
-            "class":"$String",
+            "type":"$String",
             "required":true,
             "unique":false,
             "default":"Hello",

@@ -6,7 +6,6 @@ var classes = {};
 
 
 
-
 classes.Base = Backbone.RelationalModel.extend({
 	
 	isRelation : function (field) {
@@ -42,30 +41,6 @@ classes.Base = Backbone.RelationalModel.extend({
 				
 		return "Null"
 		
-	},
-	
-	fieldNames : function () {
-		
-			// XXX jwang - do this when create meta - cache it!
-		var meta = this.meta();
-		var fieldMetas = meta.fieldMetas;
-		
-		fieldMetas = _.reject(fieldMetas, function (aFieldMeta) {
-			return aFieldMeta.visible == false;
-		});		
-		
-		fieldMetas = _.sortBy(fieldMetas, function (aFieldMeta) {
-			return aFieldMeta.rank;
-		});
-					
-		var fieldNames = _.pluck(fieldMetas, "name");
-		
-		return fieldNames;		
-	},
-	
-	labelForFieldMeta : function (fieldName){		
-		var meta = this.meta();
-		return meta.fieldMetaMap[fieldName].type.entityMeta.label;
 	}
 	
 	
@@ -226,9 +201,7 @@ controllers.SideBarCtrl = function (tercelServiceProviderPromise, $q, $scope) {
 				selectedModelList.push(entry);
 				
 			}
-			
-			
-		
+
 		
 		$scope.selectedModels = selectedModelList;
 		$scope.selectedMetaName = fieldMeta.entityMeta;		
@@ -254,6 +227,7 @@ controllers.SideBarCtrl = function (tercelServiceProviderPromise, $q, $scope) {
 		var scope = $scope;
 		var theClass = $scope['classes'][$scope.selectedMetaName];
 		var meta = theClass.meta();
+		var test = meta.fieldNames();
 		return meta;
 	}
 		
@@ -432,6 +406,44 @@ controllers.SideBarCtrl = function (tercelServiceProviderPromise, $q, $scope) {
 						
 						var relationalModel = classes.Base.extend({"relations":relations,"defaults":defaults});
 						
+						
+							// meta static util functions	
+						
+						
+							// return fieldNames that are visible and in ranking order
+						meta.fieldNames = (function () {
+								// self-caching
+							var fieldNames = null;								
+							return function () {									
+								if (fieldNames == null) {
+									var fieldMetas = this.fieldMetas;
+									
+									fieldMetas = _.reject(fieldMetas, function (aFieldMeta) {
+										return aFieldMeta.visible == false;
+									});		
+									
+									fieldMetas = _.sortBy(fieldMetas, function (aFieldMeta) {
+										return aFieldMeta.rank;
+									});
+												
+									fieldNames = _.pluck(fieldMetas, "name");									
+								}																						
+								return fieldNames;		
+							}
+							
+						})();
+						
+					
+							// label for fields
+						meta.labelForFieldMeta = function (fieldName) {		
+							var fieldEntityTypeLabel = this.fieldMetaMap[fieldName].type.entityMeta.label;
+							var fieldLabel = this.fieldMetaMap[fieldName].label;
+							//return this.fieldMetaMap[fieldName].type.entityMeta.label;
+							return fieldLabel;
+						};
+						
+				
+
 							// make both class and instance to have method meta
 						relationalModel.prototype.meta = function () {
 							return meta;

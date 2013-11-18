@@ -47,7 +47,7 @@
             "final":true,
             "access":100,
             "since":1,
-            "label":"Fleet Equipments",
+            "label":"Fleet Equipment",
             "rank":7,
             "visible":true
         },
@@ -62,8 +62,8 @@
             "final":true,
             "access":100,
             "since":1,
-            "label":"Sensor Deployments ",
-            "rank":8,
+            "label":"Sensor Deployment",
+            "rank":1,
             "visible":true
         },
         {
@@ -77,9 +77,9 @@
             "final":true,
             "access":100,
             "since":1,
-            "label":"Component Deployments",
+            "label":"Component Deployment",
             "rank":9,
             "visible":true
-        }
+        }         
     ]
 }

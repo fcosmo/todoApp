@@ -49,20 +49,6 @@
             "label":"SubSystem",
             "rank":7,
             "visible":true
-        },
-       {
-            "name":"test",
-            "description":"The SubSystem of the Component Deployment",
-            "type":"$String",
-            "required":true,
-            "unique":false,
-            "default":"Hello",
-            "final":true,
-            "access":100,
-            "since":1,
-            "label":"Hello",
-            "rank":8,
-            "visible":true
-        }        
+        } 
     ]
 }

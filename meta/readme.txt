@@ -26,7 +26,7 @@ Top Level:
             ::= <string>        
         hasMany: indicates the field is a oneToMany relationship. 
             ::= "forward" | "backward" | "bidirectional"
-        class: the type of class of this field.
+        type: the type of class of this field.
             ::= <string>
         required: is this field required.
             ::= <boolean>    

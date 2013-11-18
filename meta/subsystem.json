@@ -33,7 +33,7 @@
             "final":true,
             "access":100,
             "since":1,
-            "label":"System",
+            "label":"Component Deployment",
             "rank":6,
             "visible":true
         },
@@ -48,7 +48,7 @@
             "final":true,
             "access":100,
             "since":1,
-            "label":"ParameterInteraction",
+            "label":"Parameter Interaction",
             "rank":7,
             "visible":true
         },

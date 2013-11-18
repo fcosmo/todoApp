@@ -52,7 +52,7 @@
             },
             {
                 "name":"version",
-                "description":"The version at which this object is created",
+                "description":"The current version of this entity",
                 "type":"$Number",
                 "required":true,
                 "unique":false,

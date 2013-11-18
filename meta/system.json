@@ -37,7 +37,7 @@
             "visible":true
         },
         {
-            "name":"subsytemList",
+            "name":"subsystemList",
             "description":"The subSystem of this System",
             "hasMany":"bidirectional",
             "type":"SubSystem",

@@ -24,7 +24,7 @@
             },
             {
                 "name":"createTime",
-                "description":"Time in millisecond when object is created since epoc",
+                "description":"Time in millisecond when object is created",
                 "type":"$Timestamp",
                 "required":true,
                 "unique":false,

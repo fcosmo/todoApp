@@ -2,48 +2,48 @@ Top Level:
     
     entityMeta:
 
-        name: the name of this entity. Capitalized with CamelCase. 
+        name: The name of this entity. Capitalized with Camel Case. 
             ::= <string>
-        description: the description of this class.
+        description: The description of this entity.
             ::= <string>
-        inherits: the super class in which this class inherits from.
-            ::= <class>
-        access: the access level of this class, for 0 being lowest. 
+        inherits: The parent entity in which this entity inherits from if any.
+            ::= <entity>
+        access: The access level of this entity, for 0 being lowest. 
             ::= <digit>         
-        since: which version at which this class is introduced. 
+        since: Which version at which this entity is introduced. 
             ::= <digit>
-        label: the UI display label for this class.
+        label: The UI display label for this entity.
             ::= <string>
-        abstract: indicate the class is abstract. i.e. super/abstract/primitive classes.
+        abstract: Indicates if this entity is abstract. For example parent entities and abstract entities are abstract entities.
             ::= <boolean>
 
 
     fieldMetas:
 
-        name: the name of this field. Lowercase with CamelCase. Append suffix "List" for hasMany relation fields
+        name: The name of this field. Lowercase with CamelCase.  Carries suffix "List" for "hasMany" relation fields.
             ::= <string>
-        description: the description of this field.
+        description: The description of this field.
             ::= <string>        
-        hasMany: indicates the field is a oneToMany relationship. 
-            ::= "forward" | "backward" | "bidirectional"
-        type: the type of class of this field.
+        hasMany: When present, indicates the field has oneToMany relationship. The value is used accordingly externally. 
+            ::= "forward" | "backward" | "bidirectional" 
+        type: The type of entity for this field.
             ::= <string>
-        required: is this field required.
+        required: Indicates if this field required.
             ::= <boolean>    
-        unique: is the value unique 
+        unique:  Indicates if this value unique. 
             ::= <boolean>
-        default: default value of this field. ie. number:-1, string:"", array:[], reference:null, object:{}, boolean:false
+        default: The default value of this field. ie. number:-1, string:"", array:[], reference:null, object:{}, boolean:false
             ::=  <boolean> | <digits> | <string> | "[]" | "null" | "{}" 
-        final: is the field value final once created. 
+        final: Indicates if this field value final once created. i.e. readOnly.
             ::= <boolean>
-        access: access level of this field, for 0 being lowest.
+        access: The access level of this field, for 0 being lowest.
             ::= <integer>
-        since: the version this field is introduced.
+        since: The version at which this field is introduced.
             ::= <integer>
-        label: the UI display label for this field.
+        label: The UI display label for this field.
             ::= <string>
-        rank: the displaying rank of this field.
+        rank: The displaying rank of this field.
             ::= <integer> 
-        visible: is this field visible.
+        visible: Indicate if this field is visible.
             ::= <boolean>
 

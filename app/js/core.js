@@ -1,4 +1,4 @@
-
+'use strict';
 
 var classes = {};
 
@@ -217,7 +217,6 @@ var modelService = function (data) {
 			var className = cap(key);
 			var theClass = classes[className];
 			var theAttributesList = data[i][key];
-
 			var instanceCollection = [];
 
 			for (var j = 0; j < theAttributesList.length; j++) {

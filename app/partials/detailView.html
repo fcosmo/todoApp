@@ -2,11 +2,11 @@
 <table class="entityTable">
     <tr class="entityTableHeader">
         <td ng-repeat="fieldName in selectedClass().fieldNames()">
-            <div title="{{'asdfds'}}>">{{selectedClass().labelForFieldMeta(fieldName)}}</div>
+            <div title="{{selectedClass().fieldMetaMap[fieldName].description}}">{{selectedClass().fieldMetaMap[fieldName].label}}</div>
         </td>
     </tr>
-    <tr class="entityTableRow" ng-repeat="model in selectedModel()">
-        <td ng-repeat="fieldName in model.meta().fieldNames() track by $index">
+    <tr class="entityTableRow" ng-repeat="model in selectedModel() | limitTo:20">
+        <td ng-repeat="fieldName in model.meta().fieldNames() track by $index ">
             <div ng-switch on="model.typeOf(fieldName)">
                 <div ng-switch-when="HasOne" ng-click="sidebar.clickField(model, fieldName)"><a href="#">{{model.attributes[fieldName].attributes.title}}</a></div>
                 <div ng-switch-when="Value">{{model.attributes[fieldName]}}</div>                

@@ -20,11 +20,11 @@ Top Level:
 
     fieldMetas:
 
-        name: The name of this field. Lowercase with CamelCase.  Carries suffix "List" for "hasMany" relation fields.
+        name: The name of this field. Lowercase with CamelCase. (ie theField).  Carries suffix "List" for "hasMany" relation fields. (ie theFieldList). 
             ::= <string>
         description: The description of this field.
             ::= <string>        
-        hasMany: When present, indicates the field has oneToMany relationship. The value is used accordingly externally. 
+        hasMany: When present, indicates the field has oneToMany relationship.  
             ::= "forward" | "backward" | "bidirectional" 
         type: The type of entity for this field.
             ::= <string>

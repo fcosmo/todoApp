@@ -1,8 +1,8 @@
 {
     "entityMeta":{
         "name":"System",
-        "description":"The System Class",
-        "inherits":"BaseObject",
+        "description":"The System Entity",
+        "inherits":"BaseEntity",
         "since":1,
         "access":100,
         "label":"System"

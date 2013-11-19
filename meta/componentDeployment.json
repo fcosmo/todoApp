@@ -1,8 +1,8 @@
 {
     "entityMeta":{
         "name":"ComponentDeployment",
-        "description":"The Component Deployment Class",
-        "inherits":"BaseObject",
+        "description":"The Component Deployment Entity",
+        "inherits":"BaseEntity",
         "since":1,
         "access":100,
         "label":"Component Deployment"

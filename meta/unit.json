@@ -1,8 +1,8 @@
 {
     "entityMeta":{
         "name":"Unit",
-        "description":"The Unit Class",
-        "inherits":"BaseObject",
+        "description":"The Unit Entity",
+        "inherits":"BaseEntity",
         "since":1,
         "access":100,
         "label":"Unit"

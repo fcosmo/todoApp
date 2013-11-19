@@ -1,8 +1,8 @@
 {
     "entityMeta":{
         "name":"PhysicalQuantity",
-        "description":"Physical Quantity Class",
-        "inherits":"BaseObject",
+        "description":"Physical Quantity Entity",
+        "inherits":"BaseEntity",
         "since":1,
         "access":100,
         "label":"Physical Quantity"

@@ -1,8 +1,8 @@
 [
     {
         "entityMeta":{
-            "name":"BaseObject",
-            "description":"Base Class",
+            "name":"BaseEntity",
+            "description":"Base Entity",
             "since":1,
             "access":100,
             "abstract":true

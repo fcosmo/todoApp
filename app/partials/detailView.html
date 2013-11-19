@@ -8,7 +8,7 @@
     <tr class="entityTableRow" ng-repeat="model in selectedModel()">
         <td ng-repeat="fieldName in model.meta().fieldNames() track by $index">
             <div ng-switch on="model.typeOf(fieldName)">
-                <div ng-switch-when="HasOne" ng-click="clickField(model, fieldName)"><a href="#">{{model.attributes[fieldName].attributes.title}}</a></div>
+                <div ng-switch-when="HasOne" ng-click="sidebar.clickField(model, fieldName)"><a href="#">{{model.attributes[fieldName].attributes.title}}</a></div>
                 <div ng-switch-when="Value">{{model.attributes[fieldName]}}</div>                
                 <div ng-switch-when="HasMany" ng-click="clickFieldList(model, fieldName)"><a href="#">{{model.attributes[fieldName].length + ' ' + model.meta().labelForFieldMeta(fieldName)}}</a></div>
                 <div ng-switch-when="Null">{{'Null'}}</div>                

@@ -1,8 +1,8 @@
 {
     "entityMeta":{
         "name":"Parameter",
-        "description":"The Parameter Class",
-        "inherits":"BaseObject",
+        "description":"The Parameter Entity",
+        "inherits":"BaseEntity",
         "since":1,
         "access":100,
         "label":"Parameter"
@@ -74,7 +74,7 @@
             "final":true,
             "access":100,
             "since":1,
-            "label":"PhysicalQuantity",
+            "label":"Physical Quantity",
             "rank":7,
             "visible":true
         }

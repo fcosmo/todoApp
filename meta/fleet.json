@@ -1,8 +1,8 @@
 {
     "entityMeta":{
         "name":"Fleet",
-        "description":"The Fleet Class",
-        "inherits":"BaseObject",
+        "description":"The Fleet Entity",
+        "inherits":"BaseEntity",
         "since":1,
         "access":100,
         "label":"Fleet"

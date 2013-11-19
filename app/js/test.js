@@ -5,9 +5,9 @@
 
 var metas = {
 		
-		"BaseObject" : {
+		"BaseEntity" : {
 			"entityMeta": {
-				"name":"BaseObject",
+				"name":"BaseEntity",
 				"label":"Base Object"
 			},
 			
@@ -25,7 +25,7 @@ var metas = {
 			"entityMeta":{
 				"name":"ComponentDeployment",
 				"label":"Component Deployment",
-				"extend":"BaseObject"
+				"extend":"BaseEntity"
 			},
 			"fieldMetas":[
 				{	
@@ -183,9 +183,9 @@ var metas = {
 
 	
 	
-	var BaseObject = (function () {
+	var BaseEntity = (function () {
 		
-		function BaseObject () {
+		function BaseEntity () {
 			Object.defineProperties(this, {
 				id: {	
 					get : function () {
@@ -195,7 +195,7 @@ var metas = {
 			});			
 		}
 		
-		BaseObject.prototype.extend = function () {
+		BaseEntity.prototype.extend = function () {
 			
 			__extends (aFn, this.prototype);
 		
@@ -209,7 +209,7 @@ var metas = {
 		}
 	
 		
-		return BaseObject;
+		return BaseEntity;
 		
 	})();
 	
@@ -249,9 +249,9 @@ var metas = {
 	aDog = new Dog(4);
 	
 	//subclass extends superclass
-	//SomeSubClass.prototype = Object.create(BaseObject.prototype);		
+	//SomeSubClass.prototype = Object.create(BaseEntity.prototype);		
 	//SomeSubClass.prototype.constructor = SomeSubClass;				
-	//var aSomeSubClass = BaseObject.extend();
+	//var aSomeSubClass = BaseEntity.extend();
 	//alert(aSomeSubClass.id);
 	
 	

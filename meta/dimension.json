@@ -1,8 +1,8 @@
 {
     "entityMeta":{
         "name":"Dimension",
-        "description":"Dimension Class",
-        "inherits":"BaseObject",
+        "description":"Dimension Entity",
+        "inherits":"BaseEntity",
         "since":1,
         "access":100,
         "label":"Dimension"

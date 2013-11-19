@@ -1,8 +1,8 @@
 {
     "entityMeta":{
         "name":"SubSystem",
-        "description":"The SubSYstem Class",
-        "inherits":"BaseObject",
+        "description":"The SubSYstem Entity",
+        "inherits":"BaseEntity",
         "since":1,
         "access":100,
         "label":"SubSystem"

@@ -1,0 +1,44 @@
+<div ng-controller="EntityExplorerCtrl as EntityExplorerCtrl">
+<div class="col-md-3">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">Panel title</h3>
+    </div>
+    <div class="panel-body">
+      <button ng-click="EntityExplorerCtrl.loadMeta();EntityExplorerCtrl.loadData()">Load Entity Meta</button>
+      <ul class="list-group">
+        <li class="list-group-item" ng-repeat="(metaName, metaObject) in metas"><a href="#" title="{{metaObject.entityMeta.description}}" ng-click="EntityExplorerCtrl.selectMeta(metaName)">{{metaObject.entityMeta.label}}</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="col-md-9">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">Panel title</h3>
+    </div>  
+      <table class="table">
+        <tr class="entityTableHeader">
+          <th ng-repeat="fieldName in EntityExplorerCtrl.selectedMeta().fieldNames()">
+            <div title="{{EntityExplorerCtrl.selectedMeta().fieldMetaMap[fieldName].description}}">{{EntityExplorerCtrl.selectedMeta().fieldMetaMap[fieldName].label}}</div>
+          </th>
+        </tr>
+        <tr class="entityTableRow" ng-repeat="model in EntityExplorerCtrl.selectedModel() | limitTo:20">
+          <td ng-repeat="fieldName in model.meta().fieldNames() track by $index ">
+            <div ng-switch on="model.typeOf(fieldName)">
+              <div ng-switch-when="HasOne" ng-click="EntityExplorerCtrl.clickField(model, fieldName)">
+                <a href="#">{{model.attributes[fieldName].attributes.title}}</a>
+              </div>
+              <div ng-switch-when="Value">{{model.attributes[fieldName]}}</div>
+              <div ng-switch-when="HasMany" ng-click="EntityExplorerCtrl.clickFieldList(model, fieldName)">
+                <a href="#">{{model.attributes[fieldName].length + ' ' + model.meta().labelForFieldMeta(fieldName)}}</a>
+              </div>
+              <div ng-switch-when="Null">{{'Null'}}</div>
+              <div ng-switch-default>INVALID</div>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+</div>
+</div>

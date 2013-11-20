@@ -4,17 +4,61 @@
 
 var controllers = {};
 
-controllers.NavBarCtrl = function () {
-	this.home= function(){
-		alert("home");
-	};
-};
 
+controllers.PageCtrl = function (tercelServiceProviderPromise, $q, $scope) {
+	this.pageHeader = function () {
+		return '/app/partials/pageHeader.html';
+	}
+	
+	this.pageBody = function () {
+		return '/app/partials/pageBody.html';		
+	}	
+}
 
-controllers.SideBarCtrl = function (tercelServiceProviderPromise, $q, $scope) {
+controllers.TabCtrl = function ($scope) {
+			
+	this.tabTable = {
+		"explorer": {
+			"label":"Explorer",
+			"partialPage":"/app/partials/entityExplorer.html"			
+		},
+		"monitor": {
+			"label":"Monitor",
+			"partialPage":"/app/partials/entityMonitor.html"			
+		},
+		"editor": {
+			"label":"Editor",
+			"partialPage":"/app/partials/entityEditor.html"			
+		}
+			
+	}
+	
+	
+	this.tabKeys = function () {
+		return Object.keys(this.tabTable);
+	}
+	
+	this.isTabSelected = function (tabKey) {
+		return $scope.currentTabKey 
+			? $scope.currentTabKey === tabKey 
+			: "explorer" === tabKey;	
+	}
+	
+	this.clickTab = function (tabKey) {
+		$scope.currentTabKey = tabKey;
+	}	
+	
+	
+	this.tabContentPage = function () {		
+		return $scope.currentTabKey 
+			? this.tabTable[$scope.currentTabKey].partialPage 
+			: this.tabTable["explorer"].partialPage;
+	}
+	
+}
 
-
-
+controllers.EntityExplorerCtrl = function (tercelServiceProviderPromise, $q, $scope) {
+	
 	this.clickField = function (model, fieldName) {
 		var fieldMeta = model.meta().fieldMetaMap[fieldName];
 		var fieldModel = model.get(fieldName);
@@ -22,23 +66,15 @@ controllers.SideBarCtrl = function (tercelServiceProviderPromise, $q, $scope) {
 		$scope.selectedModels = [fieldModel];	
 	}
 
-	$scope.clickFieldList = function (model, fieldName) {		
+	this.clickFieldList = function (model, fieldName) {		
 		var fieldMeta = model.meta().fieldMetaMap[fieldName];
 		var fieldCollection = model.get(fieldName);
 		$scope.selectedMetaName = fieldMeta.type.entityMeta.name;		
 		$scope.selectedModels = fieldCollection.models;				
 	}	
 
-	$scope.selectedMeta = function () {
 
-		if (typeof $scope.selectedMetaName == "undefined") {
-			return "";
-		}		
-		return $scope.metas[$scope.selectedMetaName];
-	}
-
-
-	$scope.selectedClass = function () {
+	this.selectedMeta = function () {
 
 		if (typeof $scope.selectedMetaName === "undefined") {
 			return "";
@@ -51,14 +87,11 @@ controllers.SideBarCtrl = function (tercelServiceProviderPromise, $q, $scope) {
 	}
 
 
-
-	$scope.selectedModel = function () {
+	this.selectedModel = function () {
 		var selectedModels = $scope.selectedModels;
 		return selectedModels;
 	}	
 
-	// the model holders;
-	$scope.selectedModels = null;
 
 	this.selectMeta = function (metaName) {
 		$scope.models = $scope.models || {};
@@ -80,12 +113,6 @@ controllers.SideBarCtrl = function (tercelServiceProviderPromise, $q, $scope) {
 		}, function () { alert('unable to download')});	
 
 	}	
-
-
-	this.showSelectedMasterView = function () {	
-
-		return '/app/partials/detailView.html';
-	}
 
 
 	this.loadMeta = function (){
@@ -148,7 +175,20 @@ controllers.SideBarCtrl = function (tercelServiceProviderPromise, $q, $scope) {
 		        			alert('error !');
 		        		}
 		        );				
+	};			
+}
+
+controllers.PageHeaderCtrl = function (tercelServiceProviderPromise, $q, $scope) {
+	
+	this.home= function() {
+		alert("home");
 	};		
+}
+
+controllers.PageBodyCtrl = function (tercelServiceProviderPromise, $q, $scope) {
+
+
+
 
 };
 

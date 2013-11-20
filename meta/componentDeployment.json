@@ -5,7 +5,7 @@
         "inherits":"BaseEntity",
         "since":1,
         "access":100,
-        "label":"Component Deployment"
+        "label":"Component Deployment"        
     },
     "fieldMetas":[
         {

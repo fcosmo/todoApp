@@ -5,7 +5,7 @@
       <h3 class="panel-title">Panel title</h3>
     </div>
     <div class="panel-body">
-      <button ng-click="EntityExplorerCtrl.loadMeta();EntityExplorerCtrl.loadData()">Load Entity Meta</button>
+      <button ng-click="EntityExplorerCtrl.loadData()">Load Entity Data</button>
       <ul class="list-group">
         <li class="list-group-item" ng-repeat="(metaName, metaObject) in metas"><a href="#" title="{{metaObject.entityMeta.description}}" ng-click="EntityExplorerCtrl.selectMeta(metaName)">{{metaObject.entityMeta.label}}</a></li>
       </ul>

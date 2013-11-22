@@ -1,85 +1,93 @@
-{
-    "entityMeta":{
-        "name":"Unit",
-        "description":"The Unit Entity",
-        "inherits":"BaseEntity",
-        "since":1,
-        "access":100,
-        "label":"Unit"
-    },
-    "fieldMetas":[
-        {
-            "name":"title",
-            "description":"The title of this Unit",
-            "type":"$String(2048)",
-            "required":true,
-            "unique":false,
-            "default":null,
-            "final":true,
-            "access":100,
+[
+    {
+        "entityMeta":{
+            "name":"Unit",
+            "description":"The Unit Entity",
+            "inherits":"BaseEntity",
             "since":1,
-            "label":"Title",
-            "rank":5,
-            "visible":true
+            "access":100,
+            "label":"Unit"
         },
-        {
-            "name":"system",
-            "description":"The system of this Unit",
-            "type":"System",
-            "required":true,
-            "unique":false,
-            "default":null,
-            "final":true,
-            "access":100,
-            "since":1,
-            "label":"System",
-            "rank":6,
-            "visible":true
-        },
-        {
-            "name":"fleetEquipmentList",
-            "description":"The Fleet Equipments of this Unit",
-            "hasMany":"bidirectional",
-            "type":"FleetEquipment",
-            "required":true,
-            "unique":false,
-            "default":[],
-            "final":true,
-            "access":100,
-            "since":1,
-            "label":"Fleet Equipment",
-            "rank":7,
-            "visible":true
-        },
-        {
-            "name":"sensorDeploymentList",
-            "description":"The Sensor Deployment of this Unit",
-            "hasMany":"bidirectional",
-            "type":"SensorDeployment",
-            "required":true,
-            "unique":false,
-            "default":[],
-            "final":true,
-            "access":100,
-            "since":1,
-            "label":"Sensor Deployment",
-            "rank":1,
-            "visible":true
-        },
-        {
-            "name":"componentDeploymentList",
-            "description":"The Component Deployment of this Unit",
-            "hasMany":"bidirectional",
-            "type":"ComponentDeployment",
-            "required":true,
-            "unique":false,
-            "default":[],
-            "final":true,
-            "access":100,
-            "since":1,
-            "label":"Component Deployment",
-            "rank":9,
-            "visible":true
-        }         
-    ]
-}
+        "fieldMetas":[
+            {
+                "name":"title",
+                "description":"The title of this Unit",
+                "type":"$String(2048)",
+                "required":true,
+                "unique":false,
+                "default":null,
+                "final":true,
+                "access":100,
+                "since":1,
+                "label":"Title",
+                "rank":5,
+                "visible":true
+            },
+            {
+                "name":"system",
+                "description":"The system of this Unit",
+                "type":"System",
+                "required":true,
+                "unique":false,
+                "default":null,
+                "final":true,
+                "access":100,
+                "since":1,
+                "label":"System",
+                "rank":6,
+                "visible":true
+            },
+            {
+                "name":"fleetEquipmentList",
+                "description":"The Fleet Equipments of this Unit",
+                "hasMany":"bidirectional",
+                "type":"FleetEquipment",
+                "required":true,
+                "unique":false,
+                "default":[
+                    
+                ],
+                "final":true,
+                "access":100,
+                "since":1,
+                "label":"Fleet Equipment",
+                "rank":7,
+                "visible":true
+            },
+            {
+                "name":"sensorDeploymentList",
+                "description":"The Sensor Deployment of this Unit",
+                "hasMany":"bidirectional",
+                "type":"SensorDeployment",
+                "required":true,
+                "unique":false,
+                "default":[
+                    
+                ],
+                "final":true,
+                "access":100,
+                "since":1,
+                "label":"Sensor Deployment",
+                "rank":1,
+                "visible":true
+            },
+            {
+                "name":"componentDeploymentList",
+                "description":"The Component Deployment of this Unit",
+                "hasMany":"bidirectional",
+                "type":"ComponentDeployment",
+                "required":true,
+                "unique":false,
+                "default":[
+                    
+                ],
+                "final":true,
+                "access":100,
+                "since":1,
+                "label":"Component Deployment",
+                "rank":9,
+                "visible":true
+            }
+        ]
+    }
+]

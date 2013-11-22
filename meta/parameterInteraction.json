@@ -1,54 +1,56 @@
-{
-    "entityMeta":{
-        "name":"ParameterInteraction",
-        "description":"The Parameter Interaction Entity",
-        "inherits":"BaseEntity",
-        "since":1,
-        "access":100,
-        "label":"Parameter Interaction"
-    },
-    "fieldMetas":[
-        {
-            "name":"direction",
-            "description":"The direction of this Parameter Interaction",
-            "type":"$String(2048)",
-            "required":true,
-            "unique":false,
-            "default":null,
-            "final":true,
-            "access":100,
+[
+    {
+        "entityMeta":{
+            "name":"ParameterInteraction",
+            "description":"The Parameter Interaction Entity",
+            "inherits":"BaseEntity",
             "since":1,
-            "label":"Direction",
-            "rank":7,
-            "visible":true
+            "access":100,
+            "label":"Parameter Interaction"
         },
-        {
-            "name":"subsystem",
-            "description":"The SubSystem of the Parameter Interaction",
-            "type":"SubSystem",
-            "required":true,
-            "unique":false,
-            "default":null,
-            "final":true,
-            "access":100,
-            "since":1,
-            "label":"SubSystem",
-            "rank":5,
-            "visible":true
-        },
-        {
-            "name":"parameter",
-            "description":"The parameter of the Parameter Interaction",
-            "type":"Parameter",
-            "required":true,
-            "unique":false,
-            "default":null,
-            "final":true,
-            "access":100,
-            "since":1,
-            "label":"Parameter",
-            "rank":6,
-            "visible":true
-        }
-    ]
-}
+        "fieldMetas":[
+            {
+                "name":"direction",
+                "description":"The direction of this Parameter Interaction",
+                "type":"$String(2048)",
+                "required":true,
+                "unique":false,
+                "default":null,
+                "final":true,
+                "access":100,
+                "since":1,
+                "label":"Direction",
+                "rank":7,
+                "visible":true
+            },
+            {
+                "name":"subsystem",
+                "description":"The SubSystem of the Parameter Interaction",
+                "type":"SubSystem",
+                "required":true,
+                "unique":false,
+                "default":null,
+                "final":true,
+                "access":100,
+                "since":1,
+                "label":"SubSystem",
+                "rank":5,
+                "visible":true
+            },
+            {
+                "name":"parameter",
+                "description":"The parameter of the Parameter Interaction",
+                "type":"Parameter",
+                "required":true,
+                "unique":false,
+                "default":null,
+                "final":true,
+                "access":100,
+                "since":1,
+                "label":"Parameter",
+                "rank":6,
+                "visible":true
+            }
+        ]
+    }
+]

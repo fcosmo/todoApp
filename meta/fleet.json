@@ -1,26 +1,28 @@
-{
-    "entityMeta":{
-        "name":"Fleet",
-        "description":"The Fleet Entity",
-        "inherits":"BaseEntity",
-        "since":1,
-        "access":100,
-        "label":"Fleet"
-    },
-    "fieldMetas":[
-        {
-            "name":"title",
-            "description":"The title of this Fleet",
-            "type":"$String(2048)",
-            "required":true,
-            "unique":false,
-            "default":null,
-            "final":true,
-            "access":100,
+[
+    {
+        "entityMeta":{
+            "name":"Fleet",
+            "description":"The Fleet Entity",
+            "inherits":"BaseEntity",
             "since":1,
-            "label":"Title",
-            "rank":5,
-            "visible":true
-        }
-    ]
-}
+            "access":100,
+            "label":"Fleet"
+        },
+        "fieldMetas":[
+            {
+                "name":"title",
+                "description":"The title of this Fleet",
+                "type":"$String(2048)",
+                "required":true,
+                "unique":false,
+                "default":null,
+                "final":true,
+                "access":100,
+                "since":1,
+                "label":"Title",
+                "rank":5,
+                "visible":true
+            }
+        ]
+    }
+]

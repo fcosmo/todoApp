@@ -1,85 +1,93 @@
-{
-    "entityMeta":{
-        "name":"System",
-        "description":"The System Entity",
-        "inherits":"BaseEntity",
-        "since":1,
-        "access":100,
-        "label":"System"
-    },
-    "fieldMetas":[
-        {
-            "name":"title",
-            "description":"The title of this System",
-            "type":"$String(2048)",
-            "required":true,
-            "unique":false,
-            "default":null,
-            "final":true,
-            "access":100,
+[
+    {
+        "entityMeta":{
+            "name":"System",
+            "description":"The System Entity",
+            "inherits":"BaseEntity",
             "since":1,
-            "label":"Title",
-            "rank":5,
-            "visible":true
+            "access":100,
+            "label":"System"
         },
-        {
-            "name":"key",
-            "description":"The key of this System",
-            "type":"$String(2048)",
-            "required":true,
-            "unique":false,
-            "default":null,
-            "final":true,
-            "access":100,
-            "since":1,
-            "label":"Key",
-            "rank":6,
-            "visible":true
-        },
-        {
-            "name":"subsystemList",
-            "description":"The subSystem of this System",
-            "hasMany":"bidirectional",
-            "type":"SubSystem",
-            "required":true,
-            "unique":false,
-            "default":[],
-            "final":true,
-            "access":100,
-            "since":1,
-            "label":"SubSystem",
-            "rank":7,
-            "visible":true
-        },
-        {
-            "name":"parameterList",
-            "description":"The Parameter of this System",
-            "hasMany":"bidirectional",
-            "type":"Parameter",
-            "required":true,
-            "unique":false,
-            "default":[],
-            "final":true,
-            "access":100,
-            "since":1,
-            "label":"Parameter",
-            "rank":8,
-            "visible":true
-        },
-        {
-            "name":"unitList",
-            "description":"The unit of this System",
-            "hasMany":"bidirectional",
-            "type":"Unit",
-            "required":true,
-            "unique":false,
-            "default":[],
-            "final":true,
-            "access":100,
-            "since":1,
-            "label":"Unit",
-            "rank":9,
-            "visible":true
-        }
-    ]
-}
+        "fieldMetas":[
+            {
+                "name":"title",
+                "description":"The title of this System",
+                "type":"$String(2048)",
+                "required":true,
+                "unique":false,
+                "default":null,
+                "final":true,
+                "access":100,
+                "since":1,
+                "label":"Title",
+                "rank":5,
+                "visible":true
+            },
+            {
+                "name":"key",
+                "description":"The key of this System",
+                "type":"$String(2048)",
+                "required":true,
+                "unique":false,
+                "default":null,
+                "final":true,
+                "access":100,
+                "since":1,
+                "label":"Key",
+                "rank":6,
+                "visible":true
+            },
+            {
+                "name":"subsystemList",
+                "description":"The subSystem of this System",
+                "hasMany":"bidirectional",
+                "type":"SubSystem",
+                "required":true,
+                "unique":false,
+                "default":[
+                    
+                ],
+                "final":true,
+                "access":100,
+                "since":1,
+                "label":"SubSystem",
+                "rank":7,
+                "visible":true
+            },
+            {
+                "name":"parameterList",
+                "description":"The Parameter of this System",
+                "hasMany":"bidirectional",
+                "type":"Parameter",
+                "required":true,
+                "unique":false,
+                "default":[
+                    
+                ],
+                "final":true,
+                "access":100,
+                "since":1,
+                "label":"Parameter",
+                "rank":8,
+                "visible":true
+            },
+            {
+                "name":"unitList",
+                "description":"The unit of this System",
+                "hasMany":"bidirectional",
+                "type":"Unit",
+                "required":true,
+                "unique":false,
+                "default":[
+                    
+                ],
+                "final":true,
+                "access":100,
+                "since":1,
+                "label":"Unit",
+                "rank":9,
+                "visible":true
+            }
+        ]
+    }
+]

@@ -124,9 +124,8 @@
                 "required":false,
                 "description":"the scale of the number",
                 "range":[
-                    "Default",
-                    "Base64",
-                    "URLEncode"
+                    0,
+                    15
                 ]
             },
             {

@@ -1,40 +1,42 @@
-{
-    "entityMeta":{
-        "name":"FleetEquipment",
-        "description":"The Fleet Equipment Entity",
-        "inherits":"BaseEntity",
-        "since":1,
-        "access":100,
-        "label":"Fleet Equipment"
-    },
-    "fieldMetas":[
-        {
-            "name":"fleet",
-            "description":"The fleet of this Fleet Equipment",
-            "type":"Fleet",
-            "required":true,
-            "unique":false,
-            "default":null,
-            "final":true,
-            "access":100,
+[
+    {
+        "entityMeta":{
+            "name":"FleetEquipment",
+            "description":"The Fleet Equipment Entity",
+            "inherits":"BaseEntity",
             "since":1,
-            "label":"Fleet",
-            "rank":5,
-            "visible":true
+            "access":100,
+            "label":"Fleet Equipment"
         },
-        {
-            "name":"unit",
-            "description":"The unit of the Fleet Equipment",
-            "type":"Unit",
-            "required":true,
-            "unique":false,
-            "default":null,
-            "final":true,
-            "access":100,
-            "since":1,
-            "label":"Unit",
-            "rank":6,
-            "visible":true
-        }
-    ]
-}
+        "fieldMetas":[
+            {
+                "name":"fleet",
+                "description":"The fleet of this Fleet Equipment",
+                "type":"Fleet",
+                "required":true,
+                "unique":false,
+                "default":null,
+                "final":true,
+                "access":100,
+                "since":1,
+                "label":"Fleet",
+                "rank":5,
+                "visible":true
+            },
+            {
+                "name":"unit",
+                "description":"The unit of the Fleet Equipment",
+                "type":"Unit",
+                "required":true,
+                "unique":false,
+                "default":null,
+                "final":true,
+                "access":100,
+                "since":1,
+                "label":"Unit",
+                "rank":6,
+                "visible":true
+            }
+        ]
+    }
+]

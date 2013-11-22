@@ -1,4 +1,4 @@
-Top Level:
+#Top Level:
     
     entityMeta:
 
@@ -14,7 +14,7 @@ Top Level:
             ::= <digit>
         label: The UI display label for this entity.
             ::= <string>
-        abstract: Indicates if this entity is abstract. For example parent entities and abstract entities are abstract entities.
+        abstract: Indicates if this entity is abstract. For example Abstract, Base or Primitive entities are abstract entities.
             ::= <boolean>
 
 
@@ -28,9 +28,9 @@ Top Level:
             ::= "forward" | "backward" | "bidirectional" 
         type: The type of entity for this field.
             ::= <string>
-        required: Indicates if this field required.
+        required: Indicates if this field is required.
             ::= <boolean>    
-        unique:  Indicates if this value unique. 
+        unique:  Indicates if this value is unique. 
             ::= <boolean>
         default: The default value of this field. ie. number:-1, string:"", array:[], reference:null, object:{}, boolean:false
             ::=  <boolean> | <digits> | <string> | "[]" | "null" | "{}" 

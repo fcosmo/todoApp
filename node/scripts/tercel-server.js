@@ -1,31 +1,123 @@
 #!/usr/bin/env node
 
 var util = require('util'),
+assert = require('assert'),
 http = require('http'),
 fs = require('fs'),
 url = require('url'),
-events = require('events');
-
-
-var _ = require('underscore')._,
-Backbone = require('backbone');
-require('backbone-relational');	
-//require(process.cwd() + '/app/js/core.js');
-
-var classes = {};
-classes.Base = Backbone.RelationalModel.extend({
-});
-
-
-console.log('awesome');
+events = require('events'),
+_ = require('underscore'),
+backbone = require('backbone'),
+q = require('q'),
+qfs = require("q-io/fs"),
+core = require('core');
 
 
 
-/*
-require(process.cwd() + '/app/js/util.js');
-require(process.cwd() + '/app/lib/backbone/backbone.js');
-require(process.cwd() + '/app/lib/backbone-relational/backbone-relational.js');
-*/
+function loadMeta (doneFn) {
+	// load Meta
+	fs.readdir("./meta/", function (err, files) {
+		if (err) {
+			console.error(err);
+			return;
+		}
+
+		var reads = [];
+		for (var i = 0; i < files.length; i++) {
+			var file = files[i];
+			reads.push(qfs.read("./meta/" + files[i], "r"));
+		}
+
+		q.all(reads).then(
+				function (contentList) { 
+					core.metaFileList = [];
+					core.metaJsonList =[];
+					contentList.forEach(function (content) {
+						try {
+							if (content.charAt(0) === '#') {
+								return true;
+							}
+							var data = JSON.parse(content);
+							core.metaJsonList.push(data);
+							core.metaFileList.push(content);
+						}
+						catch (err) {
+							console.log("skipping" + content);
+						}
+					})	        		
+					core.metaService(core.metaJsonList);	
+					
+					core.metaFileList = "[" +  core.metaFileList.join(",") + "]";
+
+					for (var key in core.metas) {
+						var aMeta = core.metas[key];
+						console.log("Loaded Entity: " + aMeta.entityMeta.name);
+					}  
+					
+					
+					doneFn();
+				},
+
+				function (error) {
+					alert('error !');
+				}
+		);		
+	})
+}
+
+
+function loadData () {
+
+	
+	backbone.Relational.store.addModelScope(core.classes);
+		
+	// load sample data
+	fs.readdir("./data/", function (err, files) {
+		
+		
+		
+		if (err) {
+			console.error(err);
+			return;
+		}
+
+		var reads = [];
+		for (var i = 0; i < files.length; i++) {
+			var file = files[i];
+			reads.push(qfs.read("./data/" + files[i], "r"));
+		}
+
+		q.all(reads).then(
+				function (contentList) { 
+					dataJsonList =[];
+					contentList.forEach(function (content) {
+						try {
+							if (content.charAt(0) === '#') {
+								return true;
+							}
+							var data = JSON.parse(content);
+							dataJsonList.push(data);
+						}
+						catch (err) {
+							console.log("skipping" + content);
+						}
+					})	        		
+					core.modelService(dataJsonList);	
+					
+					for (var key in core.models) {
+						var aModel = core.models[key];
+						console.log("Pre Loaded " + key + " Entity: " +  aModel.length);
+					}  		
+				},
+				function (error) {
+					alert('error !');
+				}
+		);		
+	})
+	
+}
+
+loadMeta(loadData);
 
 var DEFAULT_PORT = 8000;
 
@@ -107,8 +199,9 @@ StaticServlet.MimeMap = {
 };
 
 StaticServlet.prototype.handleRequest = function(req, res) {
+	
 	var self = this;
-
+	
 	
 	if (req.url.path.length <= 1) {
 		path = "./app/main.html";
@@ -118,8 +211,23 @@ StaticServlet.prototype.handleRequest = function(req, res) {
 			return self.sendFile_(req, res, path);
 		});		
 	}	
-	else {
-		
+	else if (req.url.path === "/meta/meta.json") {
+		res.writeHead(200, {
+			'Content-Type': StaticServlet.MimeMap['json']
+		});		
+		res.write(core.metaFileList);
+		res.end();
+	}
+	/*
+	else if (req.url.path.indexOf("/data/") == 0) {
+		res.writeHead(200, {
+			'Content-Type': StaticServlet.MimeMap['json']
+		});		
+		res.write(core.metaFileList);
+		res.end();
+	}
+	*/	
+	else {		
 		var path = ('./' + req.url.pathname).replace('//','/').replace(/%(..)/g, function(match, hex){
 			return String.fromCharCode(parseInt(hex, 16));
 		});

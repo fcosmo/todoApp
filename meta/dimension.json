@@ -1,40 +1,42 @@
-{
-    "entityMeta":{
-        "name":"Dimension",
-        "description":"Dimension Entity",
-        "inherits":"BaseEntity",
-        "since":1,
-        "access":100,
-        "label":"Dimension"
-    },
-    "fieldMetas":[
-        {
-            "name":"title",
-            "description":"The title of this Dimension",
-            "type":"$String(2048)",
-            "required":true,
-            "unique":false,
-            "default":null,
-            "final":true,
-            "access":100,
+[
+    {
+        "entityMeta":{
+            "name":"Dimension",
+            "description":"Dimension Entity",
+            "inherits":"BaseEntity",
             "since":1,
-            "label":"Title",
-            "rank":5,
-            "visible":true
+            "access":100,
+            "label":"Dimension"
         },
-        {
-            "name":"physicalQuantity",
-            "description":"The physical quantity of the Dimension",
-            "type":"PhysicalQuantity",
-            "required":true,
-            "unique":false,
-            "default":null,
-            "final":true,
-            "access":100,
-            "since":1,
-            "label":"Physical Quantity",
-            "rank":6,
-            "visible":true
-        }
-    ]
-}
+        "fieldMetas":[
+            {
+                "name":"title",
+                "description":"The title of this Dimension",
+                "type":"$String(2048)",
+                "required":true,
+                "unique":false,
+                "default":null,
+                "final":true,
+                "access":100,
+                "since":1,
+                "label":"Title",
+                "rank":5,
+                "visible":true
+            },
+            {
+                "name":"physicalQuantity",
+                "description":"The physical quantity of the Dimension",
+                "type":"PhysicalQuantity",
+                "required":true,
+                "unique":false,
+                "default":null,
+                "final":true,
+                "access":100,
+                "since":1,
+                "label":"Physical Quantity",
+                "rank":6,
+                "visible":true
+            }
+        ]
+    }
+]

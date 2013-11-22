@@ -1,70 +1,76 @@
-{
-    "entityMeta":{
-        "name":"SubSystem",
-        "description":"The SubSYstem Entity",
-        "inherits":"BaseEntity",
-        "since":1,
-        "access":100,
-        "label":"SubSystem"
-    },
-    "fieldMetas":[
-        {
-            "name":"title",
-            "description":"The title of this SubSystem",
-            "type":"$String(2048)",
-            "required":true,
-            "unique":false,
-            "default":null,
-            "final":true,
-            "access":100,
+[
+    {
+        "entityMeta":{
+            "name":"SubSystem",
+            "description":"The SubSYstem Entity",
+            "inherits":"BaseEntity",
             "since":1,
-            "label":"Title",
-            "rank":5,
-            "visible":true
+            "access":100,
+            "label":"SubSystem"
         },
-        {
-            "name":"componentDeploymentList",
-            "description":"The ComponentDeployment of this SubSystem",
-            "hasMany":"bidirectional",
-            "type":"ComponentDeployment",
-            "required":true,
-            "unique":false,
-            "default":[],
-            "final":true,
-            "access":100,
-            "since":1,
-            "label":"Component Deployment",
-            "rank":6,
-            "visible":true
-        },
-        {
-            "name":"parameterInteractionList",
-            "description":"The Parameter Interaction of this SubSystem",
-            "hasMany":"bidirectional",
-            "type":"ParameterInteraction",
-            "required":true,
-            "unique":false,
-            "default":[],
-            "final":true,
-            "access":100,
-            "since":1,
-            "label":"Parameter Interaction",
-            "rank":7,
-            "visible":true
-        },
-        {
-            "name":"system",
-            "description":"The system of this SubSystem",
-            "type":"System",
-            "required":true,
-            "unique":false,
-            "default":null,
-            "final":true,
-            "access":100,
-            "since":1,
-            "label":"System",
-            "rank":8,
-            "visible":true
-        }
-    ]
-}
+        "fieldMetas":[
+            {
+                "name":"title",
+                "description":"The title of this SubSystem",
+                "type":"$String(2048)",
+                "required":true,
+                "unique":false,
+                "default":null,
+                "final":true,
+                "access":100,
+                "since":1,
+                "label":"Title",
+                "rank":5,
+                "visible":true
+            },
+            {
+                "name":"componentDeploymentList",
+                "description":"The ComponentDeployment of this SubSystem",
+                "hasMany":"bidirectional",
+                "type":"ComponentDeployment",
+                "required":true,
+                "unique":false,
+                "default":[
+                    
+                ],
+                "final":true,
+                "access":100,
+                "since":1,
+                "label":"Component Deployment",
+                "rank":6,
+                "visible":true
+            },
+            {
+                "name":"parameterInteractionList",
+                "description":"The Parameter Interaction of this SubSystem",
+                "hasMany":"bidirectional",
+                "type":"ParameterInteraction",
+                "required":true,
+                "unique":false,
+                "default":[
+                    
+                ],
+                "final":true,
+                "access":100,
+                "since":1,
+                "label":"Parameter Interaction",
+                "rank":7,
+                "visible":true
+            },
+            {
+                "name":"system",
+                "description":"The system of this SubSystem",
+                "type":"System",
+                "required":true,
+                "unique":false,
+                "default":null,
+                "final":true,
+                "access":100,
+                "since":1,
+                "label":"System",
+                "rank":8,
+                "visible":true
+            }
+        ]
+    }
+]

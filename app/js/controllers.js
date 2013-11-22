@@ -132,10 +132,10 @@ controllers.EntityExplorerCtrl = function (tercelServiceProviderPromise, $q, $sc
 		        tercelServiceProviderPromise.getJSON("/meta/unit.json"),
 		        tercelServiceProviderPromise.getJSON("/meta/parameterInteraction.json")		     
 		        ]).then(
-		        	function (data) {
-			        	metaService(data);	
-			        	$scope.metas = metas;
-	        			$scope.classes = classes;
+		        	function (dataList) { 
+			        	core.metaService(dataList);	
+			        	$scope.metas = core.metas;
+	        			$scope.classes = core.classes;
 	        			console.log('done metas');
 		        	},
 		        	
@@ -145,14 +145,8 @@ controllers.EntityExplorerCtrl = function (tercelServiceProviderPromise, $q, $sc
 		        );				
 	};		
 
-
-
-
-	this.loadData= function (){
-		//game.getJSON();
-
-		$q.all([
-		        tercelServiceProviderPromise.getJSON("/data/componentDeployment.json"),
+/*
+                tercelServiceProviderPromise.getJSON("/data/componentDeployment.json"),
 		        tercelServiceProviderPromise.getJSON("/data/dimension.json"),
 		        tercelServiceProviderPromise.getJSON("/data/fleet.json"),
 		        tercelServiceProviderPromise.getJSON("/data/fleetEquipment.json"),
@@ -162,13 +156,34 @@ controllers.EntityExplorerCtrl = function (tercelServiceProviderPromise, $q, $sc
 		        tercelServiceProviderPromise.getJSON("/data/subsystem.json"),
 		        tercelServiceProviderPromise.getJSON("/data/system.json"),
 		        tercelServiceProviderPromise.getJSON("/data/unit.json"),
-		        tercelServiceProviderPromise.getJSON("/data/parameterInteraction.json")		     		       
+		        tercelServiceProviderPromise.getJSON("/data/parameterInteraction.json")	  
+  
+ */
+
+
+	this.loadData= function (){
+		//game.getJSON();
+		Backbone.Relational.store.addModelScope(core.classes);
+
+		$q.all([
+	             tercelServiceProviderPromise.getJSON("/data/componentDeployment.json"),
+			        tercelServiceProviderPromise.getJSON("/data/dimension.json"),
+			        tercelServiceProviderPromise.getJSON("/data/fleet.json"),
+			        tercelServiceProviderPromise.getJSON("/data/fleetEquipment.json"),
+			        tercelServiceProviderPromise.getJSON("/data/parameter.json"),
+			        tercelServiceProviderPromise.getJSON("/data/physicalQuantity.json"),
+			        tercelServiceProviderPromise.getJSON("/data/sensorDeployment.json"),
+			        tercelServiceProviderPromise.getJSON("/data/subsystem.json"),
+			        tercelServiceProviderPromise.getJSON("/data/system.json"),
+			        tercelServiceProviderPromise.getJSON("/data/unit.json"),
+			        tercelServiceProviderPromise.getJSON("/data/parameterInteraction.json")	  
 		        ]).then(
 		        		function (data) {
-		        		    
-		        			modelService(data);
+		        			$scope.metas = core.metas;
+		        			$scope.classes = core.classes;		        		    		        			
+		        			core.modelService(data);
 
-		        			$scope.models = models;
+		        			$scope.models = core.models;
 
 		        		},
 		        		function (error) {

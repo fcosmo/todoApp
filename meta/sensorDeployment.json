@@ -1,82 +1,84 @@
-{
-    "entityMeta":{
-        "name":"SensorDeployment",
-        "description":"The Sensor Deployment Entity",
-        "inherits":"BaseEntity",
-        "since":1,
-        "access":100,
-        "label":"Sensor Deployment"
-    },
-    "fieldMetas":[
-        {
-            "name":"title",
-            "description":"The title of this Sensor Deployment",
-            "type":"$String(2048)",
-            "required":true,
-            "unique":false,
-            "default":null,
-            "final":true,
-            "access":100,
+[
+    {
+        "entityMeta":{
+            "name":"SensorDeployment",
+            "description":"The Sensor Deployment Entity",
+            "inherits":"BaseEntity",
             "since":1,
-            "label":"Title",
-            "rank":5,
-            "visible":true
+            "access":100,
+            "label":"Sensor Deployment"
         },
-        {
-            "name":"timed",
-            "description":"Is this Sensor Deployment timed",
-            "type":"$Boolean",
-            "required":true,
-            "unique":false,
-            "default":null,
-            "final":true,
-            "access":100,
-            "since":1,
-            "label":"Timed",
-            "rank":12,
-            "visible":true
-        },
-        {
-            "name":"parameter",
-            "description":"The parameter of this Sensor Deployment",
-            "type":"Parameter",
-            "required":true,
-            "unique":false,
-            "default":null,
-            "final":true,
-            "access":100,
-            "since":1,
-            "label":"Parameter",
-            "rank":7,
-            "visible":true
-        },
-        {
-            "name":"unit",
-            "description":"The unit of this Sensor Deployment",
-            "type":"Unit",
-            "required":true,
-            "unique":false,
-            "default":null,
-            "final":true,
-            "access":100,
-            "since":1,
-            "label":"Unit",
-            "rank":6,
-            "visible":true
-        },
-        {
-            "name":"dimension",
-            "description":"The Dimension of the Sensor Deployment",
-            "type":"Dimension",
-            "required":true,
-            "unique":false,
-            "default":null,
-            "final":true,
-            "access":100,
-            "since":1,
-            "label":"Dimension",
-            "rank":7,
-            "visible":true
-        }
-    ]
-}
+        "fieldMetas":[
+            {
+                "name":"title",
+                "description":"The title of this Sensor Deployment",
+                "type":"$String(2048)",
+                "required":true,
+                "unique":false,
+                "default":null,
+                "final":true,
+                "access":100,
+                "since":1,
+                "label":"Title",
+                "rank":5,
+                "visible":true
+            },
+            {
+                "name":"timed",
+                "description":"Is this Sensor Deployment timed",
+                "type":"$Boolean",
+                "required":true,
+                "unique":false,
+                "default":null,
+                "final":true,
+                "access":100,
+                "since":1,
+                "label":"Timed",
+                "rank":12,
+                "visible":true
+            },
+            {
+                "name":"parameter",
+                "description":"The parameter of this Sensor Deployment",
+                "type":"Parameter",
+                "required":true,
+                "unique":false,
+                "default":null,
+                "final":true,
+                "access":100,
+                "since":1,
+                "label":"Parameter",
+                "rank":7,
+                "visible":true
+            },
+            {
+                "name":"unit",
+                "description":"The unit of this Sensor Deployment",
+                "type":"Unit",
+                "required":true,
+                "unique":false,
+                "default":null,
+                "final":true,
+                "access":100,
+                "since":1,
+                "label":"Unit",
+                "rank":6,
+                "visible":true
+            },
+            {
+                "name":"dimension",
+                "description":"The Dimension of the Sensor Deployment",
+                "type":"Dimension",
+                "required":true,
+                "unique":false,
+                "default":null,
+                "final":true,
+                "access":100,
+                "since":1,
+                "label":"Dimension",
+                "rank":7,
+                "visible":true
+            }
+        ]
+    }
+]

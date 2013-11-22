@@ -1,82 +1,84 @@
-{
-    "entityMeta":{
-        "name":"Parameter",
-        "description":"The Parameter Entity",
-        "inherits":"BaseEntity",
-        "since":1,
-        "access":100,
-        "label":"Parameter"
-    },
-    "fieldMetas":[
-        {
-            "name":"key",
-            "description":"The key of this Parameter",
-            "type":"$String(2048)",
-            "required":true,
-            "unique":false,
-            "default":null,
-            "final":true,
-            "access":100,
+[
+    {
+        "entityMeta":{
+            "name":"Parameter",
+            "description":"The Parameter Entity",
+            "inherits":"BaseEntity",
             "since":1,
-            "label":"Key",
-            "rank":5,
-            "visible":true
+            "access":100,
+            "label":"Parameter"
         },
-        {
-            "name":"title",
-            "description":"The title of this Parameter",
-            "type":"$String(2048)",
-            "required":true,
-            "unique":false,
-            "default":null,
-            "final":true,
-            "access":100,
-            "since":1,
-            "label":"Title",
-            "rank":5,
-            "visible":true
-        },
-        {
-            "name":"variable",
-            "description":"The variable of this Parameter",
-            "type":"$String(2048)",
-            "required":true,
-            "unique":false,
-            "default":null,
-            "final":true,
-            "access":100,
-            "since":1,
-            "label":"Variable",
-            "rank":5,
-            "visible":true
-        },
-        {
-            "name":"system",
-            "description":"The System of this Parameter",
-            "type":"System",
-            "required":true,
-            "unique":false,
-            "default":null,
-            "final":true,
-            "access":100,
-            "since":1,
-            "label":"System",
-            "rank":6,
-            "visible":true
-        },
-        {
-            "name":"physicalQuantity",
-            "description":"The physical quantity of this Parameter",
-            "type":"PhysicalQuantity",
-            "required":true,
-            "unique":false,
-            "default":null,
-            "final":true,
-            "access":100,
-            "since":1,
-            "label":"Physical Quantity",
-            "rank":7,
-            "visible":true
-        }
-    ]
-}
+        "fieldMetas":[
+            {
+                "name":"key",
+                "description":"The key of this Parameter",
+                "type":"$String(2048)",
+                "required":true,
+                "unique":false,
+                "default":null,
+                "final":true,
+                "access":100,
+                "since":1,
+                "label":"Key",
+                "rank":5,
+                "visible":true
+            },
+            {
+                "name":"title",
+                "description":"The title of this Parameter",
+                "type":"$String(2048)",
+                "required":true,
+                "unique":false,
+                "default":null,
+                "final":true,
+                "access":100,
+                "since":1,
+                "label":"Title",
+                "rank":5,
+                "visible":true
+            },
+            {
+                "name":"variable",
+                "description":"The variable of this Parameter",
+                "type":"$String(2048)",
+                "required":true,
+                "unique":false,
+                "default":null,
+                "final":true,
+                "access":100,
+                "since":1,
+                "label":"Variable",
+                "rank":5,
+                "visible":true
+            },
+            {
+                "name":"system",
+                "description":"The System of this Parameter",
+                "type":"System",
+                "required":true,
+                "unique":false,
+                "default":null,
+                "final":true,
+                "access":100,
+                "since":1,
+                "label":"System",
+                "rank":6,
+                "visible":true
+            },
+            {
+                "name":"physicalQuantity",
+                "description":"The physical quantity of this Parameter",
+                "type":"PhysicalQuantity",
+                "required":true,
+                "unique":false,
+                "default":null,
+                "final":true,
+                "access":100,
+                "since":1,
+                "label":"Physical Quantity",
+                "rank":7,
+                "visible":true
+            }
+        ]
+    }
+]
